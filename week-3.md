@@ -158,6 +158,27 @@
 
 ---
 
+> **WARNING: Thursday is the most dangerous concurrent training day in the entire program.** HIIT in the AM followed by full MMA sparring in the PM combines high CNS fatigue, glycogen depletion, and reduced reaction time — all of which increase injury risk during live exchanges.
+>
+> **Alternatives to consider:**
+> - Move HIIT to Wednesday AM (swap with the lower body session) to create a 48-hour buffer before sparring
+> - Reduce HIIT duration to 20 minutes (cut interval rounds by 40%)
+> - Replace HIIT entirely with a 30-minute mobility/movement prep session
+>
+> **If you choose to keep both sessions on Thursday:**
+> - Mandatory **6+ hour gap** between AM and PM sessions
+> - Eat a **full meal** (protein + carbs + moderate fat) between sessions — do not spar glycogen-depleted
+> - **Nap 20-30 minutes** between sessions if possible
+> - Hydrate aggressively: minimum 1.5L water between sessions with electrolytes
+>
+> **Signs to SKIP PM sparring — do not negotiate these:**
+> - Dizziness or lightheadedness at any point after the AM session
+> - Nausea that persists beyond 30 minutes post-HIIT
+> - Heart rate that won't come down below 100 bpm within 15 minutes post-HIIT
+> - Sharp joint pain (not general muscle fatigue — sharp, specific pain)
+>
+> If any of these signs are present, replace PM sparring with light technical drilling or skip it entirely. One missed sparring session costs you nothing. One concussion or ligament tear costs you months.
+
 ## Thursday — HIIT / Fight Circuit + MMA Sparring
 
 > **Progression from Week 2:** HIIT tightens rest intervals (30s on/20s off, was 30/30). Rowing rest drops to 75s. Added alactic sprint set. Sparring increases to 6x5 min at 85-90% — full fight-pace simulation. This is the hardest day of the entire training block.

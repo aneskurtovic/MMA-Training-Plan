@@ -168,15 +168,64 @@
 
 ---
 
+## 9. Neck Strengthening Protocol
+
+Neck strength is critical for concussion prevention in combat sports. A stronger neck decelerates the head more effectively on impact, reducing rotational forces on the brain. Every fighter should treat neck work with the same priority as core work — it is non-negotiable.
+
+---
+
+### Pre-Session Neck Warm-Up (add to Striking & Grappling warm-ups)
+
+Perform this before every striking and grappling session, immediately after the general warm-up.
+
+| Exercise | Protocol | Rest | Cue |
+|----------|----------|------|-----|
+| Isometric Neck Hold — Forward | 10 sec hold x 2 rounds | 5 sec between directions | Place palm on forehead, push head into hand at ~50% effort. Resist all movement — neck stays neutral. |
+| Isometric Neck Hold — Backward | 10 sec hold x 2 rounds | 5 sec between directions | Place palm on back of head, push backward into hand at ~50% effort. Keep chin slightly tucked. |
+| Isometric Neck Hold — Left | 10 sec hold x 2 rounds | 5 sec between directions | Place left palm on left temple, push into hand. Keep shoulders level, do not side-bend the trunk. |
+| Isometric Neck Hold — Right | 10 sec hold x 2 rounds | 5 sec between directions | Place right palm on right temple, push into hand. Match effort to the left side. |
+
+- **2 rounds** through all 4 directions = approximately 3 minutes total.
+- Use light manual resistance from a partner (preferred) or self-applied with your hand.
+- Effort should be moderate (50-70%) — this is activation, not max effort.
+- If training solo, a resistance band looped around the head works as an alternative.
+
+**Total: ~3 min added to warm-up**
+
+---
+
+### Progressive Neck Harness Work (Friday Power Sessions)
+
+Add this at the end of the Friday AM strength session, after core work and before the cool-down. Use a neck harness with a plate or chain attachment.
+
+| Week | Sets x Reps | Load | Notes |
+|------|-------------|------|-------|
+| Week 1 | 2 x 15 | 2.5 kg | Learn the movement. Slow, controlled reps. Full ROM flexion and extension only. |
+| Week 2 | 3 x 12 | 5 kg | Increase volume and load. Maintain strict control — no jerking. |
+| Week 3 | 3 x 10 | 7.5 kg | Peak load for the block. If form degrades, drop back to 5 kg. |
+| Week 4 (deload) | 2 x 10 | 5 kg | Reduced volume and load. Maintenance only. |
+
+#### Execution Cues
+
+1. Stand with feet shoulder-width apart or sit on a bench with torso upright.
+2. Attach the neck harness with the plate hanging in front (for extension) or behind (for flexion).
+3. Perform controlled flexion (chin to chest) and extension (look up) through a comfortable range of motion.
+4. Each rep should take 3-4 seconds total (2 sec concentric, 2 sec eccentric).
+5. **NEVER do neck bridges or rapid rotations under load.** These movements compress cervical discs and carry an unacceptable injury risk for the marginal benefit they provide.
+
+> **Lateral neck work under load (side flexion with a harness) is an advanced progression.** Do not add it until flexion/extension has been trained consistently for at least 8 weeks and you can handle 10 kg comfortably.
+
+---
+
 ### Quick Reference: Warm-Up Assignment by Session
 
-| Session Type | Warm-Up Protocol | Time |
-|--------------|------------------|------|
-| Strength: Upper Body | Protocol 1 | ~10 min |
-| Strength: Lower Body | Protocol 2 | ~12 min |
-| Strength: Power Day | Protocol 3 | ~11 min |
-| MMA Striking | Protocol 4 | ~10 min |
-| MMA Grappling | Protocol 5 | ~12 min |
-| Conditioning / Cardio | Protocol 6 | ~8 min |
-| All sessions (post) | Cool-Down Protocol 7 | ~15-20 min |
-| Recovery day | Mobility Flow Protocol 8 | ~25 min |
+| Session Type | Warm-Up Protocol | Neck Protocol | Time |
+|--------------|------------------|---------------|------|
+| Strength: Upper Body | Protocol 1 | — | ~10 min |
+| Strength: Lower Body | Protocol 2 | — | ~12 min |
+| Strength: Power Day | Protocol 3 | Harness work post-session (Protocol 9b) | ~11 min + 5 min |
+| MMA Striking | Protocol 4 | Pre-session isometric 4-way (Protocol 9a) | ~10 min + 3 min |
+| MMA Grappling | Protocol 5 | Pre-session isometric 4-way (Protocol 9a) | ~12 min + 3 min |
+| Conditioning / Cardio | Protocol 6 | — | ~8 min |
+| All sessions (post) | Cool-Down Protocol 7 | — | ~15-20 min |
+| Recovery day | Mobility Flow Protocol 8 | — | ~25 min |

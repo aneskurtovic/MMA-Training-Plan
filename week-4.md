@@ -328,6 +328,54 @@
 
 ---
 
+## What's Next — Fight Camp Transition
+
+You have completed 4 weeks of general physical preparation. The foundation is built — strength, conditioning, movement quality, and training habits are established. The question now is: what comes next?
+
+### Option 1: Repeat This Block (+5% Load)
+
+Extend the general preparation phase by running the same 4-week structure with a global 5% increase on all working loads. This is appropriate if:
+
+- You are not planning to fight in the next 12 weeks
+- Baseline test results showed room for improvement in strength or conditioning
+- You want to build a deeper foundation before specialising
+
+### Option 2: Fight Camp (8-12 Weeks Out From Fight)
+
+Shift to sport-specific peaking. The training emphasis changes:
+
+| Quality | General Prep (this block) | Fight Camp |
+|---------|--------------------------|------------|
+| Strength volume | 3 sessions/week, progressive overload | 2 sessions/week, maintenance loads |
+| Conditioning | Mixed methods, building base | Fight-specific intervals, round simulation |
+| Sparring | 1x/week, controlled intensity | 2-3x/week, increasing to full fight pace |
+| Skill work | Broad development | Game plan specific, opponent study |
+| Fight simulations | None | Weekly 3-5 round simulations from Week 4+ |
+
+### Option 3: Maintenance Block (4 Weeks)
+
+If a fight is not imminent but you want to hold your gains while focusing on skill development:
+
+- 2 strength sessions per week (Monday upper, Wednesday lower) at 70-80% 1RM
+- Maintain all physical qualities at current level — no progression needed
+- Increase MMA skill sessions to 6-7 per week
+- Focus on technical depth: guard systems, wrestling chains, striking combinations
+- Conditioning: 2 sessions per week, maintain current output levels
+
+### Timeline Planning
+
+If scheduling a fight, the minimum preparation timeline is:
+
+| Phase | Duration | Purpose |
+|-------|----------|---------|
+| General Prep (this block) | 4 weeks | Build physical base |
+| Fight Camp | 8-12 weeks | Sport-specific peaking |
+| **Total** | **12-16 weeks** | **From "I want to fight" to fight night** |
+
+> **Do NOT jump from this general prep block directly into a fight without a proper camp. The skills and conditioning built here are the foundation — fight camp sharpens them into weapons.** Taking a fight on 4 weeks of general prep alone means entering the cage with a solid engine but no game plan, no opponent-specific preparation, and no mental readiness for the pressure of competition. The foundation matters, but it is not the finished product.
+
+---
+
 ## Sunday — FULL REST
 
 No training. No "active recovery." No gym. Rest completely.

@@ -4,9 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MMA Fighter Development Program</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;600;700;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Fonts loaded locally for offline support -->
+__FONTS_CSS_PLACEHOLDER__
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -388,6 +387,34 @@ body::after{
   .md td{padding:7px 8px;font-size:12px}
 }
 
+/* ═══════════════════════════════════
+   RESPONSIVE — TABLE CARDS
+   ═══════════════════════════════════ */
+@media(max-width:600px){
+  .table-wrap{border:none;background:none;box-shadow:none;border-radius:0;overflow:visible}
+  .md table,.md thead,.md tbody,.md th,.md tr{display:block}
+  .md thead{position:absolute;left:-9999px;top:-9999px}
+  .md tr{
+    margin-bottom:12px;padding:14px 16px;
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:var(--radius);
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+  }
+  .md td{
+    display:flex;justify-content:space-between;align-items:flex-start;
+    padding:6px 0;border-bottom:1px solid var(--border);
+    font-size:13px;text-align:right;
+  }
+  .md td:last-child{border-bottom:none}
+  .md td::before{
+    content:attr(data-label);
+    font-weight:600;color:var(--text-bright);text-align:left;
+    margin-right:12px;flex-shrink:0;font-size:10.5px;
+    text-transform:uppercase;letter-spacing:.08em;
+    padding-top:2px;
+  }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar{width:5px;height:5px}
 ::-webkit-scrollbar-track{background:transparent}
@@ -396,6 +423,100 @@ body::after{
 
 /* ── Selection ── */
 ::selection{background:var(--accent-med);color:var(--text-bright)}
+
+/* ── Progress Badge ── */
+.progress-badge{
+  margin-top:10px;padding:6px 12px;
+  background:var(--accent-soft);border:1px solid rgba(249,115,22,.15);
+  border-radius:6px;font-size:11px;font-weight:600;
+  color:var(--accent);letter-spacing:.02em;
+  display:none;text-align:center;
+}
+.progress-badge.visible{display:block}
+
+/* ── Rest Timer ── */
+.rest-timer{
+  position:fixed;bottom:28px;left:28px;z-index:50;
+}
+.timer-toggle{
+  width:44px;height:44px;border-radius:12px;
+  background:var(--bg-raised);border:1px solid var(--border);
+  color:var(--text);font-size:18px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .2s;
+}
+.timer-toggle:hover{border-color:var(--accent);color:var(--accent)}
+.timer-toggle.active{background:var(--accent);color:#000;border-color:var(--accent)}
+.timer-panel{
+  display:none;position:absolute;bottom:54px;left:0;
+  background:var(--bg-raised);border:1px solid var(--border-bright);
+  border-radius:var(--radius-lg);padding:16px;min-width:200px;
+  box-shadow:0 8px 32px rgba(0,0,0,.4);
+}
+.timer-panel.open{display:block}
+.timer-display{
+  font-family:var(--font-mono);font-size:36px;font-weight:700;
+  color:var(--text-bright);text-align:center;margin-bottom:12px;
+  letter-spacing:.05em;
+}
+.timer-display.warning{color:var(--accent)}
+.timer-display.done{color:var(--green);animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.timer-presets{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-bottom:10px}
+.timer-presets button{
+  padding:6px 12px;border-radius:6px;border:1px solid var(--border);
+  background:var(--bg-card);color:var(--text);font-family:var(--font-mono);
+  font-size:12px;cursor:pointer;transition:all .15s;
+}
+.timer-presets button:hover{border-color:var(--accent);color:var(--accent)}
+.timer-stop{
+  display:block;width:100%;padding:8px;margin-top:4px;
+  border-radius:6px;border:1px solid var(--red);
+  background:rgba(239,68,68,.1);color:var(--red);
+  font-family:var(--font-body);font-size:12px;font-weight:600;
+  cursor:pointer;transition:all .15s;
+}
+.timer-stop:hover{background:rgba(239,68,68,.2)}
+@media(max-width:768px){
+  .rest-timer{bottom:16px;left:16px}
+}
+
+/* ═══════════════════════════════════
+   PRINT LAYOUT
+   ═══════════════════════════════════ */
+@media print{
+  body{background:#fff;color:#000;font-size:12pt}
+  body::after{display:none}
+  .sidebar,.hamburger,.overlay,.back-top,.lang-toggle,.dl-btn,.progress-badge{display:none !important}
+  .main{margin-left:0}
+  .main::before,.main::after{display:none}
+  .content{max-width:100%;padding:0}
+  .md h1{color:#000;font-size:24pt}
+  .md h1::after{background:#000}
+  .md h2{color:#000;background:none;border:none;border-left:3px solid #000;font-size:16pt;padding:8px 12px}
+  .md h3{color:#000;border-bottom-color:#ccc}
+  .md h4{color:#333}
+  .md h4::before{background:#333}
+  .md a{color:#000;text-decoration:underline;background:none}
+  .md blockquote{border-color:#000;background:#f5f5f5}
+  .md blockquote::before{background:#000}
+  .table-wrap{box-shadow:none;border:1px solid #ccc}
+  .md th{color:#000;border-bottom-color:#999}
+  .md td{border-bottom-color:#ddd;color:#000}
+  .md tbody tr:hover{background:none}
+  .md code{background:#f0f0f0;border-color:#ccc;color:#333}
+  .md pre{background:#f5f5f5;border-color:#ccc}
+  .md pre code{color:#000}
+  .md strong{color:#000}
+  .md em{color:#333}
+  .md li::marker{color:#333}
+  .rest-timer{display:none !important}
+  .md h2{page-break-before:auto;page-break-after:avoid}
+  .md h3{page-break-after:avoid}
+  .table-wrap,.md table{page-break-inside:avoid}
+  .md blockquote{page-break-inside:avoid}
+  @page{margin:1.5cm}
+}
 </style>
 </head>
 <body>
@@ -424,6 +545,7 @@ body::after{
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       <span id="dl-text">Download Excel Tracker</span>
     </a>
+    <div class="progress-badge" id="progress-badge"></div>
   </div>
   <nav class="sidebar-nav" id="nav"></nav>
 </aside>
@@ -435,6 +557,22 @@ body::after{
   </div>
 </main>
 
+<!-- Rest Timer -->
+<div class="rest-timer" id="rest-timer">
+  <button class="timer-toggle" id="timer-toggle" aria-label="Rest Timer">&#9201;</button>
+  <div class="timer-panel" id="timer-panel">
+    <div class="timer-display" id="timer-display">0:00</div>
+    <div class="timer-presets">
+      <button onclick="startTimer(30)">30s</button>
+      <button onclick="startTimer(60)">1:00</button>
+      <button onclick="startTimer(90)">1:30</button>
+      <button onclick="startTimer(120)">2:00</button>
+      <button onclick="startTimer(180)">3:00</button>
+    </div>
+    <button class="timer-stop" id="timer-stop" onclick="stopTimer()">Stop</button>
+  </div>
+</div>
+
 <!-- Back to top -->
 <button class="back-top" id="backtop" aria-label="Back to top">&#8593;</button>
 
@@ -443,7 +581,7 @@ body::after{
 var CONTENT_EN = __CONTENT_EN_PLACEHOLDER__;
 var CONTENT_BOS = __CONTENT_BOS_PLACEHOLDER__;
 
-var SECTIONS = ['overview','schedule','week-1','week-2','week-3','week-4','exercises','warmups','nutrition','testing','sources'];
+var SECTIONS = ['overview','schedule','week-1','week-2','week-3','week-4','exercises','warmups','nutrition','testing','sources','safety'];
 
 var NAV_EN = {
   groups: [
@@ -458,6 +596,7 @@ var NAV_EN = {
       { id: 'week-4', icon: '04', text: 'Week 4 \u2014 Peak & Test' }
     ]},
     { label: 'Reference', items: [
+      { id: 'safety', icon: '\uD83D\uDEE1', text: 'Safety & Protocols' },
       { id: 'exercises', icon: '\u269B', text: 'Exercise Library' },
       { id: 'warmups', icon: '\u262F', text: 'Warm-up Routines' },
       { id: 'nutrition', icon: '\u2605', text: 'Nutrition' },
@@ -482,6 +621,7 @@ var NAV_BOS = {
       { id: 'week-4', icon: '04', text: 'Sedmica 4 \u2014 Vrh & Test' }
     ]},
     { label: 'Referenca', items: [
+      { id: 'safety', icon: '\uD83D\uDEE1', text: 'Sigurnost i Protokoli' },
       { id: 'exercises', icon: '\u269B', text: 'Biblioteka vje\u017Ebi' },
       { id: 'warmups', icon: '\u262F', text: 'Zagrijavanje' },
       { id: 'nutrition', icon: '\u2605', text: 'Ishrana' },
@@ -497,16 +637,11 @@ var currentLang = 'en';
 var cache = { en: {}, bos: {} };
 var markedLoaded = false;
 
-// ── Load marked.js from CDN ──
-var s = document.createElement('script');
-s.src = 'https://cdn.jsdelivr.net/npm/marked@15/marked.min.js';
-s.onload = function() {
-  markedLoaded = true;
-  marked.setOptions({ breaks: false, gfm: true });
-  cache = { en: {}, bos: {} };
-  renderCurrent();
-};
-document.head.appendChild(s);
+// marked.js is inlined at build time
+__MARKED_JS_PLACEHOLDER__
+markedLoaded = true;
+marked.setOptions({ breaks: false, gfm: true });
+renderCurrent();
 
 // ── Markdown rendering ──
 function renderMd(src) {
@@ -520,6 +655,21 @@ function renderMd(src) {
 function wrapTables(html) {
   return html.replace(/<table/g, '<div class="table-wrap"><table')
              .replace(/<\/table>/g, '</table></div>');
+}
+
+function addTableLabels(container) {
+  container.querySelectorAll('table').forEach(function(table) {
+    var headers = [];
+    table.querySelectorAll('thead th').forEach(function(th) {
+      headers.push(th.textContent.trim());
+    });
+    if (headers.length === 0) return;
+    table.querySelectorAll('tbody tr').forEach(function(tr) {
+      tr.querySelectorAll('td').forEach(function(td, i) {
+        if (headers[i]) td.setAttribute('data-label', headers[i]);
+      });
+    });
+  });
 }
 
 function getContent() {
@@ -574,16 +724,39 @@ function setLang(lang) {
   renderCurrent();
 }
 
+// ── Week progress badge ──
+var WEEK_THEMES = {
+  'week-1': { num: 1, en: 'Foundation', bos: 'Temelj' },
+  'week-2': { num: 2, en: 'Build', bos: 'Gradnja' },
+  'week-3': { num: 3, en: 'Intensify', bos: 'Intenzitet' },
+  'week-4': { num: 4, en: 'Peak & Test', bos: 'Vrh & Test' }
+};
+
+function updateProgress(sectionId) {
+  var badge = document.getElementById('progress-badge');
+  var week = WEEK_THEMES[sectionId];
+  if (week) {
+    var theme = currentLang === 'bos' ? week.bos : week.en;
+    var label = currentLang === 'bos' ? 'Sedmica' : 'Week';
+    badge.textContent = label + ' ' + week.num + ' of 4 — ' + theme;
+    badge.classList.add('visible');
+  } else {
+    badge.classList.remove('visible');
+  }
+}
+
 // ── Routing ──
 function renderCurrent() {
   var hash = location.hash.slice(1) || 'overview';
   var id = SECTIONS.indexOf(hash) !== -1 ? hash : 'overview';
   var page = document.getElementById('page');
   page.innerHTML = getSection(id);
+  addTableLabels(page);
   page.style.animation = 'none';
   void page.offsetHeight;
   page.style.animation = '';
   updateNav(id);
+  updateProgress(id);
   window.scrollTo({ top: 0 });
 }
 
@@ -625,6 +798,67 @@ var savedLang = 'bos';
 try { savedLang = localStorage.getItem('mma-lang') || 'bos'; } catch(e) {}
 setLang(savedLang === 'en' ? 'en' : 'bos');
 window.addEventListener('hashchange', renderCurrent);
+
+// ── Rest Timer ──
+var timerInterval = null;
+var timerSeconds = 0;
+var timerToggle = document.getElementById('timer-toggle');
+var timerPanel = document.getElementById('timer-panel');
+var timerDisplay = document.getElementById('timer-display');
+
+timerToggle.addEventListener('click', function() {
+  timerPanel.classList.toggle('open');
+});
+
+function startTimer(seconds) {
+  clearInterval(timerInterval);
+  timerSeconds = seconds;
+  timerDisplay.className = 'timer-display';
+  timerToggle.classList.add('active');
+  updateTimerDisplay();
+  timerInterval = setInterval(function() {
+    timerSeconds--;
+    updateTimerDisplay();
+    if (timerSeconds <= 5 && timerSeconds > 0) {
+      timerDisplay.classList.add('warning');
+    }
+    if (timerSeconds <= 0) {
+      clearInterval(timerInterval);
+      timerDisplay.classList.remove('warning');
+      timerDisplay.classList.add('done');
+      timerDisplay.textContent = 'REST!';
+      timerToggle.classList.remove('active');
+      // Vibrate if supported
+      if (navigator.vibrate) navigator.vibrate([200, 100, 200, 100, 200]);
+      // Beep using Web Audio API
+      try {
+        var ctx = new (window.AudioContext || window.webkitAudioContext)();
+        var osc = ctx.createOscillator();
+        var gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.frequency.value = 800;
+        gain.gain.value = 0.3;
+        osc.start();
+        setTimeout(function(){ osc.stop(); ctx.close(); }, 500);
+      } catch(e) {}
+    }
+  }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(timerInterval);
+  timerSeconds = 0;
+  timerDisplay.className = 'timer-display';
+  timerDisplay.textContent = '0:00';
+  timerToggle.classList.remove('active');
+}
+
+function updateTimerDisplay() {
+  var m = Math.floor(timerSeconds / 60);
+  var s = timerSeconds % 60;
+  timerDisplay.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+}
 </script>
 </body>
 </html>

@@ -248,3 +248,108 @@ Aim for the higher end on training days and in warm conditions.
 - [ ] Magnesium before bed
 - [ ] Pre-bed protein source
 - [ ] Prioritize whole foods over shakes today
+
+---
+
+## 8. Weight Management for Competition
+
+### Current Weight Profile
+
+- Walking weight: **87-90 kg** (88 kg reference)
+- Height: 185 cm
+- Possible weight classes: **84 kg** (light heavyweight / welterweight depending on organisation) or **93 kg**
+
+### Option A: Compete at 93 kg
+
+No weight cut needed. Compete at walking weight. This is the safest and most performance-friendly option.
+
+| Advantage | Detail |
+|-----------|--------|
+| Full strength and power | No dehydration = no performance loss |
+| Better recovery between rounds | Hydrated athletes recover faster |
+| Simplified fight prep | No weight management stress, focus entirely on skills and conditioning |
+| Better chin durability | Dehydration reduces cerebrospinal fluid volume, worsening concussion risk |
+
+### Option B: Cut to 84 kg
+
+Requires cutting 3-6 kg depending on current walking weight. This is manageable but must be done correctly.
+
+#### Chronic Dieting Phase (4-8 weeks out)
+
+| Parameter | Target |
+|-----------|--------|
+| Rate of loss | Max 0.5-1% bodyweight per week (0.44-0.88 kg/week) |
+| Caloric deficit | 300-500 kcal/day below maintenance |
+| Protein | Keep at 2.1 g/kg or increase to 2.3 g/kg to preserve muscle |
+| Target weight entering fight week | 86-87 kg (leaving 2-3 kg for water cut) |
+
+#### Water Loading Protocol (Final Week)
+
+> **WARNING: Water manipulation is DANGEROUS if done incorrectly. Work with an experienced coach or nutritionist who has managed weight cuts before. The protocol below is an outline only — individual responses vary significantly.**
+
+| Days Out | Water Intake | Sodium | Carbs | Notes |
+|----------|-------------|--------|-------|-------|
+| 7 days | 8 L/day | Normal | Normal | Begin water loading — train kidneys to excrete at high rate |
+| 6 days | 8 L/day | Normal | Normal | Continue loading |
+| 5 days | 8 L/day | Normal | Normal | Continue loading |
+| 4 days | 6 L/day | Reduce by 50% | Normal | Begin tapering |
+| 3 days | 4 L/day | Reduce to minimal | Begin reducing | Taper continues |
+| 2 days | 2 L/day | Minimal | Low | Body still excreting at high rate |
+| 1 day (24h before weigh-in) | Sips only | Minimal | Very low | Restrict to small sips as needed |
+| Weigh-in morning | Nothing until after weigh-in | — | — | Hot bath or sauna for final 0.5-1 kg if needed |
+
+#### Rehydration Post-Weigh-In
+
+| Priority | Protocol |
+|----------|----------|
+| Fluid | 1.5 L per kg of bodyweight lost. Sip steadily over 2-4 hours — do not chug. |
+| Electrolytes | Mandatory with every drink. Sodium, potassium, magnesium. Use oral rehydration solution or electrolyte mix. |
+| Food | Small, frequent meals. Start with simple carbs + protein (white rice, chicken, banana). Avoid heavy fats — they slow gastric emptying. |
+| Timing | Begin immediately after weigh-in. You need 12-24 hours minimum to rehydrate properly. Same-day weigh-ins are significantly more dangerous. |
+
+> **Never cut more than 8% of your bodyweight total (chronic + water cut combined).** For an 88 kg athlete, this means never dropping below ~81 kg at weigh-in. Cutting beyond this threshold measurably impairs reaction time, reduces power output, and — most critically — decreases chin durability by reducing the brain's protective fluid cushion.
+
+---
+
+## 9. WADA Compliance & Supplement Safety
+
+### Supplement Status
+
+All supplements listed in this program (Section 5 — Supplement Stack) are **WADA-compliant as of the writing date**. However, supplement formulations change, manufacturers reformulate, and contamination is an ongoing risk in the industry.
+
+### Verification Protocol
+
+- **Before taking ANY supplement**, verify its status at [globaldro.com](https://www.globaldro.com) — the Global Drug Reference Online maintained by WADA-accredited agencies.
+- Check every time you buy a new batch — even the same brand and product can change formulation between production runs.
+- If a substance is not listed on GlobalDRO, do not assume it is permitted. Contact your sanctioning body for guidance.
+
+### Recommended Certifications
+
+| Certification | What It Means |
+|--------------|---------------|
+| **NSF Certified for Sport** | Independent testing for banned substances and label accuracy. Gold standard. |
+| **Informed Sport** | Batch-tested by LGC for prohibited substances. Widely recognised internationally. |
+| **BSCG Certified Drug Free** | Tests for 500+ drugs including WADA-prohibited substances. |
+
+> **Use certified brands whenever possible.** The cost difference is minimal compared to the career-ending consequences of a positive test.
+
+### Common Contamination Risks
+
+| Product Category | Risk | Details |
+|-----------------|------|---------|
+| Pre-workouts | High | May contain undeclared stimulants (DMAA, DMHA, higenamine) that are prohibited in competition |
+| Herbal supplements | High | May contain unlisted ingredients, heavy metals, or pro-hormones. "Natural" does not mean safe or compliant. |
+| Imported products | High | Products manufactured outside major regulated markets (US, EU, UK, AUS) carry higher contamination risk due to less stringent manufacturing controls |
+| Fat burners / weight loss products | Very high | Frequently contain prohibited stimulants or diuretics |
+| Protein powders (major brands) | Low | Generally safe, but verify certification |
+| Creatine monohydrate (major brands) | Very low | One of the safest and most well-studied supplements |
+
+### Athlete Responsibility
+
+If competing under any athletic commission or sanctioning body (state commission, national federation, or international organisation), the athlete is **personally responsible for everything they ingest**. This is a strict liability, "no excuse" policy:
+
+- "I didn't know it was in there" is not a valid defence.
+- "My coach/nutritionist told me to take it" is not a valid defence.
+- "The label didn't list it" is not a valid defence.
+
+**You are responsible. Verify everything.**

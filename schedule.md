@@ -179,3 +179,33 @@
 - **48 hours** between heavy lower body and hard sparring when possible
 - **No back-to-back 🔴 days** except during Week 3 peak (Thursday)
 - **Post-🔴 sessions**: prioritize 15 min cool-down, foam rolling, and protein intake within 60 min
+
+---
+
+## Auto-Regulation & Missed Sessions
+
+### Missed Session Policy
+
+| Scenario | Action |
+|----------|--------|
+| Miss 1 day | Continue as planned. Shift remaining sessions forward if needed to preserve spacing (e.g., don't stack two 🔴 days). Drop the lowest-priority session of the week if you run out of days. |
+| Miss 2+ consecutive days | Repeat the current week from the start. Do not attempt to "make up" missed sessions by doubling up — this increases injury risk and defeats the purpose of the programming. |
+| Miss 3+ days due to illness | Return with a half-volume session before resuming the program. If the illness involved fever, add one extra rest day per day of fever before returning. |
+
+### RPE Auto-Regulation
+
+- All main lifts in this program are prescribed with an RPE target (e.g., RPE 7-8).
+- If you are consistently hitting **RPE 9+ on sets prescribed at RPE 7**, the load is too heavy for your current recovery state. **Reduce load by 10% for the next session** and reassess.
+- If prescribed RPE feels too easy (RPE 5 or below on RPE 7 sets), increase load by 2.5-5 kg on upper lifts or 5 kg on lower lifts for the next session.
+- RPE should be assessed on the **last rep of each working set**, not the first.
+
+### Resting Heart Rate (RHR) Monitoring
+
+> **WARNING: If your resting heart rate is elevated 7+ bpm above your personal baseline for 3 or more consecutive mornings, move to deload immediately — regardless of which week you are in.** This is one of the most reliable early indicators of overreaching or oncoming illness. Pushing through an elevated RHR leads to diminished returns, increased injury risk, and prolonged recovery. Take your RHR every morning before getting out of bed, lying still for at least 60 seconds. Use a chest strap or wrist sensor for consistency.
+
+| RHR Elevation Above Baseline | Duration | Action |
+|-------------------------------|----------|--------|
+| 1-3 bpm | Any | Normal variation. Continue as planned. |
+| 4-6 bpm | 1-2 days | Monitor. Reduce session intensity by one level (🔴 → 🟡, 🟡 → 🟢). |
+| 4-6 bpm | 3+ days | Scale back volume 20% for the remainder of the week. |
+| 7+ bpm | 3+ consecutive days | **Immediate deload.** Move to Week 4 protocol regardless of current week. |

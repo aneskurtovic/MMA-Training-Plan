@@ -248,3 +248,83 @@ Ciljati na viši kraj na dane treninga i u toplim uslovima.
 - [ ] Magnezij prije spavanja
 - [ ] Izvor proteina prije spavanja
 - [ ] Dati prednost cjelovitoj hrani nad šejkovima danas
+
+---
+
+## 8. Upravljanje Težinom za Takmičenje
+
+### Principi Sigurnog Skidanja Težine
+
+> **Upozorenje:** Agresivno rezanje vode je opasno i može ugroziti performanse i zdravlje. Sljedeći protokol je dizajniran za umjerena smanjenja težine (3-5% tjelesne težine) tokom 7-10 dana. Za smanjenja iznad 5%, obavezno konsultujte sportskog nutricionistu.
+
+### Vremenski Okvir za Takmičenje
+
+| Period | Strategija | Detalji |
+|--------|-----------|---------|
+| **4+ sedmice prije** | Postepeno smanjenje masti | Kalorizni deficit od 300-500 kcal/dan. Protein ostaje na 2.1 g/kg. Smanjite ugljikohidrate i masti proporcionalno. Ciljajte gubitak od 0.5 kg sedmično. |
+| **7-10 dana prije** | Fino podešavanje | Smanjite ugljikohidrate na 2 g/kg (umjesto 4.5 g/kg) na dane treninga. Masti na 0.8 g/kg. Izbacite dodatnu sol i prerađenu hranu. |
+| **48-24 sata prije vaganja** | Blago smanjenje vode (ako je potrebno) | Smanjite unos vode na 50% normalnog. Izbacite hranu bogatu vlaknima. Lagana sauna (maksimalno 20 min ukupno). **NIKADA ne prelazite 3% gubitka tjelesne težine od vode.** |
+| **Poslije vaganja** | Rehidracija i dopunjavanje | Počnite piti elektrolite odmah (500 ml u prvih 30 min). Ugljikohidrati: 8-10 g/kg tokom 12-24 sata nakon vaganja. Manji, česti obroci svaka 2 sata. |
+
+### Praćenje Tokom Rezanja
+
+- Vagajte se svako jutro natašte — pratite sedmični prosjek, ne dnevne fluktuacije
+- Ako dnevni gubitak prelazi 0.7 kg bez vode manipulacije, jedete premalo — dodajte 200 kcal
+- Ako snaga na treninzima padne više od 10%, deficit je prevelik — smanjite ga
+
+### Hrana za Rehidraciju Poslije Vaganja
+
+| Obrok | Vrijeme poslije vaganja | Sadržaj | Napomene |
+|-------|------------------------|---------|----------|
+| 1 | 0-30 min | 500 ml elektrolita + banana + bijeli kruh s medom | Brzi ugljikohidrati + natrij za apsorpciju |
+| 2 | 1-2 sata | Bijeli pirinač (200g kuhani) + pileća prsa (150g) + sol | Umjeren obrok, lako probavljiv |
+| 3 | 3-4 sata | Tjestenina (200g kuhana) + losos (150g) + povrće | Balansiran obrok za dopunu glikogena |
+| 4 | Prije borbe (2 sata) | Pirinčana pogačica s medom + banana + sportski napitak | Lagano, brzi ugljikohidrati za gorivo |
+
+---
+
+## 9. WADA Usklađenost i Sigurnost Suplemenata
+
+### Princip Odgovornosti
+
+> **Svaki sportaš je 100% odgovoran za sve supstance u svom tijelu.** "Nisam znao" nije odbrana. Prije uzimanja bilo kojeg suplementa, provjerite status na WADA listi zabranjenih supstanci.
+
+### Provjera Suplemenata
+
+| Korak | Akcija | Resurs |
+|-------|--------|--------|
+| 1 | Provjerite suplement na WADA listi zabranjenih supstanci | [WADA Prohibited List](https://www.wada-ama.org/en/prohibited-list) — ažurira se svake godine 1. januara |
+| 2 | Koristite certifikovane proizvode (treće strane) | Informed Sport, NSF Certified for Sport, ili BSCG certifikat |
+| 3 | Izbjegavajte proprietary blendove | Ako etiketa ne navodi tačne količine svakog sastojka, ne koristite proizvod |
+| 4 | Vodite dnevnik suplemenata | Zapisujte naziv, lot broj, proizvođača i datum kupovine svakog suplementa |
+
+### Status Suplemenata iz Ovog Plana
+
+| Suplement | WADA Status | Certifikacija potrebna? | Napomene |
+|-----------|-------------|------------------------|----------|
+| Kreatin monohidrat | ✅ Dozvoljen | Preporučena (Informed Sport) | Bezbijedan u svim dozama iz plana |
+| Kofein | ✅ Dozvoljen (praćen ali nije zabranjen) | Preporučena | Ranije bio zabranjen; trenutno praćen. Držite se ispod 6 mg/kg |
+| Whey Protein | ✅ Dozvoljen | **OBAVEZNA** — kontaminacija je čest problem | Koristite ISKLJUČIVO certifikovane brendove |
+| Elektroliti | ✅ Dozvoljeni | Niska potreba | Jednostavne soli i minerali |
+| Vitamin D3 | ✅ Dozvoljen | Niska potreba | Standardni vitaminski suplement |
+| Magnezij glicinat | ✅ Dozvoljen | Niska potreba | Standardni mineralni suplement |
+| Omega-3 (riblje ulje) | ✅ Dozvoljen | Preporučena | Provjerite da proizvod ne sadrži dodatne sastojke |
+| Beta-alanin | ✅ Dozvoljen | Preporučena | Bezbijedan u dozama iz plana |
+
+### Zabranjene Supstance — Često Viđene u MMA Okruženju
+
+> **NIKADA ne koristite sljedeće bez eksplicitne medicinske dozvole (TUE — Therapeutic Use Exemption):**
+
+- Anabolički steroidi (testosteron, nandrolon, stanozolol, itd.)
+- EPO (eritropoetin) i sredstva za stimulaciju crvenih krvnih zrnaca
+- Diuretici i maskirajući agensi (često korišteni za rezanje težine — **ZABRANJENI**)
+- IV infuzije iznad 100 ml u periodu od 12 sati (osim u bolničkim uslovima)
+- SARM-ovi (Selektivni modulatori androgenih receptora) — često prodavani kao "legalni steroidi"
+- GH (hormon rasta) i peptidi
+
+### Kontaminirani Suplementi — Prevencija
+
+- **Ne kupujte** suplemente od nepoznatih brendova na internetu
+- **Izbjegavajte** proizvode koji obećavaju "dramatične rezultate" ili koriste marketinški jezik koji sugeriše hormonske efekte
+- **Provjerite** svaki lot broj na stranici certifikatora (npr. Informed Sport baza podataka)
+- **Čuvajte** suplementne u originalnom pakovanju s vidljivim lot brojem

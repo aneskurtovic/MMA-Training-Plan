@@ -328,6 +328,43 @@
 
 ---
 
+## Šta Dalje — Tranzicija u Borbeni Kamp
+
+> **Ovaj odjeljak vrijedi samo ako imate zakazan meč.** Ako nemate borbu u planu, ponovite 4-sedmični blok opšte pripreme s novim baznim vrijednostima iz ponovnog testiranja.
+
+### Vremenski Okvir Borbenog Kampa
+
+| Period | Fokus | Trajanje |
+|--------|-------|----------|
+| Opšta priprema (GPP) | Ovaj 4-sedmični blok koji ste upravo završili | 4 sedmice |
+| Specifična priprema (SPP) | Borbeni kamp — specifičan za protivnika | 6-8 sedmica |
+| Tapering / Vrhunac (Peak) | Smanjenje volumena, oštrenje | 7-10 dana prije borbe |
+| Borba + Oporavak | Takmičenje i post-borba odmor | 1-2 sedmice |
+
+### Ključne Promjene za Borbeni Kamp
+
+| Kategorija | Opšta Priprema (ovaj blok) | Borbeni Kamp |
+|------------|---------------------------|--------------|
+| Snaga | 3 sesije/sedmica, progresivno opterećenje | 2 sesije/sedmica, održavanje snage (ne graditi nove 1RM) |
+| Kondicija | Miks aerobnog i anaerobnog | Dominantno specifična za borbu — kružne runde, simulacije borbe |
+| MMA vještine | Opšte usavršavanje svih oblasti | Specifične za protivnika — gameplan, scenariji, prilagođene kombinacije |
+| Sparring | 1-2 sesije/sedmica na 70-90% | 2-3 sesije/sedmica s partnerima koji imitiraju stil protivnika |
+| Volumen | Rastući (12.5 → 13.75 sati/sedmica) | Opadajući — počnite na 13 sati, smanjujte prema borbi |
+| RPE | 6-9 (kroz blok) | 8-9 rano u kampu, pada na 6-7 u zadnjih 10 dana |
+
+### Kontrolna Lista Prije Ulaska u Kamp
+
+- [ ] Benchmark testovi završeni i zabilježeni
+- [ ] Bazni 1RM-ovi ažurirani
+- [ ] Puls u mirovanju se vratio na baznu vrijednost (ili ispod)
+- [ ] Bez aktivnih povreda koje ograničavaju trening
+- [ ] Ciljana težinska kategorija je realna (ne više od 5% iznad gornje granice)
+- [ ] Gameplan za protivnika pripremljen s trenerom
+- [ ] Raspored sparring partnera potvrđen za kamp
+- [ ] Nutricionistički plan prilagođen za rezanje težine (ako je potrebno)
+
+---
+
 ## Nedjelja — POTPUNI ODMOR
 
 Bez treninga. Bez "aktivnog oporavka." Bez teretane. Odmorite se potpuno.

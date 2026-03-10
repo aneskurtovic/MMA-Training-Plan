@@ -286,6 +286,39 @@ Ponovi za **4 runde** (bilo 3). Odmor **90s** između rundi (bio 2 min).
 
 ---
 
+## Kontrolna Tačka Sredine Bloka — Subota Veče
+
+*Na kraju Sedmice 2, procijenite svoje stanje prije nego što uđete u vršnu Sedmicu 3. Koristite tabelu ispod da odredite da li ste spremni za progresiju.*
+
+### Tabela Procjene
+
+| Metrika | Vaša Vrijednost | Zeleno Svjetlo ✅ | Žuto Svjetlo ⚠️ | Crveno Svjetlo 🛑 |
+|---------|-----------------|-------------------|------------------|-------------------|
+| Puls u mirovanju (RHR) | ___ bpm | ≤ bazna +3 bpm | Bazna +4-6 bpm | Bazna +7 bpm ili više |
+| Kvalitet sna (prosj. sedmice) | ___ /10 | ≥ 7/10 | 5-6/10 | ≤ 4/10 |
+| Bolnost mišića | ___ /10 | ≤ 3/10 | 4-6/10 | ≥ 7/10 |
+| Bol u zglobovima | ___ /10 | 0-1/10 (samo nelagodnost) | 2-4/10 (prisutna ali podnošljiva) | ≥ 5/10 (ograničava pokrete) |
+| Raspoloženje / Motivacija | ___ /10 | ≥ 7/10 (željni treninga) | 4-6/10 (ravno ali funkcionalno) | ≤ 3/10 (dreading treninga) |
+| RPE na glavnim dizanjima ove sedmice | ___ | Na cilju ili ispod | 1 bod iznad cilja | 2+ boda iznad cilja |
+| Prehrana / Hidracija | ___ | Dosljedno na cilju | Propušteni 1-2 obroka/dana | Značajno ispod ciljeva |
+| Apetit | ___ | Normalan ili povećan | Blago smanjen | Značajno smanjen |
+
+### Vodič za Odluku — Nastavi/Prilagodi/Zaustavi
+
+**Sve zeleno ili pretežno zeleno (0-1 žuto):**
+- ✅ Nastavite prema Sedmici 3 kako je planirano. Spremni ste za vršno opterećenje.
+
+**Miješano (2-3 žuta, bez crvenih):**
+- ⚠️ Nastavite prema Sedmici 3 ali smanjite RPE ciljeve za 0.5 bod na svim sesijama. Prioritizirajte san i ishranu ovog vikenda. Razmotrte opciju da preskočite subotnju kondiciju (Sedmica 3) za dodatni oporavak.
+
+**Bilo kakvo crveno ili 4+ žutih:**
+- 🛑 Ne napredujte kako je planirano. Opcije:
+  1. Ponovite Sedmicu 2 sa smanjenim RPE ciljevima (smanjite za 1 bod).
+  2. Ubacite mini-deload: 3 dana smanjenog volumena (50% radnog opterećenja) pa zatim nastavite sa Sedmicom 3.
+  3. Ako je crveno u kategoriji bola u zglobovima — pogledajte tabelu modifikacija za povrede u safety.md i prilagodite program.
+
+---
+
 ## Rezime Sedmice 2 — Ključne progresije
 
 | Kategorija | Sedmica 1 | Sedmica 2 | Razlika |

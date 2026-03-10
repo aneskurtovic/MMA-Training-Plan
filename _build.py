@@ -23,9 +23,26 @@ bos_json = json.dumps(bos_data, ensure_ascii=False)
 with open(os.path.join(DIR, "_template.html"), encoding="utf-8") as f:
     template = f.read()
 
+# Load marked.js for inlining
+marked_path = os.path.join(DIR, "marked.min.js")
+with open(marked_path, encoding="utf-8") as f:
+    marked_js = f.read()
+
+# Load local font CSS for inlining
+fonts_css_path = os.path.join(DIR, "fonts", "fonts-local.css")
+if os.path.exists(fonts_css_path):
+    with open(fonts_css_path, encoding="utf-8") as f:
+        fonts_css = f.read()
+    fonts_tag = f"<style>{fonts_css}</style>"
+else:
+    print("WARNING: fonts/fonts-local.css not found, fonts will use system fallbacks")
+    fonts_tag = ""
+
 # Replace placeholders
 html = template.replace("__CONTENT_EN_PLACEHOLDER__", en_json)
 html = html.replace("__CONTENT_BOS_PLACEHOLDER__", bos_json)
+html = html.replace("__MARKED_JS_PLACEHOLDER__", marked_js)
+html = html.replace("__FONTS_CSS_PLACEHOLDER__", fonts_tag)
 
 out = os.path.join(DIR, "index.html")
 with open(out, "w", encoding="utf-8") as f:

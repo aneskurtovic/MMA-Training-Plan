@@ -286,6 +286,31 @@ Repeat for **4 rounds** (was 3). Rest **90s** between rounds (was 2 min).
 
 ---
 
+## Mid-Block Checkpoint — Saturday Evening
+
+Complete this checkpoint after Saturday's PM session. Be honest — this data drives your Week 3 decisions.
+
+### Self-Assessment Table
+
+| Metric | Your Value | Green Light | Yellow Light | Red Light |
+|--------|-----------|-------------|--------------|-----------|
+| Resting Heart Rate | ___ bpm | Within 3 bpm of baseline | 4-6 bpm above baseline | 7+ bpm above baseline |
+| Body Weight | ___ kg | Within 1 kg of start | 1-2 kg change | >2 kg change |
+| Fatigue (1-10) | ___ | 1-5 | 6-7 | 8-10 |
+| Sleep Quality (1-10) | ___ | 7-10 | 5-6 | 1-4 |
+| New Injuries/Pain | ___ | None | Minor ache, managed | Sharp pain, affecting training |
+
+### Go / No-Go Decision Guide
+
+- **All green** → Proceed to Week 3 as planned. Full volume, full intensity.
+- **Any yellow** → Proceed to Week 3 but **reduce volume by 10-15%**. Drop 1 set from each accessory exercise, shorten conditioning by 1 round, cap sparring at 80%.
+- **Any red** → **Repeat Week 2** from the start OR **skip to deload (Week 4)** depending on severity. If the red flag is injury-related, see the injury modification table in safety.md before continuing.
+- **Fatigue >8 OR RHR +7 bpm above baseline** → **Mandatory dial-back:** Drop Week 3 main lift RPE cap to 7-8 (instead of 8-9), reduce sparring rounds by 2 in every sparring session, and add an extra rest day mid-week if possible.
+
+> **Do not skip this checkpoint.** Two minutes of honest self-assessment here can prevent a wasted Week 3 or, worse, an injury that sidelines you for the entire next block.
+
+---
+
 ## Week 2 Summary — Key Progressions
 
 | Category | Week 1 | Week 2 | Delta |

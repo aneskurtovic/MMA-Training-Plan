@@ -160,6 +160,8 @@
 
 ## Četvrtak — HIIT / Borbeni krug + MMA Sparring
 
+> ⚠️ **UPOZORENJE — KONKURENTNI TRENING:** Četvrtak je najopasniji dan za konkurentni trening u cijelom bloku (HIIT ujutro + Sparring popodne). Oba treninga su 🔴 intenziteta. Obavezno: jedite obilan obrok bogat ugljikohidratima između sesija, hidrirajte se agresivno (minimalno 1.5L vode između sesija), odspavajte 20-30 min ako je moguće. Ako se osjećate loše nakon jutarnjeg HIIT-a — vrtoglavica, mučnina, neuobičajeni umor — **preskočite ili smanjite popodnevni sparring na tehnički rad bez kontakta**. Nijedan trening ne vrijedi povrede koja nastaje iz kumulativnog umora.
+
 > **Progresija od Sedmice 2:** HIIT skraćuje intervale odmora (30s rad/20s odmor, bilo je 30/30). Odmor na veslanju pada na 75s. Dodat alaktički sprint set. Sparring raste na 6x5 min na 85-90% — puna simulacija tempa borbe. Ovo je najteži dan cijelog trening bloka.
 
 ### Ujutro — HIIT / Borbeni krug (40 min) :red_circle:

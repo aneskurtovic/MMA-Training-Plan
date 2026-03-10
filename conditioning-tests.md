@@ -68,6 +68,13 @@ Run tests from **least fatiguing to most fatiguing** to avoid one test skewing t
 | 12 | Bodyweight | Fasted, morning, after using the bathroom. Same scale each time | Body mass | Track change, not absolute |
 | 13 | Waist Circumference | Measure at navel level, relaxed (not sucking in). Use a cloth tape measure | Central body composition proxy | Track change, not absolute |
 
+#### Grip & Neck Strength
+
+| # | Test | Protocol | What It Measures | Target / Benchmark |
+|---|------|----------|------------------|--------------------|
+| 14 | Dead Hang | Hang from pull-up bar, overhand grip (pronated), shoulder-width apart, dead hang (no active engagement of lats). Time in seconds until failure (hands open). | Grip endurance (critical for grappling — maintaining collar ties, wrist control, and submissions) | 60s+ (good), 90s+ (excellent) |
+| 15 | Neck Strength (Isometric) | Manual resistance: partner applies moderate, steady pressure while athlete resists in 4 directions (forward, backward, left, right). Hold 10 seconds each direction. Record Pass/Fail for each direction + note any asymmetry between sides. | Neck stability and concussion resilience | Hold all 4 directions for 10s without deviation. Any direction that fails or shows significant asymmetry (>3s difference left vs right) = area to address |
+
 ---
 
 ### Recording Template
@@ -87,6 +94,52 @@ Run tests from **least fatiguing to most fatiguing** to avoid one test skewing t
 | 11 | Ground-to-Standing (reps) | | | | |
 | 12 | Bodyweight (kg/lb) | | | | Fasted, morning |
 | 13 | Waist Circumference (cm/in) | | | | At navel |
+| 14 | Dead Hang (sec) | | | | Overhand grip, note if grip failed left/right |
+| 15 | Neck Strength Isometric (Pass/Fail) | | | | Forward: __ / Backward: __ / Left: __ / Right: __ |
+
+---
+
+## Monitoring: HRV & Overtraining Indicators
+
+### Morning HRV Protocol
+
+Heart Rate Variability (HRV) is one of the most reliable non-invasive markers of autonomic nervous system readiness. Higher HRV generally indicates better recovery; declining HRV indicates accumulated stress.
+
+| Parameter | Protocol |
+|-----------|----------|
+| Timing | Measure immediately on waking, before getting out of bed |
+| Position | Lying down (supine), relaxed, eyes closed |
+| Duration | 60-second reading minimum |
+| Equipment | Chest strap (preferred for accuracy) or validated app with phone camera/wrist sensor |
+| Recommended apps | Elite HRV, HRV4Training |
+| Consistency | Same position, same time, same device every day. Variability in protocol creates noise in the data. |
+
+### Interpreting HRV Trends
+
+Track the **7-day rolling average**, not individual daily readings. Single-day dips are normal and can be caused by alcohol, poor sleep, a hard session the day before, or even meal timing.
+
+| Trend | Interpretation | Action |
+|-------|----------------|--------|
+| 7-day avg stable or gradually rising | Good recovery, positive adaptation | Continue as planned |
+| Single-day dip (returns next day) | Normal variation | No action needed |
+| 3+ day downward trend | Functional overreaching — accumulated fatigue is outpacing recovery | Reduce training volume by 20%, prioritise sleep, check nutrition |
+| 7-day avg drops **>15% below personal baseline** | Non-functional overreaching or early overtraining | **Immediate deload.** Move to Week 4 protocol regardless of current week. |
+| Consistently suppressed for 2+ weeks despite deload | Possible overtraining syndrome | See a sports medicine professional. Training may need to stop entirely for 1-4 weeks. |
+
+### Overtraining Red Flags Checklist
+
+If you notice **3 or more** of the following simultaneously, you are likely overreaching and need to adjust:
+
+- [ ] Persistent fatigue despite adequate sleep (8+ hours)
+- [ ] Resting heart rate elevated 5+ consecutive days above baseline
+- [ ] Mood disturbances: irritability, apathy, loss of motivation to train
+- [ ] Loss of appetite or unexplained weight loss
+- [ ] Recurring illness (colds, infections) more than once per month
+- [ ] Performance decline despite consistent training and recovery
+- [ ] Difficulty sleeping despite fatigue (wired-but-tired feeling)
+- [ ] Increased perceived effort on previously manageable loads (RPE 8 on what used to be RPE 6)
+
+> **Overtraining is not a badge of honour — it is a programming failure.** If you reach this state, the solution is rest and recovery adjustment, not more training. Catching overreaching early (via HRV trends and the checklist above) prevents it from becoming overtraining syndrome, which can take months to recover from.
 
 ---
 
@@ -101,7 +154,7 @@ Run tests from **least fatiguing to most fatiguing** to avoid one test skewing t
 ### Procedure
 
 1. Perform the same warm-up protocol as Week 0.
-2. Run all 13 tests in the same order.
+2. Run all 15 tests in the same order.
 3. Record results in the "Week 5 Re-Test" column of the recording template above.
 4. Calculate the "Change" column (absolute and percentage).
 

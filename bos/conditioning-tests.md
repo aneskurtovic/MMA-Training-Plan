@@ -150,3 +150,70 @@ Realna poboljšanja za motiviranog vježbača koji dosljedno prati program:
 - Prilagodite opterećenja treninga: nove procjene 3RM trebaju informirati radne težine.
 - Identificirajte najslabija područja i razmotrite njihovo prioritiziranje u sljedećem mezociklusu.
 - Ako je ponovno testiranje propušteno, zakažite ga za prvi dan odmora sljedećeg bloka prije nego što se nastavi opterećenje.
+
+---
+
+## Dodatni Testovi: Snaga Stiska i Vrata
+
+### Snaga Stiska Šake (Grip Strength)
+
+| # | Test | Protokol | Šta mjeri | Cilj / Referentna vrijednost |
+|---|------|----------|-----------|------------------------------|
+| 14 | Snaga stiska šake (Grip Strength) | Koristite ručni dinamometar. 3 pokušaja po ruci, zabilježite najbolji rezultat svake ruke. 30 sek odmor između pokušaja. | Snaga stiska — kritična za grappling, klinč rad i kontrolu | Dominantna ruka: >55 kg (dobro), >65 kg (odlično). Razlika između ruku: <10% |
+| 15 | Izdržaj u visu (Dead Hang Hold) | Vješanje na šipki, nadhvat, puni opseg. Vrijeme do otpuštanja ili značajnog gubitka forme. | Izdržljivost stiska — prati se za grappling i povlačenja | >60 sek (dobro), >90 sek (odlično) |
+
+### Snaga Vrata (Neck Strength)
+
+| # | Test | Protokol | Šta mjeri | Cilj / Referentna vrijednost |
+|---|------|----------|-----------|------------------------------|
+| 16 | Izometrički test vrata — 4 smjera (Isometric Neck Test) | Koristite traku za mjerenje sile ili manualni otpor s partnerom. Testirajte fleksiju (naprijed), ekstenziju (nazad), i bočnu fleksiju (lijevo/desno). Maksimalni napor 5 sek, 3 pokušaja u svakom smjeru, zabilježite najbolji. | Snaga vrata — ključna za otpornost na potres mozga i odbranu od giljotine | Pratite promjenu tokom bloka. Ciljajte minimalno 10% poboljšanje u svim smjerovima. Razlika fleksija:ekstenzija ne bi trebala prelaziti 30%. |
+
+> Dodajte redove 14-16 u obrazac za bilježenje rezultata iznad zajedno s ostalim testovima.
+
+---
+
+## Monitoring: HRV i Indikatori Pretreniranosti
+
+### Praćenje Varijabilnosti Srčanog Ritma (HRV — Heart Rate Variability)
+
+HRV je najosjetljiviji svakodnevni marker stanja autonomnog nervnog sistema i spremnosti za trening.
+
+**Protokol mjerenja:**
+- Mjerite svako jutro odmah pri buđenju, prije ustajanja iz kreveta
+- Koristite aplikaciju koja podržava HRV mjerenje (npr. HRV4Training, Elite HRV, Oura prsten)
+- Mjerite minimalno 60 sekundi u ležećem položaju
+- Zabilježite vrijednost u dnevnik treninga svaki dan
+
+**Tumačenje:**
+
+| HRV Trend | Značenje | Akcija |
+|-----------|----------|--------|
+| Stabilan ili u porastu (unutar normalnog raspona) | Dobra adaptacija, autonomni nervni sistem oporavljen | Nastavite s planom kako je propisano |
+| Blagi pad (10-15% ispod bazne linije) | Umjeren stres ili nepotpun oporavak | Smanjite RPE za 0.5-1 bod, prioritizirajte san |
+| Značajan pad (>15% ispod bazne linije) | Pretreniranost, bolest, ili značajan životni stres | Smanjite 🔴 sesije na 🟡, izbjegavajte sparring, razmotrte dan odmora |
+| Pad koji traje 3+ dana uzastopno | Kumulativni umor ili rani znakovi pretreniranosti | Ubacite 1-2 dana potpunog odmora bez obzira na raspored |
+
+> **Napomena:** HRV se čita kao TREND, ne kao apsolutna vrijednost. Vaša bazna linija je lična — usporedite sa svojim vlastitim prosjekom tokom 7-14 dana, ne s tuđim brojevima.
+
+### Indikatori Pretreniranosti — Dnevna Kontrolna Lista
+
+Pratite ove markere svakodnevno. Ako **3 ili više** markera budu prisutno istovremeno, to je znak da vam treba dodatni oporavak.
+
+| Marker | Kako pratiti | Zabrinjavajuće Ako... |
+|--------|-------------|----------------------|
+| Puls u mirovanju (RHR) | Mjerenje pri buđenju, prije ustajanja | Povišen 5+ bpm iznad bazne linije, 2+ dana uzastopno |
+| Kvalitet sna | Subjektivna ocjena 1-10 | Ispod 5/10 dva dana uzastopno, ili nemogućnost usnivanja |
+| Apetit | Subjektivna ocjena | Značajno smanjen bez objašnjenja (nije u fazi rezanja) |
+| Raspoloženje | Subjektivna ocjena | Iritabilnost, anksioznost, ili apatija koja nije tipična za vas |
+| Performanse | RPE na treninzima | Ista opterećenja se osjećaju 2+ RPE boda teže nego prethodne sedmice |
+| Bolnost mišića | Subjektivna ocjena 1-10 | DOMS (zakašnjela bolnost) koja traje >72 sata, ili bolnost koja se ne poboljšava |
+| Učestalost bolesti | Prehlada, grlobolja, infekcije | Dva ili više epizoda unutar 4 sedmice |
+| Motivacija | Subjektivna ocjena | Strah od treninga (ne samo lijenost, već stvarna averzija) |
+
+### Akcijski Plan za Pretreniranost
+
+| Broj prisutnih markera | Kategorija | Akcija |
+|------------------------|-----------|--------|
+| 0-2 | Normalno | Nastavite s planom |
+| 3-4 | Upozorenje | Smanjite volumen za 20-30% na 2-3 dana. Prioritizirajte san (9+ sati). Povećajte kalorije za 300-500 kcal iz ugljikohidrata. |
+| 5+ | Alarm | Uzmite 2-3 dana potpunog odmora. Jedite na suficitu. Spavajte koliko god tijelo traži. Konsultujte trenera o modifikaciji plana. Razmotrte posjetu ljekaru ako simptomi ne popuštaju nakon 5 dana odmora. |

@@ -179,3 +179,33 @@
 - **48 sati** između teškog treninga donjih ekstremiteta i teškog sparringa kada je moguće
 - **Bez uzastopnih 🔴 dana** osim tokom vršne Sedmice 3 (Četvrtak)
 - **Nakon 🔴 sesija**: prioritizirajte 15 min hlađenja, valjak za masažu i unos proteina unutar 60 min
+
+---
+
+## Auto-regulacija i Propuštene Sesije
+
+### Pravila za Propuštene Sesije
+
+**Propuštena 1 sesija:**
+- Nastavite s rasporedom kao da se ništa nije desilo — ne pokušavajte nadoknaditi propuštenu sesiju.
+- Ako je propuštena sesija snage, ponovite ista opterećenja na sljedećoj sesiji snage (bez progresije te sedmice za tu grupu mišića).
+- Ako je propuštena MMA sesija, nastavite normalno — vještine se ne gube od jednog propuštenog treninga.
+
+**Propuštene 2+ sesije (uzastopno):**
+- 2 propuštena dana: nastavite s rasporedom, ali smanjite RPE za 1 bod na sljedećoj sesiji snage.
+- 3-4 propuštena dana: ponovite posljednji završeni dan i smanjite RPE za 1-2 boda na svim sesijama do kraja sedmice.
+- 5+ propuštenih dana: razmotriti ponavljanje čitave sedmice. Ne skačite naprijed u rasporedu.
+- Ako je razlog propuštanja bolest ili povreda, primijenite protokol povratka (vidjeti safety.md).
+
+### RPE Auto-regulacija
+
+Koristite RPE skalu za prilagođavanje opterećenja u realnom vremenu:
+
+| Situacija | Akcija |
+|-----------|--------|
+| Zagrijavajući setovi se osjećaju teže nego inače | Smanjite radnu težinu za 5% i zadržite isti RPE cilj |
+| RPE je 1+ bod iznad cilja na prvom radnom setu | Smanjite opterećenje za 2.5-5 kg za preostale serije |
+| RPE je 1+ bod ispod cilja na prvom radnom setu | Dodajte 2.5 kg za preostale serije (samo ako je forma čista) |
+| Ne možete završiti propisane ponavljanja | Smanjite opterećenje za 10% i završite preostale serije |
+
+> **Upozorenje o pulsu u mirovanju (RHR):** Ako je vaš puls u mirovanju ujutro **5+ bpm iznad vaše bazne vrijednosti**, to je rani znak pretreniranosti ili bolesti. Na takav dan: smanjite sve 🔴 sesije na 🟡, izbjegavajte sparring, i prioritizirajte san i ishranu. Ako je RHR povišen 2+ uzastopna dana, uzmite potpuni dan odmora bez obzira na raspored.

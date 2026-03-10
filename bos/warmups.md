@@ -168,6 +168,45 @@
 
 ---
 
+## 9. Protokol Jačanja Vrata
+
+*Vrat je kritična struktura u MMA — štiti od potresa mozga, poboljšava odbranu od giljotine i povećava stabilnost u klinču. Izvodite ove vježbe PRIJE svake sesije koja uključuje kontakt ili sparring.*
+
+### Zagrijavanje vrata prije sesije (~3 min)
+
+| Redoslijed | Vježba | Trajanje | Uputa |
+|------------|--------|----------|-------|
+| 1 | Rotacije vrata (lijevo-desno) | 10 u svakom smjeru | Sporo i kontrolisano — nikad forsirati opseg |
+| 2 | Kimanje (gore-dolje) | 10 ponavljanja | Nježan opseg, bez naglih pokreta |
+| 3 | Bočno naginjanje | 10 u svakom smjeru | Uho prema ramenu, bez podizanja ramena |
+| 4 | Izometrički držanje naprijed (Isometric Forward Hold) | 15 sek | Ruka na čelu, gurati glavu naprijed protiv otpora ruke — 50% napora |
+| 5 | Izometrički držanje nazad (Isometric Backward Hold) | 15 sek | Ruke na potiljku, gurati glavu nazad protiv otpora — 50% napora |
+| 6 | Izometrički držanje bočno — lijevo (Isometric Lateral Hold) | 15 sek | Ruka na lijevoj strani glave, gurati bočno — 50% napora |
+| 7 | Izometrički držanje bočno — desno (Isometric Lateral Hold) | 15 sek | Ruka na desnoj strani glave, gurati bočno — 50% napora |
+
+**Ukupno: ~3 min**
+
+> **Pravilo:** Izometrička držanja u 4 smjera se izvode na 50% maksimalnog napora tokom zagrijavanja. Nikada ne forsirati krajnji opseg niti izvoditi eksplozivne pokrete vratom.
+
+### Progresivni rad s hamom za vrat (Neck Harness Work) (~5 min)
+
+*Izvodite 2-3 puta sedmično kao samostalni rad na snazi vrata, idealno na kraju sesije snage ili kao dodatak nakon MMA zagrijavanja.*
+
+| Sedmica | Vježba | Serije x Ponavljanja | Opterećenje | Napomene |
+|---------|--------|----------------------|-------------|----------|
+| 1-2 | Fleksija/Ekstenzija s hamom (Neck Harness Flexion/Extension) | 2 x 15 | 2.5-5 kg | Puni kontrolisani opseg pokreta, polako u oba smjera |
+| 1-2 | Bočna fleksija s hamom (Neck Harness Lateral Flexion) | 2 x 12/strana | 2.5 kg | Kontrolisano naginjanje, pauza na vrhu |
+| 3-4 | Fleksija/Ekstenzija s hamom | 3 x 12 | 5-7.5 kg | Povećati opterećenje samo ako je forma čista |
+| 3-4 | Bočna fleksija s hamom | 3 x 10/strana | 5 kg | Progresivno povećanje opterećenja |
+
+- Ako nemate ham za vrat, koristite manualni otpor od partnera (partner pruža otpor rukama dok vi gurate u 4 smjera).
+- **NIKADA** ne izvodite mostove za vrat bez prethodnog iskustva i nadzora trenera — rizik od povrede cervikalne kičme.
+- Počnite lagano — vrat se oporavlja sporije od većih mišićnih grupa.
+
+**Ukupno: ~5 min**
+
+---
+
 ### Brzi pregled: Raspored zagrijavanja po treningu
 
 | Tip treninga | Protokol zagrijavanja | Vrijeme |
