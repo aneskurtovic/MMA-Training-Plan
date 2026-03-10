@@ -1,0 +1,4 @@
+_escaped_content.tmp
+~$*.xlsx
+*.tmp
+__pycache__/
