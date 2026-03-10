@@ -621,9 +621,9 @@ backtop.addEventListener('click', function() {
 });
 
 // ── Init ──
-var savedLang = 'en';
-try { savedLang = localStorage.getItem('mma-lang') || 'en'; } catch(e) {}
-setLang(savedLang === 'bos' ? 'bos' : 'en');
+var savedLang = 'bos';
+try { savedLang = localStorage.getItem('mma-lang') || 'bos'; } catch(e) {}
+setLang(savedLang === 'en' ? 'en' : 'bos');
 window.addEventListener('hashchange', renderCurrent);
 </script>
 </body>
