@@ -205,6 +205,24 @@ body::after{
 }
 .exercise-link:hover{color:var(--accent-bright);text-decoration-style:solid}
 
+/* ── Exercise Illustrations ── */
+.exercise-svg-wrap{
+  display:flex;justify-content:center;gap:16px;
+  padding:16px 0 8px;margin-bottom:12px;
+  border-bottom:1px solid var(--border);
+}
+.exercise-svg-wrap svg{
+  width:120px;height:140px;flex-shrink:0;
+}
+.exercise-svg-label{
+  font-size:10px;text-align:center;color:var(--text-dim);
+  margin-top:2px;letter-spacing:.04em;text-transform:uppercase;
+  font-family:var(--font-mono);
+}
+@media(max-width:600px){
+  .exercise-svg-wrap svg{width:90px;height:110px}
+}
+
 /* ── Collapsible Sections ── */
 .collapsible{
   border:1px solid var(--border);border-radius:var(--radius);
@@ -1869,6 +1887,459 @@ function makeCollapsible(container) {
   container.appendChild(result);
 }
 
+// ── Exercise SVG Illustrations ──
+// Minimalist stick-figure exercise diagrams showing start & end positions.
+// Each entry: [startPoseSVG, endPoseSVG] or single pose for isometric holds.
+// Figure is drawn in a 120x140 viewBox. Colors use CSS variables.
+
+function svgWrap(inner) {
+  return '<svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">' +
+    '<style>line,polyline,path{stroke:#f97316;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;fill:none}' +
+    'circle{fill:#f97316}.eq{stroke:#62627a;stroke-width:2;fill:none}.plate{fill:#3b82f6;opacity:.6}' +
+    '.ground{stroke:#28283a;stroke-width:1.5}.muscle{fill:rgba(249,115,22,.12);stroke:none}' +
+    'text{fill:#62627a;font-size:8px;font-family:sans-serif;text-anchor:middle}</style>' + inner + '</svg>';
+}
+
+// Reusable parts: head, torso, limbs
+function head(x,y){return '<circle cx="'+x+'" cy="'+y+'" r="7"/>';}
+function torso(x1,y1,x2,y2){return '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'"/>';}
+function limb(pts){return '<polyline points="'+pts+'"/>';}
+function bar(x1,y1,x2,y2){return '<line class="eq" x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'"/>';}
+function plate(x,y,w,h){return '<rect class="plate" x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="1"/>';}
+function ground(y){return '<line class="ground" x1="10" y1="'+y+'" x2="110" y2="'+y+'"/>';}
+function kb(x,y){return '<circle class="eq" cx="'+x+'" cy="'+y+'" r="6"/><path class="eq" d="M'+(x-3)+','+(y-6)+' Q'+x+','+(y-14)+' '+(x+3)+','+(y-6)+'"/>';}
+function db(x,y,a){
+  a=a||0;
+  var r=a*Math.PI/180;var dx=Math.cos(r)*8;var dy=Math.sin(r)*8;
+  return '<line class="eq" x1="'+(x-dx)+'" y1="'+(y-dy)+'" x2="'+(x+dx)+'" y2="'+(y+dy)+'"/>'+
+    '<rect class="plate" x="'+(x-dx-3)+'" y="'+(y-dy-2)+'" width="6" height="4" rx="1" transform="rotate('+a+','+(x-dx)+','+(y-dy)+')"/>'+
+    '<rect class="plate" x="'+(x+dx-3)+'" y="'+(y+dy-2)+'" width="6" height="4" rx="1" transform="rotate('+a+','+(x+dx)+','+(y+dy)+')"/>';
+}
+function arrow(x1,y1,x2,y2){
+  return '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" style="stroke:#22c55e;stroke-width:1.5;stroke-dasharray:3,2"/>'+
+    '<polygon points="'+(x2-3)+','+(y2-3)+' '+x2+','+y2+' '+(x2+3)+','+(y2-3)+'" style="fill:#22c55e;stroke:none"/>';
+}
+function label(x,y,t){return '<text x="'+x+'" y="'+y+'">'+t+'</text>';}
+
+var EXERCISE_SVGS = {
+  // ── Compound Barbell Lifts ──
+  'back-squat': [
+    // Standing with bar on back
+    svgWrap(ground(130)+head(60,25)+torso(60,32,60,72)+limb('60,72 50,95 45,120')+limb('60,72 70,95 75,120')+limb('60,35 40,50 35,35')+limb('60,35 80,50 85,35')+bar(30,33,90,33)+plate(27,27,6,12)+plate(87,27,6,12)+label(60,137,'START')),
+    // Deep squat
+    svgWrap(ground(130)+head(60,50)+torso(60,57,55,87)+limb('55,87 35,95 40,120')+limb('55,87 75,95 80,120')+limb('60,60 40,72 35,60')+limb('60,60 80,72 85,60')+bar(30,55,90,55)+plate(27,49,6,12)+plate(87,49,6,12)+label(60,137,'BOTTOM'))
+  ],
+  'front-squat': [
+    svgWrap(ground(130)+head(60,25)+torso(60,32,60,72)+limb('60,72 50,95 45,120')+limb('60,72 70,95 75,120')+limb('60,35 45,48 40,35')+limb('60,35 75,48 80,35')+bar(35,38,85,38)+plate(32,32,6,12)+plate(82,32,6,12)+label(60,137,'START')),
+    svgWrap(ground(130)+head(60,50)+torso(60,57,58,87)+limb('58,87 38,98 40,120')+limb('58,87 78,98 80,120')+limb('60,60 48,72 43,62')+limb('60,60 72,72 77,62')+bar(38,62,82,62)+plate(35,56,6,12)+plate(79,56,6,12)+label(60,137,'BOTTOM'))
+  ],
+  'deadlift': [
+    // Bent over gripping bar on floor
+    svgWrap(ground(130)+head(65,45)+torso(62,52,50,85)+limb('50,85 45,105 42,125')+limb('50,85 58,105 55,125')+limb('62,55 55,72 48,88')+limb('62,55 52,72 48,88')+bar(30,92,90,92)+plate(25,82,8,20)+plate(87,82,8,20)+label(60,137,'START')),
+    // Standing upright
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 48,52 45,70')+limb('60,30 72,52 75,70')+bar(30,73,90,73)+plate(25,63,8,20)+plate(87,63,8,20)+label(60,137,'LOCKOUT'))
+  ],
+  'romanian-deadlift-rdl': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 48,50 45,68')+limb('60,30 72,50 75,68')+bar(30,73,90,73)+plate(27,66,6,14)+plate(87,66,6,14)+label(60,137,'START')),
+    svgWrap(ground(130)+head(55,42)+torso(55,49,52,82)+limb('52,82 48,105 45,125')+limb('52,82 56,105 53,125')+limb('55,52 47,70 45,85')+limb('55,52 50,70 48,85')+bar(30,88,85,88)+plate(27,81,6,14)+plate(82,81,6,14)+label(60,137,'STRETCH'))
+  ],
+  'bench-press': [
+    // Lying on bench, arms extended
+    svgWrap(head(35,55)+torso(42,55,80,55)+limb('80,55 90,70 95,80')+limb('80,55 90,48 95,40')+limb('42,55 42,40 42,30')+limb('42,55 55,40 55,30')+bar(25,27,72,27)+plate(22,20,6,14)+plate(69,20,6,14)+
+      '<rect class="eq" x="75" y="40" width="30" height="5" rx="1"/>'+label(60,100,'LOCKOUT')),
+    // Bar at chest
+    svgWrap(head(35,55)+torso(42,55,80,55)+limb('80,55 90,70 95,80')+limb('80,55 90,48 95,40')+limb('42,55 35,48 38,55')+limb('42,55 50,48 52,55')+bar(22,53,68,53)+plate(19,46,6,14)+plate(65,46,6,14)+
+      '<rect class="eq" x="75" y="40" width="30" height="5" rx="1"/>'+label(60,100,'CHEST'))
+  ],
+  'overhead-press': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 45,25 42,12')+limb('60,30 75,25 78,12')+bar(30,10,90,10)+plate(27,4,6,12)+plate(87,4,6,12)+label(60,137,'LOCKOUT')),
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 45,40 40,32')+limb('60,30 75,40 80,32')+bar(30,30,90,30)+plate(27,24,6,12)+plate(87,24,6,12)+label(60,137,'RACK'))
+  ],
+  'barbell-row': [
+    svgWrap(ground(130)+head(70,40)+torso(67,47,48,78)+limb('48,78 45,105 43,125')+limb('48,78 55,105 58,125')+limb('67,50 62,68 58,82')+limb('67,50 60,68 58,82')+bar(35,85,85,85)+plate(32,78,6,14)+plate(82,78,6,14)+label(60,137,'START')),
+    svgWrap(ground(130)+head(70,40)+torso(67,47,48,78)+limb('48,78 45,105 43,125')+limb('48,78 55,105 58,125')+limb('67,50 55,55 50,65')+limb('67,50 58,55 55,65')+bar(35,68,85,68)+plate(32,61,6,14)+plate(82,61,6,14)+label(60,137,'PULL'))
+  ],
+  'hang-clean': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 48,50 45,70')+limb('60,30 72,50 75,70')+bar(30,73,90,73)+plate(27,66,6,14)+plate(87,66,6,14)+label(60,137,'HANG')),
+    svgWrap(ground(130)+head(60,25)+torso(60,32,60,72)+limb('60,72 50,95 45,120')+limb('60,72 70,95 75,120')+limb('60,35 45,40 40,33')+limb('60,35 75,40 80,33')+bar(30,31,90,31)+plate(27,25,6,12)+plate(87,25,6,12)+label(60,137,'CATCH'))
+  ],
+  'push-press': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 45,40 40,32')+limb('60,30 75,40 80,32')+bar(30,30,90,30)+plate(27,24,6,12)+plate(87,24,6,12)+label(60,137,'RACK')),
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 45,22 42,10')+limb('60,30 75,22 78,10')+bar(30,8,90,8)+plate(27,2,6,12)+plate(87,2,6,12)+label(60,137,'PRESS'))
+  ],
+
+  // ── Single-Leg / Unilateral ──
+  'rfess-bulgarian-split-squat': [
+    svgWrap(ground(130)+head(50,20)+torso(50,27,50,68)+limb('50,68 42,95 40,125')+limb('50,68 70,80 85,75')+limb('50,30 38,42 35,30')+limb('50,30 62,42 65,30')+
+      '<rect class="eq" x="80" y="68" width="18" height="12" rx="2"/>'+label(60,137,'START')),
+    svgWrap(ground(130)+head(50,40)+torso(50,47,50,85)+limb('50,85 38,105 38,125')+limb('50,85 70,90 85,80')+limb('50,50 38,60 35,48')+limb('50,50 62,60 65,48')+
+      '<rect class="eq" x="80" y="68" width="18" height="12" rx="2"/>'+label(60,137,'LUNGE'))
+  ],
+  'single-leg-rdl': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,68)+limb('60,68 55,95 52,125')+limb('60,68 65,78 68,88')+limb('60,30 48,45 45,60')+limb('60,30 72,45 75,60')+label(60,137,'START')),
+    svgWrap(ground(130)+head(40,48)+torso(40,55,60,78)+limb('60,78 58,105 55,125')+limb('60,78 78,62 95,50')+limb('40,58 38,72 40,82')+limb('40,58 42,72 44,82')+label(60,137,'HINGE'))
+  ],
+  'walking-lunges': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,68)+limb('60,68 48,95 42,125')+limb('60,68 72,95 78,125')+limb('60,30 48,42 45,30')+limb('60,30 72,42 75,30')+label(60,137,'STAND')),
+    svgWrap(ground(130)+head(55,35)+torso(55,42,55,80)+limb('55,80 38,100 35,125')+limb('55,80 72,105 78,125')+limb('55,45 43,55 40,42')+limb('55,45 67,55 70,42')+label(60,137,'LUNGE'))
+  ],
+  'step-ups': [
+    svgWrap(ground(130)+head(50,30)+torso(50,37,50,78)+limb('50,78 42,100 40,125')+limb('50,78 55,92 52,108')+limb('50,40 38,52 35,40')+limb('50,40 62,52 65,40')+
+      '<rect class="eq" x="30" y="108" width="40" height="17" rx="2"/>'+label(60,137,'STEP UP')),
+    svgWrap(ground(130)+head(50,15)+torso(50,22,50,62)+limb('50,62 45,82 42,108')+limb('50,62 55,75 58,88')+limb('50,25 38,37 35,25')+limb('50,25 62,37 65,25')+
+      '<rect class="eq" x="30" y="108" width="40" height="17" rx="2"/>'+label(60,137,'TOP'))
+  ],
+  'pistol-squat-progression': [
+    svgWrap(ground(130)+head(55,20)+torso(55,27,55,68)+limb('55,68 50,95 48,125')+limb('55,68 65,82 78,80')+limb('55,30 68,40 75,35')+limb('55,30 42,40 35,35')+label(60,137,'START')),
+    svgWrap(ground(130)+head(55,52)+torso(55,59,50,90)+limb('50,90 35,100 38,125')+limb('50,90 72,82 90,80')+limb('55,62 68,72 78,65')+limb('55,62 42,72 35,65')+label(60,137,'BOTTOM'))
+  ],
+
+  // ── Plyometrics ──
+  'box-jumps': [
+    svgWrap(ground(130)+head(35,40)+torso(35,47,35,85)+limb('35,85 28,105 25,125')+limb('35,85 42,105 45,125')+limb('35,50 25,58 20,48')+limb('35,50 45,58 50,48')+
+      '<rect class="eq" x="65" y="100" width="35" height="25" rx="2"/>'+label(35,137,'LOAD')),
+    svgWrap(ground(130)+head(82,55)+torso(82,62,82,85)+limb('82,85 78,95 75,100')+limb('82,85 86,95 89,100')+limb('82,65 72,58 68,50')+limb('82,65 92,58 96,50')+
+      '<rect class="eq" x="65" y="100" width="35" height="25" rx="2"/>'+label(82,137,'LAND'))
+  ],
+  'broad-jumps': [
+    svgWrap(ground(130)+head(30,42)+torso(30,49,32,85)+limb('32,85 25,105 22,125')+limb('32,85 40,105 42,125')+limb('30,52 20,55 15,45')+limb('30,52 22,62 18,58')+label(30,137,'LOAD')),
+    svgWrap(ground(130)+head(85,42)+torso(85,49,83,85)+limb('83,85 78,105 75,125')+limb('83,85 90,105 93,125')+limb('85,52 95,48 100,40')+limb('85,52 92,60 95,55')+arrow(40,80,75,80)+label(85,137,'LAND'))
+  ],
+  'med-ball-overhead-slam': [
+    svgWrap(ground(130)+head(60,18)+torso(60,25,60,68)+limb('60,68 55,95 52,125')+limb('60,68 65,95 68,125')+limb('60,28 50,18 52,8')+limb('60,28 70,18 68,8')+
+      '<circle class="eq" cx="60" cy="6" r="7"/>'+label(60,137,'LIFT')),
+    svgWrap(ground(130)+head(60,40)+torso(60,47,58,82)+limb('58,82 52,105 48,125')+limb('58,82 65,105 68,125')+limb('60,50 50,65 48,80')+limb('60,50 55,65 52,80')+
+      '<circle class="eq" cx="50" cy="115" r="7"/>'+label(60,137,'SLAM'))
+  ],
+  'med-ball-rotational-slam': [
+    svgWrap(ground(130)+head(60,22)+torso(60,29,60,72)+limb('60,72 52,97 48,125')+limb('60,72 68,97 72,125')+limb('60,32 42,25 35,18')+limb('60,32 48,22 42,15')+
+      '<circle class="eq" cx="38" cy="15" r="7"/>'+label(60,137,'WIND')),
+    svgWrap(ground(130)+head(60,35)+torso(60,42,58,80)+limb('58,80 52,105 48,125')+limb('58,80 65,105 68,125')+limb('60,45 72,60 82,72')+limb('60,45 75,55 85,65')+
+      '<circle class="eq" cx="90" cy="110" r="7"/>'+label(60,137,'SLAM'))
+  ],
+  'med-ball-chest-pass': [
+    svgWrap(ground(130)+head(40,22)+torso(40,29,40,72)+limb('40,72 35,97 32,125')+limb('40,72 45,97 48,125')+limb('40,32 42,42 45,38')+limb('40,32 38,42 35,38')+
+      '<circle class="eq" cx="40" cy="40" r="7"/>'+label(40,137,'LOAD')),
+    svgWrap(ground(130)+head(40,22)+torso(40,29,40,72)+limb('40,72 35,97 32,125')+limb('40,72 45,97 48,125')+limb('40,32 55,30 70,28')+limb('40,32 55,35 70,33')+
+      '<circle class="eq" cx="85" cy="30" r="7"/>'+arrow(50,38,78,38)+label(60,137,'PASS'))
+  ],
+
+  // ── Kettlebell ──
+  'kb-swings': [
+    svgWrap(ground(130)+head(65,40)+torso(62,47,55,82)+limb('55,82 48,105 45,125')+limb('55,82 62,105 65,125')+limb('62,50 55,68 48,82')+limb('62,50 52,68 45,82')+kb(46,90)+label(60,137,'HIKE')),
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 50,28 45,32')+limb('60,30 70,28 75,32')+kb(60,34)+label(60,137,'FLOAT'))
+  ],
+  'kb-snatch': [
+    svgWrap(ground(130)+head(65,40)+torso(62,47,55,82)+limb('55,82 48,105 45,125')+limb('55,82 62,105 65,125')+limb('62,50 55,68 48,85')+limb('62,50 52,65 45,80')+kb(46,92)+label(60,137,'SWING')),
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 52,18 55,6')+limb('60,30 68,25 70,20')+kb(55,4)+label(60,137,'LOCKOUT'))
+  ],
+  'battle-rope-slams': [
+    svgWrap(ground(130)+head(60,18)+torso(60,25,60,68)+limb('60,68 55,95 52,125')+limb('60,68 65,95 68,125')+limb('60,28 48,18 35,15')+limb('60,28 72,18 85,15')+
+      '<path class="eq" d="M15,15 Q25,10 35,15 Q45,20 55,15"/>'+
+      '<path class="eq" d="M65,15 Q75,10 85,15 Q95,20 105,15"/>'+label(60,137,'UP')),
+    svgWrap(ground(130)+head(60,30)+torso(60,37,60,78)+limb('60,78 55,100 52,125')+limb('60,78 65,100 68,125')+limb('60,40 48,58 35,70')+limb('60,40 72,58 85,70')+
+      '<path class="eq" d="M15,70 Q25,75 35,70 Q45,65 55,70"/>'+
+      '<path class="eq" d="M65,70 Q75,75 85,70 Q95,65 105,70"/>'+label(60,137,'SLAM'))
+  ],
+
+  // ── Pull / Upper Body ──
+  'weighted-pull-ups': [
+    svgWrap(head(60,25)+torso(60,32,60,72)+limb('60,72 52,92 48,110')+limb('60,72 68,92 72,110')+limb('60,35 48,22 42,12')+limb('60,35 72,22 78,12')+bar(20,8,100,8)+
+      '<circle class="eq" cx="60" cy="82" r="5"/>'+label(60,137,'TOP')),
+    svgWrap(head(60,55)+torso(60,62,60,102)+limb('60,102 52,118 48,130')+limb('60,102 68,118 72,130')+limb('60,65 48,42 42,12')+limb('60,65 72,42 78,12')+bar(20,8,100,8)+
+      '<circle class="eq" cx="60" cy="112" r="5"/>'+label(60,137,'HANG'))
+  ],
+  'dumbbell-row': [
+    svgWrap(ground(130)+head(72,40)+torso(70,47,45,70)+limb('45,70 42,95 40,120')+limb('45,70 55,85 58,70')+limb('70,50 65,68 62,80')+limb('70,50 68,60 65,70')+
+      '<rect class="eq" x="35" y="55" width="20" height="8" rx="2"/>'+db(62,84,90)+label(60,137,'START')),
+    svgWrap(ground(130)+head(72,40)+torso(70,47,45,70)+limb('45,70 42,95 40,120')+limb('45,70 55,85 58,70')+limb('70,50 62,48 60,55')+limb('70,50 65,46 63,52')+
+      '<rect class="eq" x="35" y="55" width="20" height="8" rx="2"/>'+db(60,52,90)+label(60,137,'PULL'))
+  ],
+  'landmine-press': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 52,25 48,18')+limb('60,30 58,40 55,50')+
+      '<line class="eq" x1="48" y1="18" x2="20" y2="125"/>'+label(60,137,'PRESS')),
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 52,38 48,42')+limb('60,30 58,45 55,52')+
+      '<line class="eq" x1="48" y1="42" x2="20" y2="125"/>'+label(60,137,'LOW'))
+  ],
+  'incline-db-press': [
+    svgWrap(head(38,40)+torso(42,43,72,72)+limb('72,72 82,90 88,100')+limb('72,72 78,85 82,95')+limb('42,46 38,32 40,22')+limb('42,46 50,32 52,22')+
+      db(40,20,0)+db(52,20,0)+
+      '<line class="eq" x1="78" y1="95" x2="55" y2="50" style="stroke:#28283a;stroke-width:3"/>'+label(60,117,'PRESS')),
+    svgWrap(head(38,40)+torso(42,43,72,72)+limb('72,72 82,90 88,100')+limb('72,72 78,85 82,95')+limb('42,46 35,48 32,42')+limb('42,46 52,48 55,42')+
+      db(32,40,0)+db(55,40,0)+
+      '<line class="eq" x1="78" y1="95" x2="55" y2="50" style="stroke:#28283a;stroke-width:3"/>'+label(60,117,'STRETCH'))
+  ],
+
+  // ── Push-Ups ──
+  'push-up-standard': [
+    svgWrap(ground(130)+head(25,72)+torso(32,72,90,72)+limb('32,72 28,90 25,105')+limb('90,72 92,90 95,105')+limb('25,105 25,125')+limb('95,105 95,125')+label(60,137,'TOP')),
+    svgWrap(ground(130)+head(25,90)+torso(32,90,90,92)+limb('32,90 28,105 25,115')+limb('90,92 92,108 95,118')+limb('25,115 25,125')+limb('95,118 95,125')+label(60,137,'BOTTOM'))
+  ],
+  'push-up-diamond': [
+    svgWrap(ground(130)+head(25,72)+torso(32,72,90,72)+limb('32,72 28,90 25,105')+limb('90,72 92,90 95,105')+limb('25,105 25,125')+limb('95,105 95,125')+
+      '<path class="eq" d="M55,105 L60,95 L65,105 L60,115 Z"/>'+label(60,137,'TOP')),
+    svgWrap(ground(130)+head(25,90)+torso(32,90,90,92)+limb('32,90 28,105 25,115')+limb('90,92 92,108 95,118')+limb('25,115 25,125')+limb('95,118 95,125')+
+      '<path class="eq" d="M55,118 L60,108 L65,118 L60,125 Z"/>'+label(60,137,'BOTTOM'))
+  ],
+  'push-up-archer': [
+    svgWrap(ground(130)+head(20,72)+torso(27,72,90,72)+limb('27,72 22,90 18,105')+limb('90,72 95,90 100,105')+limb('18,105 18,125')+limb('100,105 100,125')+label(60,137,'TOP')),
+    svgWrap(ground(130)+head(20,90)+torso(27,90,90,78)+limb('27,90 22,108 18,118')+limb('90,78 95,95 100,110')+limb('18,118 18,125')+limb('100,110 100,125')+label(60,137,'DIP'))
+  ],
+  'push-up-clap': [
+    svgWrap(ground(130)+head(25,72)+torso(32,72,90,72)+limb('32,72 28,90 25,105')+limb('90,72 92,90 95,105')+limb('25,105 25,125')+limb('95,105 95,125')+label(60,137,'PUSH')),
+    svgWrap(ground(130)+head(25,58)+torso(32,58,90,58)+limb('32,58 30,72 30,85')+limb('90,58 92,72 92,85')+limb('55,50 60,42 65,50')+label(60,137,'CLAP'))
+  ],
+  'dips': [
+    svgWrap(head(60,15)+torso(60,22,60,62)+limb('60,62 52,82 48,100')+limb('60,62 68,82 72,100')+limb('60,25 42,22 35,25')+limb('60,25 78,22 85,25')+
+      '<line class="eq" x1="30" y1="25" x2="30" y2="80"/>'+
+      '<line class="eq" x1="90" y1="25" x2="90" y2="80"/>'+label(60,117,'TOP')),
+    svgWrap(head(60,35)+torso(60,42,60,82)+limb('60,82 52,100 48,115')+limb('60,82 68,100 72,115')+limb('60,45 42,35 35,40')+limb('60,45 78,35 85,40')+
+      '<line class="eq" x1="30" y1="25" x2="30" y2="80"/>'+
+      '<line class="eq" x1="90" y1="25" x2="90" y2="80"/>'+label(60,127,'DIP'))
+  ],
+
+  // ── Accessory / Isolation ──
+  'face-pulls': [
+    svgWrap(ground(130)+head(60,22)+torso(60,29,60,72)+limb('60,72 55,97 52,125')+limb('60,72 65,97 68,125')+limb('60,32 48,28 38,25')+limb('60,32 72,28 82,25')+
+      '<line class="eq" x1="38" y1="25" x2="10" y2="25"/>'+
+      '<line class="eq" x1="82" y1="25" x2="10" y2="25"/>'+label(60,137,'PULL')),
+    svgWrap(ground(130)+head(60,22)+torso(60,29,60,72)+limb('60,72 55,97 52,125')+limb('60,72 65,97 68,125')+limb('60,32 55,35 52,28')+limb('60,32 65,35 68,28')+
+      '<line class="eq" x1="10" y1="30" x2="52" y2="30"/>'+label(60,137,'START'))
+  ],
+  'band-pull-aparts': [
+    svgWrap(ground(130)+head(60,22)+torso(60,29,60,72)+limb('60,72 55,97 52,125')+limb('60,72 65,97 68,125')+limb('60,32 48,32 38,32')+limb('60,32 72,32 82,32')+
+      '<line class="eq" x1="38" y1="32" x2="82" y2="32" style="stroke-dasharray:4,3"/>'+label(60,137,'START')),
+    svgWrap(ground(130)+head(60,22)+torso(60,29,60,72)+limb('60,72 55,97 52,125')+limb('60,72 65,97 68,125')+limb('60,32 42,30 25,32')+limb('60,32 78,30 95,32')+
+      '<line class="eq" x1="25" y1="32" x2="95" y2="32" style="stroke-dasharray:4,3"/>'+label(60,137,'APART'))
+  ],
+
+  // ── Core ──
+  'pallof-press': [
+    svgWrap(ground(130)+head(60,22)+torso(60,29,60,72)+limb('60,72 55,97 52,125')+limb('60,72 65,97 68,125')+limb('60,32 52,42 48,38')+limb('60,32 55,42 52,38')+
+      '<line class="eq" x1="10" y1="38" x2="48" y2="38" style="stroke-dasharray:4,3"/>'+label(60,137,'HOLD')),
+    svgWrap(ground(130)+head(60,22)+torso(60,29,60,72)+limb('60,72 55,97 52,125')+limb('60,72 65,97 68,125')+limb('60,32 55,32 60,32')+limb('60,32 65,32 80,32')+
+      '<line class="eq" x1="10" y1="32" x2="80" y2="32" style="stroke-dasharray:4,3"/>'+label(60,137,'PRESS'))
+  ],
+  'ab-wheel-rollout': [
+    svgWrap(ground(130)+head(35,62)+torso(40,65,70,80)+limb('70,80 72,105 72,120')+limb('70,80 68,105 68,120')+limb('40,68 30,78 25,85')+limb('40,68 32,78 28,85')+
+      '<circle class="eq" cx="25" cy="92" r="6"/>'+label(60,137,'START')),
+    svgWrap(ground(130)+head(20,80)+torso(27,82,80,88)+limb('80,88 82,108 82,120')+limb('80,88 78,108 78,120')+limb('27,85 18,88 12,90')+limb('27,85 20,88 15,90')+
+      '<circle class="eq" cx="12" cy="95" r="6"/>'+label(60,137,'EXTEND'))
+  ],
+  'hanging-leg-raises': [
+    svgWrap(head(60,20)+torso(60,27,60,68)+limb('60,68 55,92 52,115')+limb('60,68 65,92 68,115')+limb('60,30 48,18 42,8')+limb('60,30 72,18 78,8')+bar(20,5,100,5)+label(60,137,'HANG')),
+    svgWrap(head(60,20)+torso(60,27,60,68)+limb('60,68 48,62 40,55')+limb('60,68 52,58 45,52')+limb('60,30 48,18 42,8')+limb('60,30 72,18 78,8')+bar(20,5,100,5)+label(60,137,'RAISE'))
+  ],
+  'copenhagen-plank': [
+    svgWrap(ground(130)+head(25,82)+torso(30,85,85,70)+limb('85,70 95,80 100,90')+limb('85,70 92,85 98,100')+limb('30,88 28,105 25,120')+limb('30,88 32,105 35,120')+
+      '<rect class="eq" x="88" y="58" width="20" height="8" rx="2"/>'+label(60,137,'HOLD'))
+  ],
+  'dead-bug': [
+    svgWrap(head(30,70)+torso(37,70,85,70)+limb('85,70 80,55 75,42')+limb('85,70 90,55 95,42')+limb('37,70 32,55 28,42')+limb('37,70 42,55 48,42')+label(60,100,'START')),
+    svgWrap(head(30,70)+torso(37,70,85,70)+limb('85,70 92,60 100,48')+limb('85,70 78,55 72,42')+limb('37,70 28,58 20,48')+limb('37,70 45,55 50,42')+label(60,100,'EXTEND'))
+  ],
+  'bird-dog': [
+    svgWrap(ground(130)+head(30,60)+torso(35,63,80,68)+limb('80,68 82,90 82,105')+limb('80,68 78,90 78,105')+limb('35,66 32,88 30,105')+limb('35,66 38,88 40,105')+label(60,120,'START')),
+    svgWrap(ground(130)+head(30,55)+torso(35,58,80,63)+limb('80,63 92,55 105,48')+limb('80,63 78,85 78,105')+limb('35,61 22,65 10,68')+limb('35,61 38,83 40,105')+label(60,120,'EXTEND'))
+  ],
+
+  // ── Carries ──
+  'farmers-carry': [
+    svgWrap(ground(130)+head(60,15)+torso(60,22,60,65)+limb('60,65 55,90 52,120')+limb('60,65 65,90 68,120')+limb('60,25 48,45 42,65')+limb('60,25 72,45 78,65')+
+      db(42,68,90)+db(78,68,90)+arrow(45,125,75,125)+label(60,137,'WALK'))
+  ],
+  'suitcase-carry': [
+    svgWrap(ground(130)+head(60,15)+torso(60,22,60,65)+limb('60,65 55,90 52,120')+limb('60,65 65,90 68,120')+limb('60,25 48,45 42,65')+limb('60,25 68,35 72,25')+
+      db(42,68,90)+arrow(45,125,75,125)+label(60,137,'WALK'))
+  ],
+  'turkish-get-up': [
+    svgWrap(ground(130)+head(30,95)+torso(37,95,80,95)+limb('80,95 85,110 88,125')+limb('80,95 75,110 72,125')+limb('37,95 30,80 32,68')+limb('37,95 42,80 48,78')+kb(32,62)+label(60,137,'FLOOR')),
+    svgWrap(ground(130)+head(60,15)+torso(60,22,60,65)+limb('60,65 55,90 52,120')+limb('60,65 65,90 68,120')+limb('60,25 50,15 48,5')+limb('60,25 68,35 72,25')+kb(48,2)+label(60,137,'STAND'))
+  ],
+
+  // ── Shoulder Health ──
+  'band-external-rotations': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 50,42 42,42')+limb('60,30 70,42 78,42')+
+      '<line class="eq" x1="10" y1="42" x2="42" y2="42" style="stroke-dasharray:4,3"/>'+label(60,137,'START')),
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 50,42 50,32')+limb('60,30 70,42 85,30')+
+      '<line class="eq" x1="10" y1="42" x2="50" y2="42" style="stroke-dasharray:4,3"/>'+label(60,137,'ROTATE'))
+  ],
+
+  // ── Mobility ──
+  '9090-hip-switches': [
+    svgWrap(ground(130)+head(60,40)+torso(60,47,60,78)+limb('60,78 45,85 35,95')+limb('60,78 75,85 85,95')+limb('60,50 48,55 42,48')+limb('60,50 72,55 78,48')+label(60,117,'LEFT')),
+    svgWrap(ground(130)+head(60,40)+torso(60,47,60,78)+limb('60,78 75,85 85,95')+limb('60,78 45,85 35,95')+limb('60,50 48,55 42,48')+limb('60,50 72,55 78,48')+label(60,117,'RIGHT'))
+  ],
+  'hip-cars-controlled-articular-rotations': [
+    svgWrap(ground(130)+head(30,60)+torso(35,63,80,68)+limb('80,68 82,90 82,105')+limb('80,68 78,90 78,105')+limb('35,66 32,88 30,105')+limb('35,66 38,88 40,105')+label(60,120,'START')),
+    svgWrap(ground(130)+head(30,60)+torso(35,63,80,68)+limb('80,68 92,55 98,42')+limb('80,68 78,90 78,105')+limb('35,66 32,88 30,105')+limb('35,66 38,88 40,105')+
+      '<path d="M 85,68 Q 95,50 92,40" style="stroke:#22c55e;stroke-width:1;fill:none;stroke-dasharray:3,2"/>'+label(60,120,'CIRCLE'))
+  ],
+  'thoracic-spine-rotations-open-books': [
+    svgWrap(head(35,65)+torso(42,65,85,75)+limb('85,75 90,95 92,110')+limb('85,75 80,95 78,110')+limb('42,68 35,55 30,50')+limb('42,68 38,55 35,50')+label(60,125,'CLOSED')),
+    svgWrap(head(35,65)+torso(42,65,85,75)+limb('85,75 90,95 92,110')+limb('85,75 80,95 78,110')+limb('42,68 35,55 30,50')+limb('42,68 50,52 55,42')+label(60,125,'OPEN'))
+  ],
+
+  // ── Warm-Up Exercises ──
+  'goblet-squat': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,68)+limb('60,68 52,92 48,120')+limb('60,68 68,92 72,120')+limb('60,30 52,38 50,42')+limb('60,30 68,38 70,42')+kb(60,44)+label(60,137,'START')),
+    svgWrap(ground(130)+head(60,42)+torso(60,49,58,82)+limb('58,82 40,95 38,120')+limb('58,82 76,95 78,120')+limb('60,52 52,60 50,65')+limb('60,52 68,60 70,65')+kb(60,67)+label(60,137,'SQUAT'))
+  ],
+  'glute-bridge': [
+    svgWrap(ground(130)+head(25,100)+torso(32,100,85,100)+limb('85,100 95,90 100,100')+limb('85,100 90,85 85,80')+limb('32,103 28,110 25,120')+limb('32,103 35,110 38,120')+label(60,137,'DOWN')),
+    svgWrap(ground(130)+head(25,95)+torso(32,92,85,80)+limb('85,80 95,85 100,100')+limb('85,80 88,78 85,72')+limb('32,95 28,108 25,120')+limb('32,95 35,108 38,120')+label(60,137,'BRIDGE'))
+  ],
+  'band-dislocates': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 42,30 25,30')+limb('60,30 78,30 95,30')+
+      '<line class="eq" x1="25" y1="30" x2="95" y2="30" style="stroke-dasharray:4,3"/>'+label(60,137,'FRONT')),
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 42,40 25,55')+limb('60,30 78,40 95,55')+
+      '<line class="eq" x1="25" y1="55" x2="95" y2="55" style="stroke-dasharray:4,3"/>'+label(60,137,'BACK'))
+  ],
+  'scap-push-ups': [
+    svgWrap(ground(130)+head(25,72)+torso(32,72,90,72)+limb('32,72 28,90 25,105')+limb('90,72 92,90 95,105')+limb('25,105 25,125')+limb('95,105 95,125')+label(60,137,'PROTRACT')),
+    svgWrap(ground(130)+head(25,78)+torso(32,78,90,78)+limb('32,78 28,95 25,110')+limb('90,78 92,95 95,110')+limb('25,110 25,125')+limb('95,110 95,125')+label(60,137,'RETRACT'))
+  ],
+  'pvc-overhead-squat': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,68)+limb('60,68 52,92 48,120')+limb('60,68 68,92 72,120')+limb('60,30 48,18 42,8')+limb('60,30 72,18 78,8')+bar(35,6,85,6)+label(60,137,'STAND')),
+    svgWrap(ground(130)+head(60,42)+torso(60,49,58,82)+limb('58,82 40,95 38,120')+limb('58,82 76,95 78,120')+limb('60,52 48,38 42,28')+limb('60,52 72,38 78,28')+bar(35,25,85,25)+label(60,137,'SQUAT'))
+  ],
+  'kb-halo': [
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 48,22 45,15')+limb('60,30 52,22 48,15')+kb(46,12)+label(60,137,'FRONT')),
+    svgWrap(ground(130)+head(60,20)+torso(60,27,60,70)+limb('60,70 55,95 52,125')+limb('60,70 65,95 68,125')+limb('60,30 72,22 75,15')+limb('60,30 68,22 72,15')+kb(76,12)+
+      '<path d="M 46,12 Q 60,2 76,12" style="stroke:#22c55e;stroke-width:1;fill:none;stroke-dasharray:3,2"/>'+label(60,137,'HALO'))
+  ],
+  'banded-lateral-walk': [
+    svgWrap(ground(130)+head(45,22)+torso(45,29,45,72)+limb('45,72 38,97 35,125')+limb('45,72 52,97 55,125')+limb('45,32 33,42 30,30')+limb('45,32 57,42 60,30')+
+      '<line class="eq" x1="35" y1="115" x2="55" y2="115" style="stroke-dasharray:4,3"/>'+label(45,137,'START')),
+    svgWrap(ground(130)+head(70,22)+torso(70,29,70,72)+limb('70,72 58,97 55,125')+limb('70,72 82,97 85,125')+limb('70,32 58,42 55,30')+limb('70,32 82,42 85,30')+
+      '<line class="eq" x1="55" y1="115" x2="85" y2="115" style="stroke-dasharray:4,3"/>'+arrow(50,100,75,100)+label(70,137,'STEP'))
+  ],
+  'worlds-greatest-stretch': [
+    svgWrap(ground(130)+head(30,55)+torso(35,58,70,82)+limb('70,82 55,100 42,120')+limb('70,82 85,105 90,120')+limb('35,61 28,72 25,85')+limb('35,61 48,52 55,42')+label(60,137,'LUNGE')),
+    svgWrap(ground(130)+head(30,55)+torso(35,58,70,82)+limb('70,82 55,100 42,120')+limb('70,82 85,105 90,120')+limb('35,61 28,72 25,85')+limb('35,61 30,42 28,30')+label(60,137,'ROTATE'))
+  ],
+  'wall-ankle-stretch': [
+    svgWrap(ground(130)+'<line class="eq" x1="95" y1="20" x2="95" y2="125"/>'+
+      head(55,30)+torso(55,37,60,78)+limb('60,78 68,100 75,122')+limb('60,78 52,100 48,122')+limb('55,40 68,38 80,35')+limb('55,40 65,42 75,40')+label(55,137,'LEAN'))
+  ],
+  'prone-ytw-raises': [
+    svgWrap(head(25,70)+torso(30,72,90,72)+limb('90,72 95,85 98,95')+limb('90,72 88,85 85,95')+limb('30,75 20,62 15,48')+limb('30,75 22,55 18,42')+label(60,110,'Y RAISE')),
+    svgWrap(head(25,70)+torso(30,72,90,72)+limb('90,72 95,85 98,95')+limb('90,72 88,85 85,95')+limb('30,75 18,68 10,62')+limb('30,75 22,60 15,52')+label(60,110,'T RAISE'))
+  ],
+
+  // ── Grip Strength ──
+  'plate-pinch-holds': [
+    svgWrap(ground(130)+head(60,15)+torso(60,22,60,65)+limb('60,65 55,90 52,120')+limb('60,65 65,90 68,120')+limb('60,25 48,45 42,65')+limb('60,25 72,45 78,65')+
+      '<rect class="plate" x="39" y="65" width="6" height="14" rx="1"/>'+
+      '<rect class="plate" x="75" y="65" width="6" height="14" rx="1"/>'+label(60,137,'HOLD'))
+  ],
+  'towel-pull-ups': [
+    svgWrap(head(60,30)+torso(60,37,60,78)+limb('60,78 52,98 48,115')+limb('60,78 68,98 72,115')+limb('60,40 50,28 48,15')+limb('60,40 70,28 72,15')+bar(20,5,100,5)+
+      '<line class="eq" x1="48" y1="5" x2="48" y2="18"/>'+
+      '<line class="eq" x1="72" y1="5" x2="72" y2="18"/>'+label(60,127,'PULL'))
+  ],
+  'fat-grip-rows': [
+    svgWrap(ground(130)+head(70,40)+torso(67,47,48,78)+limb('48,78 45,105 43,125')+limb('48,78 55,105 58,125')+limb('67,50 55,55 50,65')+limb('67,50 58,55 55,65')+bar(35,68,85,68)+plate(32,61,6,14)+plate(82,61,6,14)+
+      '<circle class="eq" cx="55" cy="65" r="4"/>'+
+      '<circle class="eq" cx="58" cy="65" r="4"/>'+label(60,137,'PULL'))
+  ],
+  'gi-pull-ups': [
+    svgWrap(head(60,30)+torso(60,37,60,78)+limb('60,78 52,98 48,115')+limb('60,78 68,98 72,115')+limb('60,40 48,25 45,12')+limb('60,40 72,25 75,12')+bar(20,5,100,5)+
+      '<rect class="eq" x="42" y="5" width="8" height="12" rx="1"/>'+
+      '<rect class="eq" x="70" y="5" width="8" height="12" rx="1"/>'+label(60,127,'PULL'))
+  ],
+
+  // ── Neck ──
+  'neck-harness-4-way': [
+    svgWrap(ground(130)+head(60,25)+torso(60,35,60,75)+limb('60,75 55,98 52,125')+limb('60,75 65,98 68,125')+limb('60,38 48,48 42,38')+limb('60,38 72,48 78,38')+
+      '<path class="eq" d="M50,20 Q60,15 70,20 L68,30 Q60,35 52,30 Z"/>'+
+      '<line class="eq" x1="60" y1="32" x2="60" y2="50"/>'+
+      '<circle class="plate" cx="60" cy="55" r="5"/>'+label(60,137,'FLEX'))
+  ],
+  'band-neck-isometrics': [
+    svgWrap(ground(130)+head(60,25)+torso(60,35,60,75)+limb('60,75 55,98 52,125')+limb('60,75 65,98 68,125')+limb('60,38 48,48 42,38')+limb('60,38 72,48 78,38')+
+      '<line class="eq" x1="30" y1="25" x2="53" y2="25" style="stroke-dasharray:4,3"/>'+label(60,137,'RESIST'))
+  ],
+
+  // ── Conditioning ──
+  'assault-bike-intervals': [
+    svgWrap(ground(130)+head(55,18)+torso(55,25,60,65)+limb('60,65 55,85 48,95')+limb('60,65 68,85 75,95')+limb('55,28 42,28 35,32')+limb('55,28 48,25 42,22')+
+      '<circle class="eq" cx="60" cy="100" r="18"/>'+
+      '<circle class="eq" cx="60" cy="100" r="3"/>'+label(60,137,'BIKE'))
+  ],
+  'rowing-500m-repeats': [
+    svgWrap(head(40,55)+torso(45,58,80,65)+limb('80,65 90,78 95,90')+limb('80,65 88,72 92,82')+limb('45,61 38,55 32,50')+limb('45,61 40,55 35,48')+
+      '<line class="eq" x1="20" y1="95" x2="100" y2="95"/>'+label(60,117,'CATCH')),
+    svgWrap(head(80,55)+torso(75,58,45,65)+limb('45,65 38,78 35,90')+limb('45,65 42,72 40,82')+limb('75,61 82,52 88,48')+limb('75,61 80,52 85,45')+
+      '<line class="eq" x1="20" y1="95" x2="100" y2="95"/>'+label(60,117,'DRIVE'))
+  ],
+  'jump-rope': [
+    svgWrap(ground(130)+head(60,18)+torso(60,25,60,65)+limb('60,65 55,88 52,110')+limb('60,65 65,88 68,110')+limb('60,28 48,38 40,48')+limb('60,28 72,38 80,48')+
+      '<path class="eq" d="M40,48 Q20,80 40,110 Q60,130 80,110 Q100,80 80,48"/>'+label(60,137,'JUMP'))
+  ],
+  'sled-push-pull': [
+    svgWrap(ground(130)+head(45,40)+torso(48,45,62,80)+limb('62,80 55,105 48,125')+limb('62,80 72,105 78,125')+limb('48,48 38,52 30,58')+limb('48,48 40,55 33,62')+
+      '<rect class="eq" x="15" y="55" width="22" height="30" rx="3"/>'+arrow(40,125,70,125)+label(60,137,'PUSH')),
+    svgWrap(ground(130)+head(80,40)+torso(77,45,63,80)+limb('63,80 55,105 48,125')+limb('63,80 72,105 78,125')+limb('77,48 88,52 95,58')+limb('77,48 85,55 92,62')+
+      '<rect class="eq" x="82" y="55" width="22" height="30" rx="3"/>'+
+      '<line class="eq" x1="82" y1="70" x2="77" y2="48"/>'+label(60,137,'PULL'))
+  ],
+  'sledgehammer-tire-strikes': [
+    svgWrap(ground(130)+head(55,18)+torso(55,25,58,68)+limb('58,68 52,95 48,125')+limb('58,68 65,95 68,125')+limb('55,28 42,18 35,10')+limb('55,28 48,20 42,12')+
+      '<line class="eq" x1="35" y1="10" x2="25" y2="2"/>'+label(60,137,'WIND')),
+    svgWrap(ground(130)+head(55,30)+torso(55,37,58,78)+limb('58,78 52,105 48,125')+limb('58,78 65,105 68,125')+limb('55,40 62,55 68,68')+limb('55,40 58,55 62,68')+
+      '<line class="eq" x1="68" y1="68" x2="75" y2="80"/>'+
+      '<ellipse class="eq" cx="75" cy="100" rx="18" ry="12"/>'+label(60,137,'STRIKE'))
+  ],
+  'shadow-boxing': [
+    svgWrap(ground(130)+head(55,20)+torso(55,27,55,68)+limb('55,68 48,92 45,120')+limb('55,68 62,92 65,120')+limb('55,30 42,30 35,28')+limb('55,30 50,35 48,38')+label(55,137,'GUARD')),
+    svgWrap(ground(130)+head(55,20)+torso(55,27,55,68)+limb('55,68 48,92 45,120')+limb('55,68 62,92 65,120')+limb('55,30 40,22 28,20')+limb('55,30 50,38 48,42')+label(55,137,'JAB'))
+  ],
+  'bag-work': [
+    svgWrap(ground(130)+head(45,20)+torso(45,27,48,68)+limb('48,68 42,92 38,120')+limb('48,68 55,92 58,120')+limb('45,30 32,25 22,22')+limb('45,30 40,38 38,42')+
+      '<rect class="eq" x="8" y="10" width="16" height="55" rx="8"/>'+label(50,137,'PUNCH')),
+    svgWrap(ground(130)+head(55,20)+torso(55,27,55,68)+limb('55,68 48,85 42,95')+limb('55,68 70,80 78,72')+limb('55,30 42,30 35,28')+limb('55,30 50,35 48,38')+
+      '<rect class="eq" x="78" y="10" width="16" height="55" rx="8"/>'+label(55,137,'KICK'))
+  ],
+  'sprawl-to-burpee': [
+    svgWrap(ground(130)+head(60,18)+torso(60,25,60,65)+limb('60,65 55,88 52,115')+limb('60,65 65,88 68,115')+limb('60,28 48,22 42,15')+limb('60,28 72,22 78,15')+label(60,137,'JUMP')),
+    svgWrap(ground(130)+head(25,90)+torso(30,92,90,95)+limb('30,95 28,108 25,120')+limb('90,95 95,108 100,120')+limb('30,95 25,100 22,110')+limb('90,95 95,100 100,110')+label(60,137,'SPRAWL'))
+  ]
+};
+
+// Inject SVG illustrations into exercise collapsible sections
+function injectExerciseSVGs(container) {
+  var hash = location.hash.slice(1).split(':')[0] || 'dashboard';
+  if (hash !== 'exercise-detail') return;
+
+  container.querySelectorAll('.collapsible-level-week').forEach(function(col) {
+    var slug = col.id;
+    if (!slug) return;
+    var svgs = EXERCISE_SVGS[slug];
+    if (!svgs) return;
+
+    var body = col.querySelector('.collapsible-body');
+    if (!body) return;
+
+    var wrap = document.createElement('div');
+    wrap.className = 'exercise-svg-wrap';
+
+    if (Array.isArray(svgs)) {
+      for (var i = 0; i < svgs.length; i++) {
+        var fig = document.createElement('div');
+        fig.innerHTML = svgs[i];
+        wrap.appendChild(fig);
+      }
+    } else {
+      var fig = document.createElement('div');
+      fig.innerHTML = svgs;
+      wrap.appendChild(fig);
+    }
+
+    body.insertBefore(wrap, body.firstChild);
+  });
+}
+
 // ── Routing ──
 function renderCurrent() {
   var hash = location.hash.slice(1) || 'dashboard';
@@ -1889,6 +2360,7 @@ function renderCurrent() {
   }
   // Make sections collapsible
   makeCollapsible(page);
+  injectExerciseSVGs(page);
   // Add session completion checkboxes
   addSessionCheckboxes(page, id);
   // Add page TOC for long reference pages
