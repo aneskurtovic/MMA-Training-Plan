@@ -1,175 +1,169 @@
-# 4-Week Training Schedule — Calendar View
+# 9-Week Fight Camp Schedule
+
+> **Fight Date:** May 16, 2026 | **Weight Class:** 77 kg
+> **Camp Start:** March 16, 2026 | **Starting Weight:** 89 kg
+
+---
 
 ## Intensity Key
 
 | Marker | Meaning |
 |--------|---------|
-| 🟢 | Easy — recovery pace, low CNS demand |
-| 🟡 | Moderate — working hard but controlled |
-| 🔴 | Hard — high demand, plan recovery accordingly |
+| Easy | Recovery pace, low CNS demand |
+| Moderate | Working hard but controlled |
+| Hard | High demand, plan recovery accordingly |
 
 ---
 
-## Week 1 — Base Volume
+## Phase 1 — Base Camp (Weeks 1-3)
 
-**Focus:** Movement quality, establish loading baselines, RPE 6-7 across all sessions.
+**Focus:** Movement quality, baseline establishment, gradual caloric deficit begins.
+**Weight Target:** 89 kg → 85 kg
+
+### Week 1 — Base Volume (Mar 16-22) | RPE 6-7
 
 | Day | AM Session | PM Session |
 |-----|-----------|------------|
-| **Monday** | Strength — Upper Push/Pull (60 min) 🟡 | MMA Striking (75 min) 🔴 |
-| **Tuesday** | Cardiac Output Cardio (40 min) 🟢 | MMA Grappling (75 min) 🟡 |
-| **Wednesday** | Strength — Lower Body + Posterior Chain (65 min) 🔴 | Light Technique / Open Mat (60 min) 🟢 |
-| **Thursday** | HIIT / Fight-Specific Circuit (35 min) 🔴 | MMA Sparring (90 min) 🔴 |
-| **Friday** | Strength — Full Body Power (55 min) 🟡 | MMA Drilling — Technique Refinement (75 min) 🟡 |
-| **Saturday** | Fight Conditioning / Active Recovery (40 min) 🟡 | Open Mat / Light Technical (60 min) 🟢 |
+| **Monday** | Strength — Upper Push/Pull (60 min) Moderate | MMA Striking (75 min) Hard |
+| **Tuesday** | Cardiac Output (40 min) Easy | MMA Grappling (75 min) Moderate |
+| **Wednesday** | Strength — Lower + Posterior (65 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (35 min) Hard | MMA Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (55 min) Moderate | MMA Drilling (75 min) Moderate |
+| **Saturday** | Fight Conditioning (40 min) Moderate | Open Mat / Light Technical (60 min) Easy |
 | **Sunday** | REST | REST |
 
-### Week 1 — Volume Summary
-
-| Metric | Value |
-|--------|-------|
-| Total Sessions | 12 |
-| Total Training Hours | ~12.5 hours |
-| Strength Sessions | 3 |
-| MMA/Skill Sessions | 5 |
-| Conditioning Sessions | 3 |
-| Active Recovery | 1 |
-| Intensity Distribution | 🟢 x3 / 🟡 x5 / 🔴 x4 |
-
-### Week 1 — Progression Notes
-- Main lifts at 70-75% 1RM, 3-4 sets of 3-5 reps
-- Conditioning: 3-4 rounds per circuit, 1:2 work-to-rest ratio
-- Cardiac output: sustain Zone 2 (130-150 BPM) for full duration
-- Sparring: controlled, ~70% intensity, focus on implementing specific techniques
-- Log all weights, RPEs, and heart rate data to establish baselines
-
----
-
-## Week 2 — Progressive Overload
-
-**Focus:** Incremental load increase, +1 conditioning round, RPE 7-8.
+### Week 2 — Progressive Overload (Mar 23-29) | RPE 7-8
 
 | Day | AM Session | PM Session |
 |-----|-----------|------------|
-| **Monday** | Strength — Upper Push/Pull (60 min) 🟡 | MMA Striking (75 min) 🔴 |
-| **Tuesday** | Cardiac Output Cardio (45 min) 🟢 | MMA Grappling (75 min) 🟡 |
-| **Wednesday** | Strength — Lower Body + Posterior Chain (65 min) 🔴 | Light Technique / Open Mat (60 min) 🟢 |
-| **Thursday** | HIIT / Fight-Specific Circuit (40 min) 🔴 | MMA Sparring (90 min) 🔴 |
-| **Friday** | Strength — Full Body Power (55 min) 🟡 | MMA Drilling — Technique Refinement (75 min) 🟡 |
-| **Saturday** | Fight Conditioning / Active Recovery (45 min) 🟡 | Open Mat / Light Technical (60 min) 🟢 |
+| **Monday** | Strength — Upper Push/Pull (60 min) Moderate | MMA Striking (75 min) Hard |
+| **Tuesday** | Cardiac Output (45 min) Easy | MMA Grappling (75 min) Moderate |
+| **Wednesday** | Strength — Lower + Posterior (65 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (40 min) Hard | MMA Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (55 min) Moderate | MMA Drilling (75 min) Moderate |
+| **Saturday** | Fight Conditioning (45 min) Moderate | Open Mat / Light Technical (60 min) Easy |
 | **Sunday** | REST | REST |
 
-### Week 2 — Volume Summary
-
-| Metric | Value |
-|--------|-------|
-| Total Sessions | 12 |
-| Total Training Hours | ~13.0 hours |
-| Strength Sessions | 3 |
-| MMA/Skill Sessions | 5 |
-| Conditioning Sessions | 3 |
-| Active Recovery | 1 |
-| Intensity Distribution | 🟢 x3 / 🟡 x5 / 🔴 x4 |
-
-### Week 2 — Progression Notes
-- Main lifts: +2.5 kg on upper lifts, +5 kg on lower lifts (or +1 set on accessories)
-- Conditioning: +1 round per circuit, tighten rest intervals slightly (1:1.5 work-to-rest)
-- Cardiac output: extend duration by 5 min, maintain Zone 2
-- Sparring: increase intensity to ~75-80%, start pressuring pace
-- Accessory work: add 1 set to 2-3 exercises
-
----
-
-## Week 3 — Peak Volume / Intensity
-
-**Focus:** Hardest week of the block, RPE 8-9, push all qualities.
+### Week 3 — Peak Volume (Mar 30 - Apr 5) | RPE 8-9
 
 | Day | AM Session | PM Session |
 |-----|-----------|------------|
-| **Monday** | Strength — Upper Push/Pull (65 min) 🔴 | MMA Striking (75 min) 🔴 |
-| **Tuesday** | Cardiac Output Cardio (45 min) 🟢 | MMA Grappling (80 min) 🔴 |
-| **Wednesday** | Strength — Lower Body + Posterior Chain (70 min) 🔴 | Light Technique / Open Mat (60 min) 🟢 |
-| **Thursday** | HIIT / Fight-Specific Circuit (40 min) 🔴 | MMA Sparring (90 min) 🔴 |
-| **Friday** | Strength — Full Body Power (60 min) 🔴 | MMA Drilling — Technique Refinement (75 min) 🟡 |
-| **Saturday** | Fight Conditioning (45 min) 🔴 | Open Mat / Light Technical (60 min) 🟢 |
+| **Monday** | Strength — Upper Push/Pull (65 min) Hard | MMA Striking (75 min) Hard |
+| **Tuesday** | Cardiac Output (45 min) Easy | MMA Grappling (80 min) Hard |
+| **Wednesday** | Strength — Lower + Posterior (70 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (40 min) Hard | MMA Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (60 min) Hard | MMA Drilling (75 min) Moderate |
+| **Saturday** | Fight Conditioning (45 min) Hard | Open Mat / Light Technical (60 min) Easy |
 | **Sunday** | REST | REST |
-
-### Week 3 — Volume Summary
-
-| Metric | Value |
-|--------|-------|
-| Total Sessions | 12 |
-| Total Training Hours | ~13.75 hours |
-| Strength Sessions | 3 |
-| MMA/Skill Sessions | 5 |
-| Conditioning Sessions | 3 |
-| Active Recovery | 1 |
-| Intensity Distribution | 🟢 x3 / 🟡 x1 / 🔴 x8 |
-
-### Week 3 — Progression Notes
-- Main lifts at 80-85% 1RM, push top sets to RPE 8-9
-- Conditioning: peak rounds (5-6 per circuit), 1:1 work-to-rest ratio
-- Cardiac output: maintain 45 min Zone 2 — this is the recovery anchor, do not push intensity
-- Sparring: hardest session of the block, full-speed exchanges, simulate fight pace
-- Grappling: add positional sparring rounds, increase resistance from partners
-- Expect significant fatigue by Thursday/Friday — manage sleep and nutrition carefully
 
 ---
 
-## Week 4 — Deload
+## Phase 2 — Intensification (Weeks 4-6)
 
-**Focus:** Recovery and supercompensation, volume cut 40-50%, intensity at 70-75%, no hard sparring.
+**Focus:** Peak training volume, hardest conditioning, sparring ramps to 2x/week.
+**Weight Target:** 85 kg → 81 kg
+
+### Week 4 — Intensification Begins (Apr 6-12) | RPE 7-8
 
 | Day | AM Session | PM Session |
 |-----|-----------|------------|
-| **Monday** | Strength — Upper Push/Pull (40 min) 🟢 | MMA Striking — Light Technical (50 min) 🟡 |
-| **Tuesday** | Cardiac Output Cardio (30 min) 🟢 | MMA Grappling — Flow Rolling (50 min) 🟢 |
-| **Wednesday** | Strength — Lower Body + Posterior Chain (40 min) 🟢 | Mobility / Yoga / Recovery (45 min) 🟢 |
-| **Thursday** | Light Conditioning — Zone 1-2 Only (25 min) 🟢 | MMA Technical Drilling — No Sparring (60 min) 🟡 |
-| **Friday** | Strength — Full Body (35 min) 🟢 | MMA Drilling — Technique Refinement (50 min) 🟢 |
-| **Saturday** | Active Recovery — Easy Cardio (30 min) 🟢 | Open Mat / Light Technical (45 min) 🟢 |
+| **Monday** | Strength — Upper Push/Pull (60 min) Moderate | MMA Striking + Clinch (75 min) Hard |
+| **Tuesday** | Cardiac Output (45 min) Easy | MMA Sparring — Light (75 min) Hard |
+| **Wednesday** | Strength — Lower + Posterior (65 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (40 min) Hard | MMA Full Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (55 min) Moderate | MMA Drilling — Game Plan (75 min) Moderate |
+| **Saturday** | Fight Conditioning (45 min) Hard | Open Mat / Light Technical (60 min) Easy |
 | **Sunday** | REST | REST |
 
-### Week 4 — Volume Summary
+### Week 5 — Deep Intensification (Apr 13-19) | RPE 8-9
 
-| Metric | Value |
-|--------|-------|
-| Total Sessions | 12 |
-| Total Training Hours | ~8.3 hours |
-| Strength Sessions | 3 |
-| MMA/Skill Sessions | 5 |
-| Conditioning Sessions | 2 |
-| Active Recovery | 2 |
-| Intensity Distribution | 🟢 x10 / 🟡 x2 / 🔴 x0 |
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Upper Push/Pull (60 min) Hard | MMA Striking + Clinch (75 min) Hard |
+| **Tuesday** | Cardiac Output (45 min) Easy | MMA Sparring — Moderate (80 min) Hard |
+| **Wednesday** | Strength — Lower + Posterior (65 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (45 min) Hard | MMA Full Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (55 min) Hard | MMA Drilling — Game Plan (75 min) Moderate |
+| **Saturday** | Fight Conditioning (50 min) Hard | Open Mat / Light Technical (60 min) Easy |
+| **Sunday** | REST | REST |
 
-### Week 4 — Progression Notes
-- Main lifts: reduce to 2-3 sets of 3 reps at 70-75% 1RM, focus on speed and crisp technique
-- Drop all accessory work to 2 sets max, reduce weight by 30-40%
-- Conditioning: Zone 1-2 cardio only (heart rate below 150 BPM at all times)
-- No sparring — replace with light technical rolls and positional flow
-- Prioritize sleep (8-9 hours), hydration, and nutrition quality
-- Use soft tissue work daily (foam rolling, lacrosse ball, stretching)
-- Reassess 1RMs and resting heart rate at end of week to gauge adaptation
+### Week 6 — Peak Camp (Apr 20-26) | RPE 8-9 (PEAK)
+
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Upper Push/Pull (60 min) Hard | MMA Striking + Clinch (75 min) Hard |
+| **Tuesday** | Cardiac Output (45 min) Easy | MMA Sparring — Hard (80 min) Hard |
+| **Wednesday** | Strength — Lower + Posterior (65 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (45 min) Hard | MMA Full Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (55 min) Hard | MMA Drilling — Game Plan (75 min) Moderate |
+| **Saturday** | Fight Simulation — 5 Rounds (50 min) Hard | Open Mat / Light Technical (60 min) Easy |
+| **Sunday** | REST | REST |
 
 ---
 
-## 4-Week Block Summary
+## Phase 3 — Sharpening (Weeks 7-8)
 
-| Week | Total Hours | Session Count | Avg Intensity | Key Theme |
-|------|------------|---------------|---------------|-----------|
-| Week 1 | ~12.5 hrs | 12 | 🟡 Moderate | Build base, establish patterns |
-| Week 2 | ~13.0 hrs | 12 | 🟡 Moderate | Progressive overload |
-| Week 3 | ~13.75 hrs | 12 | 🔴 Hard | Peak volume and intensity |
-| Week 4 | ~8.3 hrs | 12 | 🟢 Easy | Deload and recover |
-| **Total** | **~47.5 hrs** | **48** | — | **General Preparation** |
+**Focus:** Reduce volume, sharpen technique, speed and timing work, game plan specifics.
+**Weight Target:** 81 kg → 79 kg (within water-cut range)
 
-### Intensity Distribution Across the Block
+### Week 7 — Volume Reduction (Apr 27 - May 3) | RPE 7-8
 
-| Intensity | Week 1 | Week 2 | Week 3 | Week 4 | Total |
-|-----------|--------|--------|--------|--------|-------|
-| 🟢 Easy | 3 | 3 | 3 | 10 | 19 |
-| 🟡 Moderate | 5 | 5 | 1 | 2 | 13 |
-| 🔴 Hard | 4 | 4 | 8 | 0 | 16 |
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Upper (45 min) Moderate | MMA Striking — Technical (60 min) Moderate |
+| **Tuesday** | Cardiac Output (30 min) Easy | MMA Sparring — Light (60 min) Moderate |
+| **Wednesday** | Strength — Lower (45 min) Moderate | Light Technique / Visualization (45 min) Easy |
+| **Thursday** | Short HIIT (25 min) Hard | MMA Technical Sparring (60 min) Moderate |
+| **Friday** | Active Recovery (30 min) Easy | MMA Drilling — Game Plan (60 min) Moderate |
+| **Saturday** | Conditioning Test — Mid-Camp (45 min) Moderate | Open Mat / Light (45 min) Easy |
+| **Sunday** | REST | REST |
+
+### Week 8 — Final Sharpening (May 4-10) | RPE 6-7
+
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Light Full Body (35 min) Easy | MMA Striking — Light Technical (50 min) Easy |
+| **Tuesday** | Cardiac Output (25 min) Easy | MMA Light Drilling — No Sparring (50 min) Easy |
+| **Wednesday** | Mobility / Yoga (30 min) Easy | Game Plan Walkthrough (40 min) Easy |
+| **Thursday** | Light Movement (20 min) Easy | Shadow Boxing + Visualization (30 min) Easy |
+| **Friday** | Active Recovery (20 min) Easy | Conditioning Re-Test (45 min) Moderate |
+| **Saturday** | Light Shadow Boxing (20 min) Easy | Mental Prep / Rest Easy |
+| **Sunday** | REST | REST |
+
+---
+
+## Phase 4 — Fight Week (Week 9)
+
+**Focus:** Water cut, mental preparation, light technical work only.
+**Weight Target:** 79 kg → 77 kg (water manipulation)
+
+### Week 9 — Fight Week (May 11-16)
+
+| Day | AM | PM | Weight Protocol |
+|-----|----|----|----------------|
+| **Sunday May 11** | Light shadow boxing (15 min) | Mental prep, visualization | Water 8L, normal food, sodium normal |
+| **Monday May 12** | Light movement (20 min) | Rest, visualization | Water 8L, normal food, sodium normal |
+| **Tuesday May 13** | Very light walk (20 min) | Rest | Water 6L, normal food, sodium -50% |
+| **Wednesday May 14** | No training | Rest, mental prep | Water 4L, reduce carbs, minimal sodium |
+| **Thursday May 15** | No training | Rest | Water 2L, low carbs, minimal sodium |
+| **Friday May 16** | FIGHT DAY | Weigh-in → Rehydrate → Fight | Sips only until weigh-in |
+
+---
+
+## 9-Week Block Summary
+
+| Week | Phase | Hours | Intensity | Weight Target | Theme |
+|------|-------|-------|-----------|---------------|-------|
+| 1 | Base Camp | ~12.5 | Moderate | 87.7 kg | Build base, establish patterns |
+| 2 | Base Camp | ~13.0 | Moderate | 86.4 kg | Progressive overload |
+| 3 | Base Camp | ~13.75 | Hard | 85.1 kg | Peak volume of Phase 1 |
+| 4 | Intensification | ~13.5 | Moderate-Hard | 83.8 kg | Transition to fight-specific |
+| 5 | Intensification | ~14.0 | Hard | 82.5 kg | Deep intensification |
+| 6 | Intensification | ~14.0 | Hard (Peak) | 81.2 kg | Hardest week of camp |
+| 7 | Sharpening | ~10.0 | Moderate | 80.0 kg | Volume reduction, speed focus |
+| 8 | Sharpening | ~7.0 | Easy-Moderate | 79.0 kg | Final sharpening, no hard sparring |
+| 9 | Fight Week | ~2.0 | Easy | 77.0 kg | Water cut, mental prep |
+| **Total** | | **~100 hrs** | | **-12 kg** | **Full Fight Camp** |
 
 ---
 
@@ -177,35 +171,26 @@
 
 - **Minimum 6 hours** between AM strength and PM MMA sessions
 - **48 hours** between heavy lower body and hard sparring when possible
-- **No back-to-back 🔴 days** except during Week 3 peak (Thursday)
-- **Post-🔴 sessions**: prioritize 15 min cool-down, foam rolling, and protein intake within 60 min
+- **No back-to-back hard days** except during Phase 2 peak weeks (Wed-Thu)
+- **Post-hard sessions:** 15 min cool-down, foam rolling, protein within 60 min
 
 ---
 
-## Auto-Regulation & Missed Sessions
+## Auto-Regulation
 
 ### Missed Session Policy
 
 | Scenario | Action |
 |----------|--------|
-| Miss 1 day | Continue as planned. Shift remaining sessions forward if needed to preserve spacing (e.g., don't stack two 🔴 days). Drop the lowest-priority session of the week if you run out of days. |
-| Miss 2+ consecutive days | Repeat the current week from the start. Do not attempt to "make up" missed sessions by doubling up — this increases injury risk and defeats the purpose of the programming. |
-| Miss 3+ days due to illness | Return with a half-volume session before resuming the program. If the illness involved fever, add one extra rest day per day of fever before returning. |
+| Miss 1 day | Continue as planned, shift sessions if needed |
+| Miss 2+ consecutive days | Adjust remaining phase, do not try to "make up" sessions |
+| Miss 3+ days due to illness | Return with half-volume session, add rest days |
 
-### RPE Auto-Regulation
+### Resting Heart Rate Monitoring
 
-- All main lifts in this program are prescribed with an RPE target (e.g., RPE 7-8).
-- If you are consistently hitting **RPE 9+ on sets prescribed at RPE 7**, the load is too heavy for your current recovery state. **Reduce load by 10% for the next session** and reassess.
-- If prescribed RPE feels too easy (RPE 5 or below on RPE 7 sets), increase load by 2.5-5 kg on upper lifts or 5 kg on lower lifts for the next session.
-- RPE should be assessed on the **last rep of each working set**, not the first.
-
-### Resting Heart Rate (RHR) Monitoring
-
-> **WARNING: If your resting heart rate is elevated 7+ bpm above your personal baseline for 3 or more consecutive mornings, move to deload immediately — regardless of which week you are in.** This is one of the most reliable early indicators of overreaching or oncoming illness. Pushing through an elevated RHR leads to diminished returns, increased injury risk, and prolonged recovery. Take your RHR every morning before getting out of bed, lying still for at least 60 seconds. Use a chest strap or wrist sensor for consistency.
-
-| RHR Elevation Above Baseline | Duration | Action |
-|-------------------------------|----------|--------|
-| 1-3 bpm | Any | Normal variation. Continue as planned. |
-| 4-6 bpm | 1-2 days | Monitor. Reduce session intensity by one level (🔴 → 🟡, 🟡 → 🟢). |
-| 4-6 bpm | 3+ days | Scale back volume 20% for the remainder of the week. |
-| 7+ bpm | 3+ consecutive days | **Immediate deload.** Move to Week 4 protocol regardless of current week. |
+| RHR Elevation | Duration | Action |
+|---------------|----------|--------|
+| 1-3 bpm above baseline | Any | Normal variation, continue |
+| 4-6 bpm | 1-2 days | Reduce intensity one level |
+| 4-6 bpm | 3+ days | Scale back volume 20% |
+| 7+ bpm | 3+ consecutive days | Immediate deload regardless of phase |

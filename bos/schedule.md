@@ -1,211 +1,196 @@
-# 4-Sedmični Raspored Treninga — Kalendarski Pregled
+# 9-Week Fight Camp Schedule
 
-## Ključ Intenziteta
-
-| Oznaka | Značenje |
-|--------|----------|
-| 🟢 | Lagano — tempo oporavka, nizak zahtjev na CNS |
-| 🟡 | Umjereno — naporan rad ali kontrolisan |
-| 🔴 | Teško — visok zahtjev, planirajte oporavak u skladu s tim |
+> **Fight Date:** May 16, 2026 | **Weight Class:** 77 kg
+> **Camp Start:** March 16, 2026 | **Starting Weight:** 89 kg
 
 ---
 
-## Sedmica 1 — Bazni Volumen
+## Intensity Key
 
-**Fokus:** Kvalitet pokreta, uspostavljanje baznih opterećenja, RPE 6-7 tokom svih sesija.
-
-| Dan | Jutarnja Sesija | Popodnevna Sesija |
-|-----|----------------|-------------------|
-| **Ponedjeljak** | Snaga — Gornji Dio Potisak/Povlačenje (60 min) 🟡 | MMA Udarci (Striking) (75 min) 🔴 |
-| **Utorak** | Kardio Srčani Minutni Volumen (Cardiac Output) (40 min) 🟢 | MMA Grappling (Grappling) (75 min) 🟡 |
-| **Srijeda** | Snaga — Donji Dio Tijela + Zadnji Lanac (65 min) 🔴 | Lagana Tehnika / Otvoreni Mat (60 min) 🟢 |
-| **Četvrtak** | HIIT / Borbeno Specifični Krug (35 min) 🔴 | MMA Sparring (Sparring) (90 min) 🔴 |
-| **Petak** | Snaga — Puni Tijelo Eksplozivnost (55 min) 🟡 | MMA Drilling — Usavršavanje Tehnike (75 min) 🟡 |
-| **Subota** | Borbena Kondicija / Aktivni Oporavak (40 min) 🟡 | Otvoreni Mat / Lagana Tehnika (60 min) 🟢 |
-| **Nedjelja** | ODMOR | ODMOR |
-
-### Sedmica 1 — Pregled Volumena
-
-| Metrika | Vrijednost |
-|---------|-----------|
-| Ukupno sesija | 12 |
-| Ukupno sati treninga | ~12.5 sati |
-| Sesije snage | 3 |
-| MMA/Vještine sesije | 5 |
-| Sesije kondicije | 3 |
-| Aktivni oporavak | 1 |
-| Distribucija intenziteta | 🟢 x3 / 🟡 x5 / 🔴 x4 |
-
-### Sedmica 1 — Napomene o Progresiji
-- Glavne vježbe na 70-75% 1RM, 3-4 serije po 3-5 ponavljanja
-- Kondicija: 3-4 runde po krugu, omjer rada i odmora 1:2
-- Srčani minutni volumen (Cardiac Output): održavajte Zonu 2 (130-150 BPM) tokom cijelog trajanja
-- Sparring (Sparring): kontrolisan, ~70% intenziteta, fokus na primjeni specifičnih tehnika
-- Zabilježite sva opterećenja, RPE i podatke o srčanom ritmu za uspostavljanje baznih vrijednosti
+| Marker | Meaning |
+|--------|---------|
+| Easy | Recovery pace, low CNS demand |
+| Moderate | Working hard but controlled |
+| Hard | High demand, plan recovery accordingly |
 
 ---
 
-## Sedmica 2 — Progresivno Preopterećenje
+## Phase 1 — Base Camp (Weeks 1-3)
 
-**Fokus:** Inkrementalno povećanje opterećenja, +1 runda kondicije, RPE 7-8.
+**Focus:** Movement quality, baseline establishment, gradual caloric deficit begins.
+**Weight Target:** 89 kg → 85 kg
 
-| Dan | Jutarnja Sesija | Popodnevna Sesija |
-|-----|----------------|-------------------|
-| **Ponedjeljak** | Snaga — Gornji Dio Potisak/Povlačenje (60 min) 🟡 | MMA Udarci (Striking) (75 min) 🔴 |
-| **Utorak** | Kardio Srčani Minutni Volumen (Cardiac Output) (45 min) 🟢 | MMA Grappling (Grappling) (75 min) 🟡 |
-| **Srijeda** | Snaga — Donji Dio Tijela + Zadnji Lanac (65 min) 🔴 | Lagana Tehnika / Otvoreni Mat (60 min) 🟢 |
-| **Četvrtak** | HIIT / Borbeno Specifični Krug (40 min) 🔴 | MMA Sparring (Sparring) (90 min) 🔴 |
-| **Petak** | Snaga — Puni Tijelo Eksplozivnost (55 min) 🟡 | MMA Drilling — Usavršavanje Tehnike (75 min) 🟡 |
-| **Subota** | Borbena Kondicija / Aktivni Oporavak (45 min) 🟡 | Otvoreni Mat / Lagana Tehnika (60 min) 🟢 |
-| **Nedjelja** | ODMOR | ODMOR |
+### Week 1 — Base Volume (Mar 16-22) | RPE 6-7
 
-### Sedmica 2 — Pregled Volumena
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Upper Push/Pull (60 min) Moderate | MMA Striking (75 min) Hard |
+| **Tuesday** | Cardiac Output (40 min) Easy | MMA Grappling (75 min) Moderate |
+| **Wednesday** | Strength — Lower + Posterior (65 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (35 min) Hard | MMA Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (55 min) Moderate | MMA Drilling (75 min) Moderate |
+| **Saturday** | Fight Conditioning (40 min) Moderate | Open Mat / Light Technical (60 min) Easy |
+| **Sunday** | REST | REST |
 
-| Metrika | Vrijednost |
-|---------|-----------|
-| Ukupno sesija | 12 |
-| Ukupno sati treninga | ~13.0 sati |
-| Sesije snage | 3 |
-| MMA/Vještine sesije | 5 |
-| Sesije kondicije | 3 |
-| Aktivni oporavak | 1 |
-| Distribucija intenziteta | 🟢 x3 / 🟡 x5 / 🔴 x4 |
+### Week 2 — Progressive Overload (Mar 23-29) | RPE 7-8
 
-### Sedmica 2 — Napomene o Progresiji
-- Glavne vježbe: +2.5 kg na gornje vježbe, +5 kg na donje vježbe (ili +1 serija na pomoćne vježbe)
-- Kondicija: +1 runda po krugu, lagano skratite intervale odmora (omjer rada i odmora 1:1.5)
-- Srčani minutni volumen (Cardiac Output): produžite trajanje za 5 min, održavajte Zonu 2
-- Sparring (Sparring): povećajte intenzitet na ~75-80%, počnite pritiskati tempo
-- Pomoćne vježbe: dodajte 1 seriju na 2-3 vježbe
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Upper Push/Pull (60 min) Moderate | MMA Striking (75 min) Hard |
+| **Tuesday** | Cardiac Output (45 min) Easy | MMA Grappling (75 min) Moderate |
+| **Wednesday** | Strength — Lower + Posterior (65 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (40 min) Hard | MMA Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (55 min) Moderate | MMA Drilling (75 min) Moderate |
+| **Saturday** | Fight Conditioning (45 min) Moderate | Open Mat / Light Technical (60 min) Easy |
+| **Sunday** | REST | REST |
 
----
+### Week 3 — Peak Volume (Mar 30 - Apr 5) | RPE 8-9
 
-## Sedmica 3 — Vršni Volumen / Intenzitet
-
-**Fokus:** Najteža sedmica bloka, RPE 8-9, gurajte sve kvalitete.
-
-| Dan | Jutarnja Sesija | Popodnevna Sesija |
-|-----|----------------|-------------------|
-| **Ponedjeljak** | Snaga — Gornji Dio Potisak/Povlačenje (65 min) 🔴 | MMA Udarci (Striking) (75 min) 🔴 |
-| **Utorak** | Kardio Srčani Minutni Volumen (Cardiac Output) (45 min) 🟢 | MMA Grappling (Grappling) (80 min) 🔴 |
-| **Srijeda** | Snaga — Donji Dio Tijela + Zadnji Lanac (70 min) 🔴 | Lagana Tehnika / Otvoreni Mat (60 min) 🟢 |
-| **Četvrtak** | HIIT / Borbeno Specifični Krug (40 min) 🔴 | MMA Sparring (Sparring) (90 min) 🔴 |
-| **Petak** | Snaga — Puni Tijelo Eksplozivnost (60 min) 🔴 | MMA Drilling — Usavršavanje Tehnike (75 min) 🟡 |
-| **Subota** | Borbena Kondicija (45 min) 🔴 | Otvoreni Mat / Lagana Tehnika (60 min) 🟢 |
-| **Nedjelja** | ODMOR | ODMOR |
-
-### Sedmica 3 — Pregled Volumena
-
-| Metrika | Vrijednost |
-|---------|-----------|
-| Ukupno sesija | 12 |
-| Ukupno sati treninga | ~13.75 sati |
-| Sesije snage | 3 |
-| MMA/Vještine sesije | 5 |
-| Sesije kondicije | 3 |
-| Aktivni oporavak | 1 |
-| Distribucija intenziteta | 🟢 x3 / 🟡 x1 / 🔴 x8 |
-
-### Sedmica 3 — Napomene o Progresiji
-- Glavne vježbe na 80-85% 1RM, gurajte top serije do RPE 8-9
-- Kondicija: vršni broj rundi (5-6 po krugu), omjer rada i odmora 1:1
-- Srčani minutni volumen (Cardiac Output): održavajte 45 min Zone 2 — ovo je sidro oporavka, ne gurajte intenzitet
-- Sparring (Sparring): najteža sesija bloka, razmjene punom brzinom, simulirajte tempo borbe
-- Grappling (Grappling): dodajte runde pozicionog sparringa, povećajte otpor od partnera
-- Očekujte značajan umor do Četvrtka/Petka — pažljivo upravljajte snom i ishranom
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Upper Push/Pull (65 min) Hard | MMA Striking (75 min) Hard |
+| **Tuesday** | Cardiac Output (45 min) Easy | MMA Grappling (80 min) Hard |
+| **Wednesday** | Strength — Lower + Posterior (70 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (40 min) Hard | MMA Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (60 min) Hard | MMA Drilling (75 min) Moderate |
+| **Saturday** | Fight Conditioning (45 min) Hard | Open Mat / Light Technical (60 min) Easy |
+| **Sunday** | REST | REST |
 
 ---
 
-## Sedmica 4 — Rasterećenje (Deload)
+## Phase 2 — Intensification (Weeks 4-6)
 
-**Fokus:** Oporavak i superkompenzacija, volumen smanjen 40-50%, intenzitet na 70-75%, bez teškog sparringa.
+**Focus:** Peak training volume, hardest conditioning, sparring ramps to 2x/week.
+**Weight Target:** 85 kg → 81 kg
 
-| Dan | Jutarnja Sesija | Popodnevna Sesija |
-|-----|----------------|-------------------|
-| **Ponedjeljak** | Snaga — Gornji Dio Potisak/Povlačenje (40 min) 🟢 | MMA Udarci — Lagana Tehnika (50 min) 🟡 |
-| **Utorak** | Kardio Srčani Minutni Volumen (Cardiac Output) (30 min) 🟢 | MMA Grappling — Lagano Kotrljanje (Flow Rolling) (50 min) 🟢 |
-| **Srijeda** | Snaga — Donji Dio Tijela + Zadnji Lanac (40 min) 🟢 | Mobilnost / Yoga / Oporavak (45 min) 🟢 |
-| **Četvrtak** | Lagana Kondicija — Samo Zona 1-2 (25 min) 🟢 | MMA Tehnički Drilling — Bez Sparringa (60 min) 🟡 |
-| **Petak** | Snaga — Puni Tijelo (35 min) 🟢 | MMA Drilling — Usavršavanje Tehnike (50 min) 🟢 |
-| **Subota** | Aktivni Oporavak — Lagani Kardio (30 min) 🟢 | Otvoreni Mat / Lagana Tehnika (45 min) 🟢 |
-| **Nedjelja** | ODMOR | ODMOR |
+### Week 4 — Intensification Begins (Apr 6-12) | RPE 7-8
 
-### Sedmica 4 — Pregled Volumena
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Upper Push/Pull (60 min) Moderate | MMA Striking + Clinch (75 min) Hard |
+| **Tuesday** | Cardiac Output (45 min) Easy | MMA Sparring — Light (75 min) Hard |
+| **Wednesday** | Strength — Lower + Posterior (65 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (40 min) Hard | MMA Full Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (55 min) Moderate | MMA Drilling — Game Plan (75 min) Moderate |
+| **Saturday** | Fight Conditioning (45 min) Hard | Open Mat / Light Technical (60 min) Easy |
+| **Sunday** | REST | REST |
 
-| Metrika | Vrijednost |
-|---------|-----------|
-| Ukupno sesija | 12 |
-| Ukupno sati treninga | ~8.3 sati |
-| Sesije snage | 3 |
-| MMA/Vještine sesije | 5 |
-| Sesije kondicije | 2 |
-| Aktivni oporavak | 2 |
-| Distribucija intenziteta | 🟢 x10 / 🟡 x2 / 🔴 x0 |
+### Week 5 — Deep Intensification (Apr 13-19) | RPE 8-9
 
-### Sedmica 4 — Napomene o Progresiji
-- Glavne vježbe: smanjite na 2-3 serije po 3 ponavljanja na 70-75% 1RM, fokus na brzinu i čistu tehniku
-- Smanjite sve pomoćne vježbe na maksimalno 2 serije, smanjite opterećenje za 30-40%
-- Kondicija: samo kardio Zone 1-2 (srčani ritam ispod 150 BPM u svakom trenutku)
-- Bez sparringa — zamijenite laganim tehničkim kotrljanjima i pozicionim tokom
-- Prioritizirajte san (8-9 sati), hidrataciju i kvalitet ishrane
-- Koristite rad na mekim tkivima dnevno (valjak za masažu, lopta za masažu, istezanje)
-- Ponovo procijenite 1RM i srčani ritam u mirovanju na kraju sedmice za procjenu adaptacije
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Upper Push/Pull (60 min) Hard | MMA Striking + Clinch (75 min) Hard |
+| **Tuesday** | Cardiac Output (45 min) Easy | MMA Sparring — Moderate (80 min) Hard |
+| **Wednesday** | Strength — Lower + Posterior (65 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (45 min) Hard | MMA Full Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (55 min) Hard | MMA Drilling — Game Plan (75 min) Moderate |
+| **Saturday** | Fight Conditioning (50 min) Hard | Open Mat / Light Technical (60 min) Easy |
+| **Sunday** | REST | REST |
 
----
+### Week 6 — Peak Camp (Apr 20-26) | RPE 8-9 (PEAK)
 
-## Pregled 4-Sedmičnog Bloka
-
-| Sedmica | Ukupno sati | Broj sesija | Prosječni intenzitet | Ključna tema |
-|---------|------------|-------------|---------------------|--------------|
-| Sedmica 1 | ~12.5 sati | 12 | 🟡 Umjereno | Izgradnja baze, uspostavljanje obrazaca |
-| Sedmica 2 | ~13.0 sati | 12 | 🟡 Umjereno | Progresivno preopterećenje |
-| Sedmica 3 | ~13.75 sati | 12 | 🔴 Teško | Vršni volumen i intenzitet |
-| Sedmica 4 | ~8.3 sati | 12 | 🟢 Lagano | Rasterećenje i oporavak |
-| **Ukupno** | **~47.5 sati** | **48** | — | **Opšta Priprema** |
-
-### Distribucija Intenziteta Kroz Blok
-
-| Intenzitet | Sedmica 1 | Sedmica 2 | Sedmica 3 | Sedmica 4 | Ukupno |
-|------------|-----------|-----------|-----------|-----------|--------|
-| 🟢 Lagano | 3 | 3 | 3 | 10 | 19 |
-| 🟡 Umjereno | 5 | 5 | 1 | 2 | 13 |
-| 🔴 Teško | 4 | 4 | 8 | 0 | 16 |
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Upper Push/Pull (60 min) Hard | MMA Striking + Clinch (75 min) Hard |
+| **Tuesday** | Cardiac Output (45 min) Easy | MMA Sparring — Hard (80 min) Hard |
+| **Wednesday** | Strength — Lower + Posterior (65 min) Hard | Light Technique / Open Mat (60 min) Easy |
+| **Thursday** | HIIT / Fight Circuit (45 min) Hard | MMA Full Sparring (90 min) Hard |
+| **Friday** | Strength — Full Body Power (55 min) Hard | MMA Drilling — Game Plan (75 min) Moderate |
+| **Saturday** | Fight Simulation — 5 Rounds (50 min) Hard | Open Mat / Light Technical (60 min) Easy |
+| **Sunday** | REST | REST |
 
 ---
 
-## Smjernice za Razmak Između Sesija
+## Phase 3 — Sharpening (Weeks 7-8)
 
-- **Minimum 6 sati** između jutarnje sesije snage i popodnevne MMA sesije
-- **48 sati** između teškog treninga donjih ekstremiteta i teškog sparringa kada je moguće
-- **Bez uzastopnih 🔴 dana** osim tokom vršne Sedmice 3 (Četvrtak)
-- **Nakon 🔴 sesija**: prioritizirajte 15 min hlađenja, valjak za masažu i unos proteina unutar 60 min
+**Focus:** Reduce volume, sharpen technique, speed and timing work, game plan specifics.
+**Weight Target:** 81 kg → 79 kg (within water-cut range)
+
+### Week 7 — Volume Reduction (Apr 27 - May 3) | RPE 7-8
+
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Upper (45 min) Moderate | MMA Striking — Technical (60 min) Moderate |
+| **Tuesday** | Cardiac Output (30 min) Easy | MMA Sparring — Light (60 min) Moderate |
+| **Wednesday** | Strength — Lower (45 min) Moderate | Light Technique / Visualization (45 min) Easy |
+| **Thursday** | Short HIIT (25 min) Hard | MMA Technical Sparring (60 min) Moderate |
+| **Friday** | Active Recovery (30 min) Easy | MMA Drilling — Game Plan (60 min) Moderate |
+| **Saturday** | Conditioning Test — Mid-Camp (45 min) Moderate | Open Mat / Light (45 min) Easy |
+| **Sunday** | REST | REST |
+
+### Week 8 — Final Sharpening (May 4-10) | RPE 6-7
+
+| Day | AM Session | PM Session |
+|-----|-----------|------------|
+| **Monday** | Strength — Light Full Body (35 min) Easy | MMA Striking — Light Technical (50 min) Easy |
+| **Tuesday** | Cardiac Output (25 min) Easy | MMA Light Drilling — No Sparring (50 min) Easy |
+| **Wednesday** | Mobility / Yoga (30 min) Easy | Game Plan Walkthrough (40 min) Easy |
+| **Thursday** | Light Movement (20 min) Easy | Shadow Boxing + Visualization (30 min) Easy |
+| **Friday** | Active Recovery (20 min) Easy | Conditioning Re-Test (45 min) Moderate |
+| **Saturday** | Light Shadow Boxing (20 min) Easy | Mental Prep / Rest Easy |
+| **Sunday** | REST | REST |
 
 ---
 
-## Auto-regulacija i Propuštene Sesije
+## Phase 4 — Fight Week (Week 9)
 
-### Pravila za Propuštene Sesije
+**Focus:** Water cut, mental preparation, light technical work only.
+**Weight Target:** 79 kg → 77 kg (water manipulation)
 
-**Propuštena 1 sesija:**
-- Nastavite s rasporedom kao da se ništa nije desilo — ne pokušavajte nadoknaditi propuštenu sesiju.
-- Ako je propuštena sesija snage, ponovite ista opterećenja na sljedećoj sesiji snage (bez progresije te sedmice za tu grupu mišića).
-- Ako je propuštena MMA sesija, nastavite normalno — vještine se ne gube od jednog propuštenog treninga.
+### Week 9 — Fight Week (May 11-16)
 
-**Propuštene 2+ sesije (uzastopno):**
-- 2 propuštena dana: nastavite s rasporedom, ali smanjite RPE za 1 bod na sljedećoj sesiji snage.
-- 3-4 propuštena dana: ponovite posljednji završeni dan i smanjite RPE za 1-2 boda na svim sesijama do kraja sedmice.
-- 5+ propuštenih dana: razmotriti ponavljanje čitave sedmice. Ne skačite naprijed u rasporedu.
-- Ako je razlog propuštanja bolest ili povreda, primijenite protokol povratka (vidjeti safety.md).
+| Day | AM | PM | Weight Protocol |
+|-----|----|----|----------------|
+| **Sunday May 11** | Light shadow boxing (15 min) | Mental prep, visualization | Water 8L, normal food, sodium normal |
+| **Monday May 12** | Light movement (20 min) | Rest, visualization | Water 8L, normal food, sodium normal |
+| **Tuesday May 13** | Very light walk (20 min) | Rest | Water 6L, normal food, sodium -50% |
+| **Wednesday May 14** | No training | Rest, mental prep | Water 4L, reduce carbs, minimal sodium |
+| **Thursday May 15** | No training | Rest | Water 2L, low carbs, minimal sodium |
+| **Friday May 16** | FIGHT DAY | Weigh-in → Rehydrate → Fight | Sips only until weigh-in |
 
-### RPE Auto-regulacija
+---
 
-Koristite RPE skalu za prilagođavanje opterećenja u realnom vremenu:
+## 9-Week Block Summary
 
-| Situacija | Akcija |
-|-----------|--------|
-| Zagrijavajući setovi se osjećaju teže nego inače | Smanjite radnu težinu za 5% i zadržite isti RPE cilj |
-| RPE je 1+ bod iznad cilja na prvom radnom setu | Smanjite opterećenje za 2.5-5 kg za preostale serije |
-| RPE je 1+ bod ispod cilja na prvom radnom setu | Dodajte 2.5 kg za preostale serije (samo ako je forma čista) |
-| Ne možete završiti propisane ponavljanja | Smanjite opterećenje za 10% i završite preostale serije |
+| Week | Phase | Hours | Intensity | Weight Target | Theme |
+|------|-------|-------|-----------|---------------|-------|
+| 1 | Base Camp | ~12.5 | Moderate | 87.7 kg | Build base, establish patterns |
+| 2 | Base Camp | ~13.0 | Moderate | 86.4 kg | Progressive overload |
+| 3 | Base Camp | ~13.75 | Hard | 85.1 kg | Peak volume of Phase 1 |
+| 4 | Intensification | ~13.5 | Moderate-Hard | 83.8 kg | Transition to fight-specific |
+| 5 | Intensification | ~14.0 | Hard | 82.5 kg | Deep intensification |
+| 6 | Intensification | ~14.0 | Hard (Peak) | 81.2 kg | Hardest week of camp |
+| 7 | Sharpening | ~10.0 | Moderate | 80.0 kg | Volume reduction, speed focus |
+| 8 | Sharpening | ~7.0 | Easy-Moderate | 79.0 kg | Final sharpening, no hard sparring |
+| 9 | Fight Week | ~2.0 | Easy | 77.0 kg | Water cut, mental prep |
+| **Total** | | **~100 hrs** | | **-12 kg** | **Full Fight Camp** |
 
-> **Upozorenje o pulsu u mirovanju (RHR):** Ako je vaš puls u mirovanju ujutro **5+ bpm iznad vaše bazne vrijednosti**, to je rani znak pretreniranosti ili bolesti. Na takav dan: smanjite sve 🔴 sesije na 🟡, izbjegavajte sparring, i prioritizirajte san i ishranu. Ako je RHR povišen 2+ uzastopna dana, uzmite potpuni dan odmora bez obzira na raspored.
+---
+
+## Session Spacing Guidelines
+
+- **Minimum 6 hours** between AM strength and PM MMA sessions
+- **48 hours** between heavy lower body and hard sparring when possible
+- **No back-to-back hard days** except during Phase 2 peak weeks (Wed-Thu)
+- **Post-hard sessions:** 15 min cool-down, foam rolling, protein within 60 min
+
+---
+
+## Auto-Regulation
+
+### Missed Session Policy
+
+| Scenario | Action |
+|----------|--------|
+| Miss 1 day | Continue as planned, shift sessions if needed |
+| Miss 2+ consecutive days | Adjust remaining phase, do not try to "make up" sessions |
+| Miss 3+ days due to illness | Return with half-volume session, add rest days |
+
+### Resting Heart Rate Monitoring
+
+| RHR Elevation | Duration | Action |
+|---------------|----------|--------|
+| 1-3 bpm above baseline | Any | Normal variation, continue |
+| 4-6 bpm | 1-2 days | Reduce intensity one level |
+| 4-6 bpm | 3+ days | Scale back volume 20% |
+| 7+ bpm | 3+ consecutive days | Immediate deload regardless of phase |
