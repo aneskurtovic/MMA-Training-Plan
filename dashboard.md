@@ -44,14 +44,7 @@
 
 ## Quick Links
 
-- [Phase 1: Base Camp](#phase-1) — Weeks 1-3 (Mar 16 - Apr 5)
-- [Phase 2: Intensification](#phase-2) — Weeks 4-6 (Apr 6 - Apr 26)
-- [Phase 3: Sharpening](#phase-3) — Weeks 7-8 (Apr 27 - May 10)
-- [Phase 4: Fight Week](#phase-4) — Week 9 (May 11 - May 16)
-- [Weight Management](#weight-management) — Nutrition, weight cut, supplements
-- [Training Tools](#training-tools) — Exercise library, warm-up protocols
-- [Fight Prep](#fight-prep) — Safety, testing, game plan
-- [Full Schedule](#schedule) — 9-week calendar view
+<div id="widget-quicklinks"></div>
 
 ---
 

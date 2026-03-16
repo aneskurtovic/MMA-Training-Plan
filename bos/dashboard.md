@@ -44,14 +44,7 @@
 
 ## Brze Veze
 
-- [Faza 1: Baza](#phase-1) — Sedmice 1-3 (16. mar - 5. apr)
-- [Faza 2: Intenzifikacija](#phase-2) — Sedmice 4-6 (6. apr - 26. apr)
-- [Faza 3: Oštrenje](#phase-3) — Sedmice 7-8 (27. apr - 10. maj)
-- [Faza 4: Sedmica Borbe](#phase-4) — Sedmica 9 (11. maj - 16. maj)
-- [Upravljanje Težinom](#weight-management) — Ishrana, skidanje težine, suplementi
-- [Alati za Trening](#training-tools) — Biblioteka vježbi, protokoli zagrijavanja
-- [Priprema za Borbu](#fight-prep) — Sigurnost, testiranje, plan igre
-- [Kompletan Raspored](#schedule) — Kalendarski pregled 9 sedmica
+<div id="widget-quicklinks"></div>
 
 ---
 
