@@ -2161,8 +2161,9 @@ function makeCollapsible(container) {
       closeWeek();
       var sectionTag = hash === 'nutrition-plan' ? '' : '';
       weekCollapsible = createCollapsible(text, 'week', '');
-      // Preserve heading ID for exercise linking
-      if (node.id) weekCollapsible.id = node.id;
+      // Generate ID from heading text for exercise linking + SVG injection
+      var exId = node.id || text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-');
+      if (exId) weekCollapsible.id = exId;
       currentBody = weekCollapsible.querySelector('.collapsible-body');
       result.appendChild(weekCollapsible);
       continue;
