@@ -10,6 +10,8 @@ FILE_MAP = {
     "phase-2": "phase-2.md",
     "phase-3": "phase-3.md",
     "phase-4": "phase-4.md",
+    "nutrition-plan": "nutrition-plan.md",
+    "exercise-detail": "exercise-detail.md",
     "weight-management": "weight-management.md",
     "training-tools": "training-tools.md",
     "fight-prep": "fight-prep.md",
