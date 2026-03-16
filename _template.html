@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MMA Fighter Development Program</title>
+<title>MMA Fight Camp — May 16, 2026</title>
 <!-- Fonts loaded locally for offline support -->
 __FONTS_CSS_PLACEHOLDER__
 <style>
@@ -435,6 +435,84 @@ body::after{
 .progress-badge.visible{display:block}
 
 /* ── Rest Timer ── */
+/* ── Fight Camp Dashboard Widgets ── */
+.fc-countdown{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:12px;margin:16px 0;
+}
+.fc-countdown-unit{
+  text-align:center;padding:20px 12px;
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius-lg);
+}
+.fc-countdown-num{
+  font-family:var(--font-mono);font-size:36px;font-weight:700;
+  color:var(--accent);line-height:1;
+}
+.fc-countdown-label{
+  font-size:10px;text-transform:uppercase;letter-spacing:.12em;
+  color:var(--text-dim);margin-top:6px;
+}
+.fc-weight{margin:16px 0}
+.fc-weight-bar-track{
+  height:32px;background:var(--bg-card);border:1px solid var(--border);
+  border-radius:16px;position:relative;overflow:hidden;
+}
+.fc-weight-bar-fill{
+  height:100%;background:linear-gradient(90deg,var(--accent),var(--green));
+  border-radius:16px;transition:width .5s ease;
+}
+.fc-weight-labels{
+  display:flex;justify-content:space-between;margin-top:8px;
+  font-family:var(--font-mono);font-size:13px;
+}
+.fc-weight-current{color:var(--accent);font-weight:700}
+.fc-weight-input{
+  display:flex;align-items:center;gap:10px;margin-top:12px;
+}
+.fc-weight-input input{
+  width:100px;padding:8px 12px;background:var(--bg-card);
+  border:1px solid var(--border);border-radius:8px;
+  color:var(--text-bright);font-family:var(--font-mono);font-size:14px;
+}
+.fc-weight-input button{
+  padding:8px 16px;background:var(--accent);color:#000;
+  border:none;border-radius:8px;font-weight:600;cursor:pointer;
+  font-family:var(--font-body);
+}
+.fc-phase-cards{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:10px;margin:16px 0;
+}
+.fc-phase-card{
+  padding:14px 12px;background:var(--bg-card);
+  border:1px solid var(--border);border-radius:var(--radius);
+  text-align:center;opacity:.5;transition:all .3s;
+}
+.fc-phase-card.active{
+  opacity:1;border-color:var(--accent);background:var(--accent-soft);
+  box-shadow:0 0 20px var(--accent-glow);
+}
+.fc-phase-card.completed{opacity:.7;border-color:var(--green)}
+.fc-phase-card-name{font-weight:600;font-size:12px;color:var(--text-bright)}
+.fc-phase-card-dates{font-size:10px;color:var(--text-dim);margin-top:4px}
+.fc-today{
+  padding:18px 22px;background:var(--bg-card);
+  border:1px solid var(--border);border-left:3px solid var(--accent);
+  border-radius:var(--radius-lg);margin:16px 0;
+}
+.fc-today-day{
+  font-family:var(--font-display);font-size:16px;
+  font-weight:700;color:var(--text-bright);
+}
+.fc-today-sessions{margin-top:8px;font-size:13px}
+.sidebar-nav a.nav-phase-current{border-right:2px solid var(--green)}
+@media(max-width:600px){
+  .fc-countdown{grid-template-columns:repeat(2,1fr)}
+  .fc-phase-cards{grid-template-columns:repeat(2,1fr)}
+  .fc-countdown-num{font-size:28px}
+}
+
 .rest-timer{
   position:fixed;bottom:28px;left:28px;z-index:50;
 }
@@ -487,7 +565,7 @@ body::after{
 @media print{
   body{background:#fff;color:#000;font-size:12pt}
   body::after{display:none}
-  .sidebar,.hamburger,.overlay,.back-top,.lang-toggle,.dl-btn,.progress-badge{display:none !important}
+  .sidebar,.hamburger,.overlay,.back-top,.lang-toggle,.dl-btn,.progress-badge,.fc-countdown,.fc-weight,.fc-phase-cards,.fc-today{display:none !important}
   .main{margin-left:0}
   .main::before,.main::after{display:none}
   .content{max-width:100%;padding:0}
@@ -581,56 +659,52 @@ body::after{
 var CONTENT_EN = __CONTENT_EN_PLACEHOLDER__;
 var CONTENT_BOS = __CONTENT_BOS_PLACEHOLDER__;
 
-var SECTIONS = ['overview','schedule','week-1','week-2','week-3','week-4','exercises','warmups','nutrition','testing','sources','safety'];
+var SECTIONS = ['dashboard','phase-1','phase-2','phase-3','phase-4','weight-management','training-tools','fight-prep','schedule','sources'];
 
 var NAV_EN = {
   groups: [
-    { label: 'Program', items: [
-      { id: 'overview', icon: '\u25C6', text: 'Overview' },
-      { id: 'schedule', icon: '\uD83D\uDCC6', text: 'Schedule' }
+    { label: 'Fight Camp', items: [
+      { id: 'dashboard', icon: '\u2302', text: 'Dashboard' },
+      { id: 'schedule', icon: '\uD83D\uDCC6', text: 'Full Schedule' }
     ]},
-    { label: 'Weekly Plans', items: [
-      { id: 'week-1', icon: '01', text: 'Week 1 \u2014 Foundation' },
-      { id: 'week-2', icon: '02', text: 'Week 2 \u2014 Build' },
-      { id: 'week-3', icon: '03', text: 'Week 3 \u2014 Intensify' },
-      { id: 'week-4', icon: '04', text: 'Week 4 \u2014 Peak & Test' }
+    { label: 'Camp Phases', items: [
+      { id: 'phase-1', icon: '01', text: 'Base Camp' },
+      { id: 'phase-2', icon: '02', text: 'Intensification' },
+      { id: 'phase-3', icon: '03', text: 'Sharpening' },
+      { id: 'phase-4', icon: '04', text: 'Fight Week' }
     ]},
     { label: 'Reference', items: [
-      { id: 'safety', icon: '\uD83D\uDEE1', text: 'Safety & Protocols' },
-      { id: 'exercises', icon: '\u269B', text: 'Exercise Library' },
-      { id: 'warmups', icon: '\u262F', text: 'Warm-up Routines' },
-      { id: 'nutrition', icon: '\u2605', text: 'Nutrition' },
-      { id: 'testing', icon: '\u23F1', text: 'Conditioning Tests' },
+      { id: 'weight-management', icon: '\u2696', text: 'Weight Management' },
+      { id: 'training-tools', icon: '\u269B', text: 'Training Tools' },
+      { id: 'fight-prep', icon: '\uD83D\uDEE1', text: 'Fight Prep' },
       { id: 'sources', icon: '\uD83D\uDCD6', text: 'Sources' }
     ]}
   ],
-  logo: 'MMA Training',
-  subtitle: '4-Week Development Program'
+  logo: 'Fight Camp',
+  subtitle: 'May 16, 2026 \u2014 77 kg'
 };
 
 var NAV_BOS = {
   groups: [
-    { label: 'Program', items: [
-      { id: 'overview', icon: '\u25C6', text: 'Pregled' },
-      { id: 'schedule', icon: '\uD83D\uDCC6', text: 'Raspored' }
+    { label: 'Borila\u010Dki Kamp', items: [
+      { id: 'dashboard', icon: '\u2302', text: 'Kontrolna Tabla' },
+      { id: 'schedule', icon: '\uD83D\uDCC6', text: 'Kompletan Raspored' }
     ]},
-    { label: 'Sedmi\u010Dni planovi', items: [
-      { id: 'week-1', icon: '01', text: 'Sedmica 1 \u2014 Temelj' },
-      { id: 'week-2', icon: '02', text: 'Sedmica 2 \u2014 Gradnja' },
-      { id: 'week-3', icon: '03', text: 'Sedmica 3 \u2014 Intenzitet' },
-      { id: 'week-4', icon: '04', text: 'Sedmica 4 \u2014 Vrh & Test' }
+    { label: 'Faze Kampa', items: [
+      { id: 'phase-1', icon: '01', text: 'Faza 1 \u2014 Baza' },
+      { id: 'phase-2', icon: '02', text: 'Faza 2 \u2014 Intenzifikacija' },
+      { id: 'phase-3', icon: '03', text: 'Faza 3 \u2014 O\u0161trenje' },
+      { id: 'phase-4', icon: '04', text: 'Faza 4 \u2014 Borba' }
     ]},
     { label: 'Referenca', items: [
-      { id: 'safety', icon: '\uD83D\uDEE1', text: 'Sigurnost i Protokoli' },
-      { id: 'exercises', icon: '\u269B', text: 'Biblioteka vje\u017Ebi' },
-      { id: 'warmups', icon: '\u262F', text: 'Zagrijavanje' },
-      { id: 'nutrition', icon: '\u2605', text: 'Ishrana' },
-      { id: 'testing', icon: '\u23F1', text: 'Kondicioni testovi' },
+      { id: 'weight-management', icon: '\u2696', text: 'Upravljanje Te\u017Einom' },
+      { id: 'training-tools', icon: '\u269B', text: 'Alati za Trening' },
+      { id: 'fight-prep', icon: '\uD83D\uDEE1', text: 'Priprema za Borbu' },
       { id: 'sources', icon: '\uD83D\uDCD6', text: 'Izvori' }
     ]}
   ],
-  logo: 'MMA Trening',
-  subtitle: '4-sedmi\u010Dni razvojni program'
+  logo: 'Bori. Kamp',
+  subtitle: '16. maj 2026 \u2014 77 kg'
 };
 
 var currentLang = 'en';
@@ -707,8 +781,24 @@ function renderNav() {
   });
 
   document.getElementById('brand-text').childNodes[0].textContent = navData.logo + '\n';
-  document.getElementById('brand-subtitle').textContent = navData.subtitle;
+  // Dynamic fight countdown in subtitle
+  var daysLeft = Math.ceil((FIGHT_DATE - new Date()) / 86400000);
+  if (daysLeft > 0) {
+    document.getElementById('brand-subtitle').textContent = currentLang === 'bos'
+      ? daysLeft + ' dana do borbe'
+      : daysLeft + ' days to fight';
+  } else {
+    document.getElementById('brand-subtitle').textContent = currentLang === 'bos' ? 'Dan borbe!' : 'Fight day!';
+  }
   document.getElementById('dl-text').textContent = currentLang === 'bos' ? 'Preuzmi Excel Tracker' : 'Download Excel Tracker';
+  // Highlight current phase in nav
+  var currentPhaseIdx = getCurrentPhase();
+  var currentPhaseId = PHASES[currentPhaseIdx].id;
+  nav.querySelectorAll('a').forEach(function(a) {
+    if (a.getAttribute('href') === '#' + currentPhaseId) {
+      a.classList.add('nav-phase-current');
+    }
+  });
 }
 
 // ── Language switch ──
@@ -723,21 +813,185 @@ function setLang(lang) {
   renderCurrent();
 }
 
-// ── Week progress badge ──
-var WEEK_THEMES = {
-  'week-1': { num: 1, en: 'Foundation', bos: 'Temelj' },
-  'week-2': { num: 2, en: 'Build', bos: 'Gradnja' },
-  'week-3': { num: 3, en: 'Intensify', bos: 'Intenzitet' },
-  'week-4': { num: 4, en: 'Peak & Test', bos: 'Vrh & Test' }
+// ── Fight Camp Configuration ──
+var FIGHT_DATE = new Date('2026-05-16T00:00:00');
+var CAMP_START = new Date('2026-03-16T00:00:00');
+var START_WEIGHT = 89;
+var TARGET_WEIGHT = 77;
+
+var PHASES = [
+  { id: 'phase-1', start: '2026-03-16', end: '2026-04-05',
+    en: { name: 'Base Camp', short: 'Base' },
+    bos: { name: 'Baza', short: 'Baza' } },
+  { id: 'phase-2', start: '2026-04-06', end: '2026-04-26',
+    en: { name: 'Intensification', short: 'Intense' },
+    bos: { name: 'Intenzifikacija', short: 'Intenz.' } },
+  { id: 'phase-3', start: '2026-04-27', end: '2026-05-10',
+    en: { name: 'Sharpening', short: 'Sharp' },
+    bos: { name: 'O\u0161trenje', short: 'O\u0161tr.' } },
+  { id: 'phase-4', start: '2026-05-11', end: '2026-05-16',
+    en: { name: 'Fight Week', short: 'Fight' },
+    bos: { name: 'Sedmica Borbe', short: 'Borba' } }
+];
+
+var WEIGHT_TARGETS = [
+  { week: 1, date: '2026-03-22', target: 87.7 },
+  { week: 2, date: '2026-03-29', target: 86.4 },
+  { week: 3, date: '2026-04-05', target: 85.1 },
+  { week: 4, date: '2026-04-12', target: 83.8 },
+  { week: 5, date: '2026-04-19', target: 82.5 },
+  { week: 6, date: '2026-04-26', target: 81.2 },
+  { week: 7, date: '2026-05-03', target: 80.0 },
+  { week: 8, date: '2026-05-10', target: 79.0 },
+  { week: 9, date: '2026-05-16', target: 77.0 }
+];
+
+// ── Phase Detection ──
+function getCurrentPhase() {
+  var now = new Date();
+  for (var i = 0; i < PHASES.length; i++) {
+    var start = new Date(PHASES[i].start);
+    var end = new Date(PHASES[i].end + 'T23:59:59');
+    if (now >= start && now <= end) return i;
+  }
+  if (now < new Date(PHASES[0].start)) return 0;
+  return PHASES.length - 1;
+}
+
+// ── Countdown Widget ──
+function renderCountdown(container) {
+  var now = new Date();
+  var diff = FIGHT_DATE - now;
+  if (diff < 0) diff = 0;
+  var days = Math.floor(diff / 86400000);
+  var hours = Math.floor((diff % 86400000) / 3600000);
+  var mins = Math.floor((diff % 3600000) / 60000);
+  var secs = Math.floor((diff % 60000) / 1000);
+  var labels = currentLang === 'bos'
+    ? ['Dana', 'Sati', 'Minuta', 'Sekundi']
+    : ['Days', 'Hours', 'Minutes', 'Seconds'];
+  if (diff <= 0) {
+    container.innerHTML = '<div class="fc-countdown"><div class="fc-countdown-unit" style="grid-column:1/-1"><div class="fc-countdown-num" style="color:var(--green)">' +
+      (currentLang === 'bos' ? 'DAN BORBE!' : 'FIGHT DAY!') + '</div></div></div>';
+    return;
+  }
+  container.innerHTML = '<div class="fc-countdown">' +
+    [days,hours,mins,secs].map(function(v,i) {
+      return '<div class="fc-countdown-unit"><div class="fc-countdown-num">' +
+        v + '</div><div class="fc-countdown-label">' + labels[i] + '</div></div>';
+    }).join('') + '</div>';
+}
+
+// ── Weight Widget ──
+function renderWeightWidget(container) {
+  var stored = null;
+  try { stored = JSON.parse(localStorage.getItem('fc-weight-log') || '[]'); } catch(e) { stored = []; }
+  var currentWeight = stored.length > 0 ? stored[stored.length-1].kg : START_WEIGHT;
+  var totalCut = START_WEIGHT - TARGET_WEIGHT;
+  var cutSoFar = START_WEIGHT - currentWeight;
+  var pct = Math.min(100, Math.max(0, (cutSoFar / totalCut) * 100));
+  var lbl = currentLang === 'bos'
+    ? { current: 'Trenutna', target: 'Cilj', update: 'A\u017Euriraj', start: 'Start', remaining: 'Preostalo' }
+    : { current: 'Current', target: 'Target', update: 'Update', start: 'Start', remaining: 'Remaining' };
+  container.innerHTML =
+    '<div class="fc-weight">' +
+      '<div class="fc-weight-bar-track"><div class="fc-weight-bar-fill" style="width:' + pct + '%"></div></div>' +
+      '<div class="fc-weight-labels">' +
+        '<span>' + lbl.start + ': ' + START_WEIGHT + ' kg</span>' +
+        '<span class="fc-weight-current">' + lbl.current + ': ' + currentWeight.toFixed(1) + ' kg (' + lbl.remaining + ': ' + (currentWeight - TARGET_WEIGHT).toFixed(1) + ' kg)</span>' +
+        '<span>' + lbl.target + ': ' + TARGET_WEIGHT + ' kg</span>' +
+      '</div>' +
+      '<div class="fc-weight-input">' +
+        '<input type="number" id="weight-input" step="0.1" min="70" max="100" placeholder="kg">' +
+        '<button onclick="logWeight()">' + lbl.update + '</button>' +
+      '</div>' +
+    '</div>';
+}
+
+function logWeight() {
+  var input = document.getElementById('weight-input');
+  var val = parseFloat(input.value);
+  if (isNaN(val) || val < 60 || val > 120) return;
+  var log = [];
+  try { log = JSON.parse(localStorage.getItem('fc-weight-log') || '[]'); } catch(e) {}
+  log.push({ date: new Date().toISOString().slice(0,10), kg: val });
+  try { localStorage.setItem('fc-weight-log', JSON.stringify(log)); } catch(e) {}
+  var container = document.getElementById('widget-weight');
+  if (container) renderWeightWidget(container);
+}
+
+// ── Phase Cards Widget ──
+function renderPhaseWidget(container) {
+  var current = getCurrentPhase();
+  var now = new Date();
+  var html = '<div class="fc-phase-cards">';
+  PHASES.forEach(function(p, i) {
+    var cls = 'fc-phase-card';
+    var end = new Date(p.end + 'T23:59:59');
+    if (i === current) cls += ' active';
+    else if (now > end) cls += ' completed';
+    var name = currentLang === 'bos' ? p.bos.name : p.en.name;
+    var startD = new Date(p.start);
+    var endD = new Date(p.end);
+    var dateStr = startD.toLocaleDateString(currentLang === 'bos' ? 'bs' : 'en', {month:'short',day:'numeric'}) +
+      ' - ' + endD.toLocaleDateString(currentLang === 'bos' ? 'bs' : 'en', {month:'short',day:'numeric'});
+    html += '<a href="#' + p.id + '" class="' + cls + '" style="text-decoration:none;color:inherit">' +
+      '<div class="fc-phase-card-name">' + name + '</div>' +
+      '<div class="fc-phase-card-dates">' + dateStr + '</div></a>';
+  });
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+// ── Today's Training Widget ──
+function renderTodayWidget(container) {
+  var now = new Date();
+  var dayOfWeek = now.getDay();
+  var dayNames = currentLang === 'bos'
+    ? ['Nedjelja','Ponedjeljak','Utorak','Srijeda','\u010Cetvrtak','Petak','Subota']
+    : ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var rest = currentLang === 'bos' ? 'Dan odmora. Potpuni oporavak.' : 'Rest day. Full recovery.';
+  if (dayOfWeek === 0) {
+    container.innerHTML = '<div class="fc-today"><div class="fc-today-day">' + dayNames[0] + '</div>' +
+      '<div class="fc-today-sessions">' + rest + '</div></div>';
+    return;
+  }
+  var phase = getCurrentPhase();
+  var phaseId = PHASES[phase].id;
+  var linkText = currentLang === 'bos' ? 'Pogledaj detaljan plan' : 'View detailed plan';
+  container.innerHTML = '<div class="fc-today"><div class="fc-today-day">' + dayNames[dayOfWeek] + '</div>' +
+    '<div class="fc-today-sessions"><a href="#' + phaseId + '">' + linkText + ' &rarr;</a></div></div>';
+}
+
+// ── Master init for dashboard ──
+function initDashboardWidgets() {
+  var c = document.getElementById('widget-countdown');
+  var w = document.getElementById('widget-weight');
+  var p = document.getElementById('widget-phase');
+  var t = document.getElementById('widget-today');
+  if (c) renderCountdown(c);
+  if (w) renderWeightWidget(w);
+  if (p) renderPhaseWidget(p);
+  if (t) renderTodayWidget(t);
+}
+
+var countdownInterval = null;
+
+// ── Phase progress badge ──
+var PHASE_THEMES = {
+  'phase-1': { num: 1, en: 'Base Camp (Wk 1-3)', bos: 'Baza (Sed. 1-3)' },
+  'phase-2': { num: 2, en: 'Intensification (Wk 4-6)', bos: 'Intenzifikacija (Sed. 4-6)' },
+  'phase-3': { num: 3, en: 'Sharpening (Wk 7-8)', bos: 'O\u0161trenje (Sed. 7-8)' },
+  'phase-4': { num: 4, en: 'Fight Week', bos: 'Sedmica Borbe' }
 };
 
 function updateProgress(sectionId) {
   var badge = document.getElementById('progress-badge');
-  var week = WEEK_THEMES[sectionId];
-  if (week) {
-    var theme = currentLang === 'bos' ? week.bos : week.en;
-    var label = currentLang === 'bos' ? 'Sedmica' : 'Week';
-    badge.textContent = label + ' ' + week.num + ' of 4 — ' + theme;
+  var phase = PHASE_THEMES[sectionId];
+  if (phase) {
+    var theme = currentLang === 'bos' ? phase.bos : phase.en;
+    var label = currentLang === 'bos' ? 'Faza' : 'Phase';
+    badge.textContent = label + ' ' + phase.num + ' of 4 \u2014 ' + theme;
     badge.classList.add('visible');
   } else {
     badge.classList.remove('visible');
@@ -746,8 +1000,8 @@ function updateProgress(sectionId) {
 
 // ── Routing ──
 function renderCurrent() {
-  var hash = location.hash.slice(1) || 'overview';
-  var id = SECTIONS.indexOf(hash) !== -1 ? hash : 'overview';
+  var hash = location.hash.slice(1) || 'dashboard';
+  var id = SECTIONS.indexOf(hash) !== -1 ? hash : 'dashboard';
   var page = document.getElementById('page');
   page.innerHTML = getSection(id);
   addTableLabels(page);
@@ -756,6 +1010,15 @@ function renderCurrent() {
   page.style.animation = '';
   updateNav(id);
   updateProgress(id);
+  // Dashboard widgets
+  clearInterval(countdownInterval);
+  if (id === 'dashboard') {
+    initDashboardWidgets();
+    countdownInterval = setInterval(function() {
+      var c = document.getElementById('widget-countdown');
+      if (c) renderCountdown(c);
+    }, 1000);
+  }
   window.scrollTo({ top: 0 });
 }
 

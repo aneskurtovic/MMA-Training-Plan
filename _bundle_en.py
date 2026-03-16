@@ -5,18 +5,16 @@ DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Map section IDs to filenames in root
 FILE_MAP = {
-    "overview": "overview.md",
+    "dashboard": "dashboard.md",
+    "phase-1": "phase-1.md",
+    "phase-2": "phase-2.md",
+    "phase-3": "phase-3.md",
+    "phase-4": "phase-4.md",
+    "weight-management": "weight-management.md",
+    "training-tools": "training-tools.md",
+    "fight-prep": "fight-prep.md",
     "schedule": "schedule.md",
-    "week-1": "week-1.md",
-    "week-2": "week-2.md",
-    "week-3": "week-3.md",
-    "week-4": "week-4.md",
-    "exercises": "exercises.md",
-    "warmups": "warmups.md",
-    "nutrition": "nutrition.md",
-    "testing": "conditioning-tests.md",
     "sources": "sources.md",
-    "safety": "safety.md",
 }
 
 data = {}
