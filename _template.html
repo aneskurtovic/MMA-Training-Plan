@@ -163,6 +163,108 @@ body::after{
 }
 .nav-divider:first-child{padding-top:4px}
 
+/* ── Expandable Nav Sub-Items ── */
+.nav-parent{position:relative}
+.nav-parent>.nav-expand{
+  position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  width:22px;height:22px;border:none;background:none;
+  color:var(--text-faint);cursor:pointer;font-size:10px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:4px;transition:all .15s;
+}
+.nav-parent>.nav-expand:hover{color:var(--text);background:rgba(255,255,255,.05)}
+.nav-parent>.nav-expand.open{transform:translateY(-50%) rotate(90deg)}
+.nav-sub{
+  display:none;overflow:hidden;
+  padding-left:14px;margin-bottom:2px;
+}
+.nav-sub.open{display:block}
+.nav-sub a{
+  font-size:11.5px !important;padding:5px 10px 5px 22px !important;
+  color:var(--text-faint) !important;opacity:.85;
+}
+.nav-sub a:hover{color:var(--text) !important;opacity:1}
+.nav-sub a.active{color:var(--accent) !important;opacity:1}
+.nav-day-row{
+  display:flex;gap:2px;padding:2px 10px 4px 22px;flex-wrap:wrap;
+}
+.nav-day-btn{
+  padding:3px 7px;border-radius:4px;border:1px solid var(--border);
+  background:none;color:var(--text-faint);font-size:9px;font-weight:600;
+  cursor:pointer;transition:all .15s;font-family:var(--font-body);
+  letter-spacing:.04em;text-transform:uppercase;
+}
+.nav-day-btn:hover{border-color:var(--accent);color:var(--accent)}
+.nav-day-btn.active{background:var(--accent);color:#000;border-color:var(--accent)}
+
+/* ── Clickable Exercise Links ── */
+.exercise-link{
+  color:var(--accent);cursor:pointer;
+  text-decoration:underline;text-decoration-style:dotted;
+  text-underline-offset:2px;transition:all .15s;
+}
+.exercise-link:hover{color:var(--accent-bright);text-decoration-style:solid}
+
+/* ── Collapsible Sections ── */
+.collapsible{
+  border:1px solid var(--border);border-radius:var(--radius);
+  margin:8px 0;overflow:hidden;
+  background:var(--bg-card);
+}
+.collapsible+.collapsible{margin-top:4px}
+.collapsible-header{
+  display:flex;align-items:center;gap:10px;
+  padding:12px 16px;cursor:pointer;
+  background:linear-gradient(135deg,var(--bg-card) 0%,var(--bg-raised) 100%);
+  border:none;width:100%;text-align:left;
+  color:var(--text-bright);font-family:var(--font-body);
+  transition:all .15s;user-select:none;
+}
+.collapsible-header:hover{background:var(--bg-raised)}
+.collapsible-header.open{border-bottom:1px solid var(--border)}
+.collapsible-arrow{
+  font-size:10px;color:var(--accent);transition:transform .2s;
+  flex-shrink:0;width:16px;text-align:center;
+}
+.collapsible-header.open .collapsible-arrow{transform:rotate(90deg)}
+.collapsible-title{flex:1;font-weight:600;font-size:14px}
+.collapsible-tag{
+  font-size:9px;font-weight:700;padding:2px 8px;
+  border-radius:4px;text-transform:uppercase;letter-spacing:.08em;
+  flex-shrink:0;
+}
+.collapsible-tag.am{background:rgba(59,130,246,.15);color:var(--blue)}
+.collapsible-tag.pm{background:rgba(168,85,247,.15);color:var(--purple)}
+.collapsible-tag.rest{background:rgba(34,197,94,.15);color:var(--green)}
+.collapsible-tag.week{background:var(--accent-soft);color:var(--accent)}
+.collapsible-tag.day{background:rgba(255,255,255,.05);color:var(--text-dim)}
+.collapsible-body{
+  padding:16px;display:none;
+}
+.collapsible-body.open{display:block}
+/* Nested collapsibles */
+.collapsible .collapsible{
+  margin:4px 0;border-color:var(--border);
+  background:var(--bg);
+}
+.collapsible .collapsible .collapsible-header{
+  padding:9px 14px;
+}
+.collapsible .collapsible .collapsible-title{font-size:13px}
+/* Phase / week level styling */
+.collapsible-level-week>.collapsible-header{
+  border-left:3px solid var(--accent);
+}
+.collapsible-level-day>.collapsible-header{
+  border-left:3px solid var(--blue);
+  padding:8px 14px;
+}
+.collapsible-level-session>.collapsible-header{
+  border-left:3px solid var(--purple);
+  padding:7px 12px;
+}
+.collapsible-level-session .collapsible-title{font-size:12px}
+
 /* ═══════════════════════════════════
    MAIN AREA
    ═══════════════════════════════════ */
@@ -659,21 +761,35 @@ body::after{
 var CONTENT_EN = __CONTENT_EN_PLACEHOLDER__;
 var CONTENT_BOS = __CONTENT_BOS_PLACEHOLDER__;
 
-var SECTIONS = ['dashboard','phase-1','phase-2','phase-3','phase-4','weight-management','training-tools','fight-prep','schedule','sources'];
+var SECTIONS = ['dashboard','phase-1','phase-2','phase-3','phase-4','nutrition-plan','exercise-detail','weight-management','training-tools','fight-prep','schedule','sources'];
+
+// Week-to-phase mapping and day names for sub-navigation
+var WEEK_MAP = {
+  'phase-1': [1,2,3],
+  'phase-2': [4,5,6],
+  'phase-3': [7,8],
+  'phase-4': [9]
+};
+var DAY_NAMES_EN = ['Mon','Tue','Wed','Thu','Fri','Sat'];
+var DAY_NAMES_BOS = ['Pon','Uto','Sri','\u010Cet','Pet','Sub'];
+var DAY_FULL_EN = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var DAY_FULL_BOS = ['Ponedjeljak','Utorak','Srijeda','\u010Cetvrtak','Petak','Subota'];
 
 var NAV_EN = {
   groups: [
     { label: 'Fight Camp', items: [
       { id: 'dashboard', icon: '\u2302', text: 'Dashboard' },
-      { id: 'schedule', icon: '\uD83D\uDCC6', text: 'Full Schedule' }
+      { id: 'schedule', icon: '\uD83D\uDCC6', text: 'Full Schedule' },
+      { id: 'nutrition-plan', icon: '\uD83C\uDF7D', text: 'Nutrition Plan' }
     ]},
     { label: 'Camp Phases', items: [
-      { id: 'phase-1', icon: '01', text: 'Base Camp' },
-      { id: 'phase-2', icon: '02', text: 'Intensification' },
-      { id: 'phase-3', icon: '03', text: 'Sharpening' },
-      { id: 'phase-4', icon: '04', text: 'Fight Week' }
+      { id: 'phase-1', icon: '01', text: 'Base Camp', weeks: [1,2,3] },
+      { id: 'phase-2', icon: '02', text: 'Intensification', weeks: [4,5,6] },
+      { id: 'phase-3', icon: '03', text: 'Sharpening', weeks: [7,8] },
+      { id: 'phase-4', icon: '04', text: 'Fight Week', weeks: [9] }
     ]},
     { label: 'Reference', items: [
+      { id: 'exercise-detail', icon: '\uD83D\uDCAA', text: 'Exercise Guide' },
       { id: 'weight-management', icon: '\u2696', text: 'Weight Management' },
       { id: 'training-tools', icon: '\u269B', text: 'Training Tools' },
       { id: 'fight-prep', icon: '\uD83D\uDEE1', text: 'Fight Prep' },
@@ -681,22 +797,25 @@ var NAV_EN = {
     ]}
   ],
   logo: 'Fight Camp',
-  subtitle: 'May 16, 2026 \u2014 77 kg'
+  subtitle: 'May 16, 2026 \u2014 77 kg',
+  weekLabel: 'Week'
 };
 
 var NAV_BOS = {
   groups: [
     { label: 'Borila\u010Dki Kamp', items: [
       { id: 'dashboard', icon: '\u2302', text: 'Kontrolna Tabla' },
-      { id: 'schedule', icon: '\uD83D\uDCC6', text: 'Kompletan Raspored' }
+      { id: 'schedule', icon: '\uD83D\uDCC6', text: 'Kompletan Raspored' },
+      { id: 'nutrition-plan', icon: '\uD83C\uDF7D', text: 'Plan Ishrane' }
     ]},
     { label: 'Faze Kampa', items: [
-      { id: 'phase-1', icon: '01', text: 'Faza 1 \u2014 Baza' },
-      { id: 'phase-2', icon: '02', text: 'Faza 2 \u2014 Intenzifikacija' },
-      { id: 'phase-3', icon: '03', text: 'Faza 3 \u2014 O\u0161trenje' },
-      { id: 'phase-4', icon: '04', text: 'Faza 4 \u2014 Borba' }
+      { id: 'phase-1', icon: '01', text: 'Faza 1 \u2014 Baza', weeks: [1,2,3] },
+      { id: 'phase-2', icon: '02', text: 'Faza 2 \u2014 Intenzifikacija', weeks: [4,5,6] },
+      { id: 'phase-3', icon: '03', text: 'Faza 3 \u2014 O\u0161trenje', weeks: [7,8] },
+      { id: 'phase-4', icon: '04', text: 'Faza 4 \u2014 Borba', weeks: [9] }
     ]},
     { label: 'Referenca', items: [
+      { id: 'exercise-detail', icon: '\uD83D\uDCAA', text: 'Vodič za Vježbe' },
       { id: 'weight-management', icon: '\u2696', text: 'Upravljanje Te\u017Einom' },
       { id: 'training-tools', icon: '\u269B', text: 'Alati za Trening' },
       { id: 'fight-prep', icon: '\uD83D\uDEE1', text: 'Priprema za Borbu' },
@@ -704,7 +823,8 @@ var NAV_BOS = {
     ]}
   ],
   logo: 'Bori. Kamp',
-  subtitle: '16. maj 2026 \u2014 77 kg'
+  subtitle: '16. maj 2026 \u2014 77 kg',
+  weekLabel: 'Sedmica'
 };
 
 var currentLang = 'en';
@@ -760,28 +880,91 @@ function getSection(id) {
   return langCache[id];
 }
 
+// ── Sub-anchor scrolling target ──
+var pendingScroll = null;
+
 // ── Nav rendering ──
 function renderNav() {
   var navData = currentLang === 'bos' ? NAV_BOS : NAV_EN;
   var nav = document.getElementById('nav');
+  var weekLabel = navData.weekLabel || 'Week';
+  var dayNames = currentLang === 'bos' ? DAY_NAMES_BOS : DAY_NAMES_EN;
+  var dayFull = currentLang === 'bos' ? DAY_FULL_BOS : DAY_FULL_EN;
   var html = '';
   navData.groups.forEach(function(g) {
     html += '<div class="nav-divider">' + g.label + '</div>';
     g.items.forEach(function(item) {
-      html += '<a href="#' + item.id + '"><span class="nav-icon">' + item.icon + '</span>' + item.text + '</a>';
+      if (item.weeks) {
+        // Expandable phase item
+        html += '<div class="nav-parent">';
+        html += '<a href="#' + item.id + '" class="nav-phase-link"><span class="nav-icon">' + item.icon + '</span>' + item.text + '</a>';
+        html += '<button class="nav-expand" data-target="sub-' + item.id + '" aria-label="Expand">&#9654;</button>';
+        html += '<div class="nav-sub" id="sub-' + item.id + '">';
+        item.weeks.forEach(function(w) {
+          html += '<a href="#' + item.id + ':week-' + w + '" class="nav-week-link">' + weekLabel + ' ' + w + '</a>';
+          html += '<div class="nav-day-row" data-week="' + w + '" data-phase="' + item.id + '">';
+          dayNames.forEach(function(d, di) {
+            html += '<button class="nav-day-btn" data-phase="' + item.id + '" data-day="' + dayFull[di] + '" data-week="' + w + '">' + d + '</button>';
+          });
+          html += '</div>';
+        });
+        html += '</div></div>';
+      } else {
+        html += '<a href="#' + item.id + '"><span class="nav-icon">' + item.icon + '</span>' + item.text + '</a>';
+      }
     });
   });
   nav.innerHTML = html;
 
-  nav.querySelectorAll('a').forEach(function(a) {
+  // Expand/collapse handlers
+  nav.querySelectorAll('.nav-expand').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var target = document.getElementById(btn.getAttribute('data-target'));
+      if (target) {
+        target.classList.toggle('open');
+        btn.classList.toggle('open');
+      }
+    });
+  });
+
+  // Week link handlers
+  nav.querySelectorAll('.nav-week-link').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var parts = a.getAttribute('href').slice(1).split(':');
+      var sectionId = parts[0];
+      var anchor = parts[1];
+      closeMenu();
+      location.hash = sectionId;
+      pendingScroll = anchor;
+      setTimeout(renderCurrent, 20);
+    });
+  });
+
+  // Day button handlers
+  nav.querySelectorAll('.nav-day-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var phaseId = btn.getAttribute('data-phase');
+      var dayName = btn.getAttribute('data-day');
+      var weekNum = btn.getAttribute('data-week');
+      closeMenu();
+      location.hash = phaseId;
+      pendingScroll = 'day-' + dayName.toLowerCase() + '-week-' + weekNum;
+      setTimeout(renderCurrent, 20);
+    });
+  });
+
+  // Regular nav links
+  nav.querySelectorAll('a:not(.nav-week-link)').forEach(function(a) {
     a.addEventListener('click', function() {
       closeMenu();
+      pendingScroll = null;
       setTimeout(renderCurrent, 20);
     });
   });
 
   document.getElementById('brand-text').childNodes[0].textContent = navData.logo + '\n';
-  // Dynamic fight countdown in subtitle
   var daysLeft = Math.ceil((FIGHT_DATE - new Date()) / 86400000);
   if (daysLeft > 0) {
     document.getElementById('brand-subtitle').textContent = currentLang === 'bos'
@@ -794,11 +977,18 @@ function renderNav() {
   // Highlight current phase in nav
   var currentPhaseIdx = getCurrentPhase();
   var currentPhaseId = PHASES[currentPhaseIdx].id;
-  nav.querySelectorAll('a').forEach(function(a) {
+  nav.querySelectorAll('.nav-phase-link').forEach(function(a) {
     if (a.getAttribute('href') === '#' + currentPhaseId) {
       a.classList.add('nav-phase-current');
     }
   });
+  // Auto-expand current phase
+  var currentSub = document.getElementById('sub-' + currentPhaseId);
+  if (currentSub) {
+    currentSub.classList.add('open');
+    var expandBtn = nav.querySelector('[data-target="sub-' + currentPhaseId + '"]');
+    if (expandBtn) expandBtn.classList.add('open');
+  }
 }
 
 // ── Language switch ──
@@ -998,13 +1188,240 @@ function updateProgress(sectionId) {
   }
 }
 
+// ── Exercise name mapping for clickable links ──
+var exerciseNames = null;
+
+function buildExerciseMap() {
+  if (exerciseNames) return;
+  var raw = getContent()['exercise-detail'];
+  if (!raw) return;
+  exerciseNames = {};
+  // Find all ## headings in exercise-detail markdown
+  var lines = raw.split('\n');
+  for (var i = 0; i < lines.length; i++) {
+    var m = lines[i].match(/^## (.+)/);
+    if (m) {
+      var name = m[1].trim();
+      // Generate slug matching marked.js behavior
+      var slug = name.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-');
+      exerciseNames[name.toLowerCase()] = slug;
+      // Also store without parenthetical (for Bosnian "Čučanj (Back Squat)" → also index "back squat")
+      var paren = name.match(/\(([^)]+)\)/);
+      if (paren) {
+        exerciseNames[paren[1].toLowerCase()] = slug;
+      }
+    }
+  }
+}
+
+function linkExercises(container) {
+  buildExerciseMap();
+  if (!exerciseNames) return;
+  // Find exercise names in table first-column cells
+  container.querySelectorAll('td:first-child').forEach(function(td) {
+    var text = td.textContent.trim();
+    // Strip markdown formatting artifacts
+    var cleanText = text.replace(/\*\*/g, '').trim();
+    // Check common patterns: "Exercise Name" or "Exercise Name (variant)"
+    var baseName = cleanText.split('(')[0].trim().split(' — ')[0].trim();
+    var key = baseName.toLowerCase();
+    if (exerciseNames[key] || exerciseNames[cleanText.toLowerCase()]) {
+      var slug = exerciseNames[key] || exerciseNames[cleanText.toLowerCase()];
+      td.querySelectorAll('strong, span').forEach(function(el) {
+        if (el.querySelector('.exercise-link')) return;
+      });
+      if (td.querySelector('.exercise-link')) return;
+      var inner = td.innerHTML;
+      td.innerHTML = '<span class="exercise-link" data-exercise="' + slug + '">' + inner + '</span>';
+    }
+  });
+  // Click handler for exercise links
+  container.querySelectorAll('.exercise-link').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      var slug = el.getAttribute('data-exercise');
+      location.hash = 'exercise-detail';
+      pendingScroll = slug;
+      renderCurrent();
+    });
+  });
+}
+
+// ── Add IDs to week/day headings for scrolling ──
+function addScrollAnchors(container) {
+  container.querySelectorAll('h1, h2').forEach(function(h) {
+    var text = h.textContent.trim();
+    // Match "Week X" headings (H1)
+    var weekMatch = text.match(/(?:Week|Sedmica)\s+(\d+)/i);
+    if (weekMatch && h.tagName === 'H1') {
+      h.id = 'week-' + weekMatch[1];
+    }
+    // Match day headings like "Monday — Week 1" or "Ponedjeljak — Sedmica 1"
+    var dayMatch = text.match(/^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Ponedjeljak|Utorak|Srijeda|Četvrtak|Petak|Subota)\s*[—\-]\s*(?:Week|Sedmica)\s*(\d+)/i);
+    if (dayMatch) {
+      h.id = 'day-' + dayMatch[1].toLowerCase() + '-week-' + dayMatch[2];
+    }
+  });
+}
+
+// ── Collapsible sections ──
+function makeCollapsible(container) {
+  // Only apply to phase pages, nutrition-plan, and exercise-detail
+  var hash = location.hash.slice(1).split(':')[0] || 'dashboard';
+  if (hash.indexOf('phase-') !== 0 && hash !== 'nutrition-plan' && hash !== 'exercise-detail') return;
+
+  // Strategy: find heading hierarchy and wrap content between headings
+  var nodes = Array.from(container.childNodes);
+  var result = document.createDocumentFragment();
+  var weekCollapsible = null;
+  var dayCollapsible = null;
+  var sessionCollapsible = null;
+  var currentBody = null;
+
+  function closeSession() {
+    if (sessionCollapsible && currentBody) {
+      currentBody = dayCollapsible ? dayCollapsible.querySelector('.collapsible-body') : (weekCollapsible ? weekCollapsible.querySelector('.collapsible-body') : null);
+    }
+    sessionCollapsible = null;
+  }
+  function closeDay() {
+    closeSession();
+    if (dayCollapsible && currentBody) {
+      currentBody = weekCollapsible ? weekCollapsible.querySelector('.collapsible-body') : null;
+    }
+    dayCollapsible = null;
+  }
+  function closeWeek() {
+    closeDay();
+    weekCollapsible = null;
+    currentBody = null;
+  }
+
+  function createCollapsible(title, level, tag) {
+    var wrapper = document.createElement('div');
+    wrapper.className = 'collapsible collapsible-level-' + level;
+    var header = document.createElement('div');
+    header.className = 'collapsible-header';
+    header.innerHTML = '<span class="collapsible-arrow">&#9654;</span>' +
+      '<span class="collapsible-title">' + title + '</span>' +
+      (tag ? '<span class="collapsible-tag ' + tag + '">' + tag.toUpperCase() + '</span>' : '');
+    header.addEventListener('click', function() {
+      header.classList.toggle('open');
+      var body = wrapper.querySelector('.collapsible-body');
+      if (body) body.classList.toggle('open');
+    });
+    var body = document.createElement('div');
+    body.className = 'collapsible-body';
+    wrapper.appendChild(header);
+    wrapper.appendChild(body);
+    return wrapper;
+  }
+
+  for (var i = 0; i < nodes.length; i++) {
+    var node = nodes[i];
+    if (node.nodeType !== 1) {
+      if (currentBody) currentBody.appendChild(node);
+      else result.appendChild(node);
+      continue;
+    }
+
+    var tag = node.tagName;
+    var text = node.textContent.trim();
+
+    // H1 = Week level heading
+    if (tag === 'H1' && /(?:Week|Sedmica)\s+\d/i.test(text)) {
+      closeWeek();
+      weekCollapsible = createCollapsible(text, 'week', 'week');
+      // Auto-open current week
+      var weekNum = text.match(/(\d+)/);
+      if (weekNum) {
+        weekCollapsible.id = 'week-' + weekNum[1];
+        // Auto-open week 1 on first visit (or current week based on date)
+        var campWeek = Math.ceil((new Date() - CAMP_START) / (7 * 86400000));
+        if (parseInt(weekNum[1]) === campWeek || parseInt(weekNum[1]) === 1 && campWeek < 1) {
+          weekCollapsible.querySelector('.collapsible-header').classList.add('open');
+          weekCollapsible.querySelector('.collapsible-body').classList.add('open');
+        }
+      }
+      currentBody = weekCollapsible.querySelector('.collapsible-body');
+      result.appendChild(weekCollapsible);
+      continue;
+    }
+
+    // H2 = Day level heading (e.g., "Monday — Week 1" or "Tuesday — Week 2")
+    if (tag === 'H2' && /(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Ponedjeljak|Utorak|Srijeda|Četvrtak|Petak|Subota|Nedjelja)/i.test(text)) {
+      closeDay();
+      var dayTag = 'day';
+      if (/Sunday|Nedjelja/i.test(text)) dayTag = 'rest';
+      dayCollapsible = createCollapsible(text, 'day', dayTag);
+      // Set scroll anchor ID
+      var dayMatch = text.match(/^(\w+)\s*[—\-]\s*(?:Week|Sedmica)\s*(\d+)/i);
+      if (dayMatch) {
+        dayCollapsible.id = 'day-' + dayMatch[1].toLowerCase() + '-week-' + dayMatch[2];
+      }
+      currentBody = dayCollapsible.querySelector('.collapsible-body');
+      if (weekCollapsible) {
+        weekCollapsible.querySelector('.collapsible-body').appendChild(dayCollapsible);
+      } else {
+        result.appendChild(dayCollapsible);
+      }
+      continue;
+    }
+
+    // H3 = Session level (e.g., "AM — Strength: Upper Push/Pull" or "PM — MMA Striking")
+    if (tag === 'H3' && dayCollapsible && /(?:AM|PM|Jutro|Popodne|Večer)/i.test(text)) {
+      closeSession();
+      var sessionTag = /AM|Jutro/i.test(text) ? 'am' : 'pm';
+      sessionCollapsible = createCollapsible(text, 'session', sessionTag);
+      currentBody = sessionCollapsible.querySelector('.collapsible-body');
+      dayCollapsible.querySelector('.collapsible-body').appendChild(sessionCollapsible);
+      continue;
+    }
+
+    // H2 in exercise-detail or nutrition-plan = collapsible section
+    if (tag === 'H2' && (hash === 'exercise-detail' || hash === 'nutrition-plan')) {
+      closeWeek();
+      var sectionTag = hash === 'nutrition-plan' ? '' : '';
+      weekCollapsible = createCollapsible(text, 'week', '');
+      // Preserve heading ID for exercise linking
+      if (node.id) weekCollapsible.id = node.id;
+      currentBody = weekCollapsible.querySelector('.collapsible-body');
+      result.appendChild(weekCollapsible);
+      continue;
+    }
+
+    // Everything else goes to current body
+    if (currentBody) {
+      currentBody.appendChild(node);
+    } else {
+      result.appendChild(node);
+    }
+  }
+
+  container.innerHTML = '';
+  container.appendChild(result);
+}
+
 // ── Routing ──
 function renderCurrent() {
   var hash = location.hash.slice(1) || 'dashboard';
-  var id = SECTIONS.indexOf(hash) !== -1 ? hash : 'dashboard';
+  // Handle phase:week-N style anchors
+  var parts = hash.split(':');
+  var id = parts[0];
+  if (parts.length > 1 && !pendingScroll) {
+    pendingScroll = parts[1];
+  }
+  if (SECTIONS.indexOf(id) === -1) id = 'dashboard';
   var page = document.getElementById('page');
   page.innerHTML = getSection(id);
   addTableLabels(page);
+  addScrollAnchors(page);
+  // Link exercises in phase pages
+  if (id.indexOf('phase-') === 0) {
+    linkExercises(page);
+  }
+  // Make sections collapsible
+  makeCollapsible(page);
   page.style.animation = 'none';
   void page.offsetHeight;
   page.style.animation = '';
@@ -1019,7 +1436,37 @@ function renderCurrent() {
       if (c) renderCountdown(c);
     }, 1000);
   }
-  window.scrollTo({ top: 0 });
+  // Handle sub-anchor scrolling
+  if (pendingScroll) {
+    var scrollTarget = pendingScroll;
+    pendingScroll = null;
+    setTimeout(function() {
+      var target = document.getElementById(scrollTarget);
+      if (target) {
+        // Auto-open all parent collapsibles
+        var el = target;
+        while (el && el !== page) {
+          if (el.classList && el.classList.contains('collapsible')) {
+            var h = el.querySelector('.collapsible-header');
+            var b = el.querySelector('.collapsible-body');
+            if (h && !h.classList.contains('open')) h.classList.add('open');
+            if (b && !b.classList.contains('open')) b.classList.add('open');
+          }
+          el = el.parentElement;
+        }
+        // If target itself is a collapsible, open it
+        if (target.classList && target.classList.contains('collapsible')) {
+          var th = target.querySelector('.collapsible-header');
+          var tb = target.querySelector('.collapsible-body');
+          if (th && !th.classList.contains('open')) th.classList.add('open');
+          if (tb && !tb.classList.contains('open')) tb.classList.add('open');
+        }
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 150);
+  } else {
+    window.scrollTo({ top: 0 });
+  }
 }
 
 function updateNav(id) {
