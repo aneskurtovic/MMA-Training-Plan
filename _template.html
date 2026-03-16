@@ -633,6 +633,157 @@ body::after{
   .fc-countdown-num{font-size:28px}
 }
 
+/* ── Breadcrumb ── */
+.breadcrumb{
+  display:flex;align-items:center;gap:6px;
+  margin-bottom:20px;font-size:12px;
+  color:var(--text-faint);font-weight:500;
+  letter-spacing:.02em;flex-wrap:wrap;
+}
+.breadcrumb-sep{color:var(--text-faint);opacity:.5;font-size:10px}
+.breadcrumb a{
+  color:var(--text-dim);text-decoration:none;transition:color .15s;
+  background:none;
+}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb-current{color:var(--text-bright)}
+
+/* ── Search ── */
+.search-wrap{position:relative;margin-top:10px}
+.search-input{
+  width:100%;padding:9px 12px 9px 34px;
+  background:var(--bg);border:1px solid var(--border);border-radius:8px;
+  color:var(--text-bright);font-family:var(--font-body);font-size:12.5px;
+  outline:none;transition:border-color .2s;
+}
+.search-input::placeholder{color:var(--text-faint)}
+.search-input:focus{border-color:var(--accent)}
+.search-icon{
+  position:absolute;left:10px;top:50%;transform:translateY(-50%);
+  color:var(--text-faint);font-size:14px;pointer-events:none;
+}
+.search-results{
+  position:absolute;top:calc(100% + 4px);left:0;right:0;
+  background:var(--bg-raised);border:1px solid var(--border-bright);
+  border-radius:var(--radius);max-height:320px;overflow-y:auto;
+  z-index:300;display:none;
+  box-shadow:0 8px 32px rgba(0,0,0,.5);
+}
+.search-results.open{display:block}
+.search-result{
+  display:block;padding:10px 14px;border-bottom:1px solid var(--border);
+  cursor:pointer;transition:background .15s;text-decoration:none;color:inherit;
+}
+.search-result:last-child{border-bottom:none}
+.search-result:hover{background:var(--accent-soft)}
+.search-result-section{
+  font-size:10px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--accent);font-weight:600;margin-bottom:2px;
+}
+.search-result-text{font-size:12px;color:var(--text);line-height:1.5}
+.search-result-text mark{background:var(--accent-med);color:var(--text-bright);border-radius:2px;padding:0 2px}
+.search-clear{
+  position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  background:none;border:none;color:var(--text-faint);cursor:pointer;
+  font-size:14px;padding:4px;display:none;
+}
+.search-clear.visible{display:block}
+.search-clear:hover{color:var(--text)}
+
+/* ── Session Completion Checkbox ── */
+.session-check{
+  -webkit-appearance:none;appearance:none;
+  width:18px;height:18px;border:2px solid var(--border-bright);
+  border-radius:4px;background:var(--bg);cursor:pointer;
+  flex-shrink:0;position:relative;transition:all .2s;
+}
+.session-check:checked{background:var(--accent);border-color:var(--accent)}
+.session-check:checked::after{
+  content:'\2713';position:absolute;top:-1px;left:2px;
+  color:#000;font-size:12px;font-weight:900;
+}
+.collapsible.session-done>.collapsible-header{
+  border-left-color:var(--green) !important;opacity:.65;
+}
+.collapsible.session-done .collapsible-title{
+  text-decoration:line-through;text-decoration-color:var(--text-faint);
+}
+.completion-stat{
+  font-size:10px;color:var(--green);font-weight:600;
+  margin-left:auto;padding-left:8px;white-space:nowrap;
+}
+
+/* ── Page TOC ── */
+.page-toc{
+  margin:16px 0 28px;padding:16px 20px;
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius-lg);
+}
+.page-toc-title{
+  font-size:10px;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--text-faint);font-weight:700;margin-bottom:10px;
+}
+.page-toc-list{
+  display:flex;flex-wrap:wrap;gap:6px;list-style:none;
+  padding:0;margin:0;
+}
+.page-toc-list a{
+  display:inline-block;padding:5px 12px;border-radius:6px;
+  background:var(--bg-raised);border:1px solid var(--border);
+  color:var(--text-dim);font-size:12px;font-weight:500;
+  text-decoration:none;transition:all .15s;
+}
+.page-toc-list a:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
+
+/* ── Weight Chart ── */
+.fc-weight-chart{margin:16px 0 4px}
+.fc-weight-chart svg{width:100%;height:80px;display:block}
+.fc-weight-chart .chart-line{fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.fc-weight-chart .chart-target{fill:none;stroke:var(--green);stroke-width:1;stroke-dasharray:4,4;opacity:.5}
+.fc-weight-chart .chart-dot{fill:var(--accent);r:3}
+.fc-weight-chart .chart-label{fill:var(--text-faint);font-size:9px;font-family:var(--font-mono)}
+.fc-weight-chart .chart-area{fill:url(#chartGrad);opacity:.15}
+
+/* ── Quick-Access Cards ── */
+.fc-quicklinks{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:10px;margin:16px 0;
+}
+.fc-quicklink{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:16px;background:var(--bg-card);
+  border:1px solid var(--border);border-radius:var(--radius-lg);
+  text-decoration:none;color:inherit;transition:all .25s;
+}
+.fc-quicklink:hover{
+  border-color:var(--accent);background:var(--accent-soft);
+  transform:translateY(-2px);box-shadow:0 4px 20px rgba(249,115,22,.1);
+}
+.fc-quicklink-icon{
+  width:36px;height:36px;border-radius:8px;
+  background:var(--accent-soft);
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;flex-shrink:0;
+}
+.fc-quicklink-text{flex:1;min-width:0}
+.fc-quicklink-title{
+  font-weight:600;font-size:13px;color:var(--text-bright);
+  margin-bottom:2px;
+}
+.fc-quicklink-desc{font-size:11px;color:var(--text-dim);line-height:1.4}
+@media(max-width:600px){
+  .fc-quicklinks{grid-template-columns:1fr}
+}
+
+/* ── Accessibility Focus ── */
+.collapsible-header:focus-visible,
+.session-check:focus-visible,
+.search-input:focus-visible,
+.page-toc-list a:focus-visible,
+.fc-quicklink:focus-visible{
+  outline:2px solid var(--accent);outline-offset:2px;
+}
+
 .rest-timer{
   position:fixed;bottom:28px;left:28px;z-index:50;
 }
@@ -743,6 +894,12 @@ body::after{
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       <span id="dl-text">Download Excel Tracker</span>
     </a>
+    <div class="search-wrap">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" class="search-input" id="search-input" placeholder="Search exercises, plans..." autocomplete="off">
+      <button class="search-clear" id="search-clear" aria-label="Clear search">&times;</button>
+      <div class="search-results" id="search-results"></div>
+    </div>
     <div class="progress-badge" id="progress-badge"></div>
   </div>
   <nav class="sidebar-nav" id="nav"></nav>
@@ -848,6 +1005,27 @@ var NAV_BOS = {
 var currentLang = 'en';
 var cache = { en: {}, bos: {} };
 var markedLoaded = false;
+
+// ── Section display names for breadcrumbs ──
+var SECTION_META = {
+  'dashboard':        { group: null, en: 'Dashboard', bos: 'Kontrolna Tabla' },
+  'schedule':         { group: 'camp', en: 'Full Schedule', bos: 'Kompletan Raspored' },
+  'nutrition-plan':   { group: 'camp', en: 'Nutrition Plan', bos: 'Plan Ishrane' },
+  'phase-1':          { group: 'phases', en: 'Phase 1: Base Camp', bos: 'Faza 1: Baza' },
+  'phase-2':          { group: 'phases', en: 'Phase 2: Intensification', bos: 'Faza 2: Intenzifikacija' },
+  'phase-3':          { group: 'phases', en: 'Phase 3: Sharpening', bos: 'Faza 3: Oštrenje' },
+  'phase-4':          { group: 'phases', en: 'Phase 4: Fight Week', bos: 'Faza 4: Sedmica Borbe' },
+  'exercise-detail':  { group: 'ref', en: 'Exercise Guide', bos: 'Vodič za Vježbe' },
+  'weight-management':{ group: 'ref', en: 'Weight Management', bos: 'Upravljanje Težinom' },
+  'training-tools':   { group: 'ref', en: 'Training Tools', bos: 'Alati za Trening' },
+  'fight-prep':       { group: 'ref', en: 'Fight Prep', bos: 'Priprema za Borbu' },
+  'sources':          { group: 'ref', en: 'Sources', bos: 'Izvori' }
+};
+var GROUP_NAMES = {
+  'camp':   { en: 'Fight Camp', bos: 'Borilački Kamp' },
+  'phases': { en: 'Camp Phases', bos: 'Faze Kampa' },
+  'ref':    { en: 'Reference', bos: 'Referenca' }
+};
 
 // marked.js is inlined at build time
 __MARKED_JS_PLACEHOLDER__
@@ -1114,6 +1292,7 @@ function renderWeightWidget(container) {
         '<button onclick="logWeight()">' + lbl.update + '</button>' +
       '</div>' +
     '</div>';
+  renderWeightChart(container);
 }
 
 function logWeight() {
@@ -1126,6 +1305,253 @@ function logWeight() {
   try { localStorage.setItem('fc-weight-log', JSON.stringify(log)); } catch(e) {}
   var container = document.getElementById('widget-weight');
   if (container) renderWeightWidget(container);
+}
+
+// ── Breadcrumb ──
+function renderBreadcrumb(sectionId) {
+  var meta = SECTION_META[sectionId];
+  if (!meta) return '';
+  var lang = currentLang === 'bos' ? 'bos' : 'en';
+  var home = '<a href="#dashboard">' + (lang === 'bos' ? 'Početna' : 'Home') + '</a>';
+  if (!meta.group) return '<div class="breadcrumb">' + '<span class="breadcrumb-current">' + meta[lang] + '</span></div>';
+  var groupName = GROUP_NAMES[meta.group] ? GROUP_NAMES[meta.group][lang] : '';
+  return '<div class="breadcrumb">' + home +
+    '<span class="breadcrumb-sep">&#9655;</span>' +
+    '<span>' + groupName + '</span>' +
+    '<span class="breadcrumb-sep">&#9655;</span>' +
+    '<span class="breadcrumb-current">' + meta[lang] + '</span></div>';
+}
+
+// ── Search ──
+var searchTimeout = null;
+function initSearch() {
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  var clearBtn = document.getElementById('search-clear');
+  if (!input) return;
+  input.addEventListener('input', function() {
+    clearBtn.classList.toggle('visible', input.value.length > 0);
+    clearTimeout(searchTimeout);
+    if (input.value.trim().length < 2) { results.classList.remove('open'); return; }
+    searchTimeout = setTimeout(function() { doSearch(input.value.trim()); }, 300);
+  });
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') { input.value = ''; results.classList.remove('open'); clearBtn.classList.remove('visible'); }
+  });
+  clearBtn.addEventListener('click', function() {
+    input.value = ''; results.classList.remove('open'); clearBtn.classList.remove('visible');
+    input.focus();
+  });
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.search-wrap')) results.classList.remove('open');
+  });
+}
+
+function doSearch(query) {
+  var content = currentLang === 'bos' ? CONTENT_BOS : CONTENT_EN;
+  var results = document.getElementById('search-results');
+  var lang = currentLang === 'bos' ? 'bos' : 'en';
+  var q = query.toLowerCase();
+  var hits = [];
+  SECTIONS.forEach(function(id) {
+    var raw = content[id];
+    if (!raw) return;
+    var text = raw.replace(/[#*|>\-`\[\]()]/g, ' ').replace(/\s+/g, ' ');
+    var idx = text.toLowerCase().indexOf(q);
+    if (idx === -1) return;
+    var start = Math.max(0, idx - 40);
+    var end = Math.min(text.length, idx + query.length + 60);
+    var snippet = (start > 0 ? '...' : '') + text.slice(start, end) + (end < text.length ? '...' : '');
+    var meta = SECTION_META[id];
+    hits.push({ id: id, section: meta ? meta[lang] : id, snippet: snippet, query: query });
+  });
+  if (hits.length === 0) {
+    results.innerHTML = '<div class="search-result"><div class="search-result-text" style="color:var(--text-dim)">' +
+      (lang === 'bos' ? 'Nema rezultata' : 'No results found') + '</div></div>';
+    results.classList.add('open');
+    return;
+  }
+  results.innerHTML = hits.slice(0, 8).map(function(h) {
+    var highlighted = h.snippet.replace(new RegExp('(' + h.query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi'), '<mark>$1</mark>');
+    return '<div class="search-result" data-id="' + h.id + '">' +
+      '<div class="search-result-section">' + h.section + '</div>' +
+      '<div class="search-result-text">' + highlighted + '</div></div>';
+  }).join('');
+  results.classList.add('open');
+  results.querySelectorAll('.search-result').forEach(function(el) {
+    el.addEventListener('click', function() {
+      location.hash = el.getAttribute('data-id');
+      results.classList.remove('open');
+      document.getElementById('search-input').value = '';
+      document.getElementById('search-clear').classList.remove('visible');
+      closeMenu();
+      renderCurrent();
+    });
+  });
+}
+
+// ── Session Completion Tracking ──
+function getCompletionData() {
+  try { return JSON.parse(localStorage.getItem('fc-completed') || '{}'); } catch(e) { return {}; }
+}
+function saveCompletionData(data) {
+  try { localStorage.setItem('fc-completed', JSON.stringify(data)); } catch(e) {}
+}
+
+function addSessionCheckboxes(container, sectionId) {
+  if (sectionId.indexOf('phase-') !== 0) return;
+  var data = getCompletionData();
+  container.querySelectorAll('.collapsible-level-session').forEach(function(el) {
+    var header = el.querySelector('.collapsible-header');
+    if (!header || header.querySelector('.session-check')) return;
+    // Build a key from parent collapsibles
+    var weekEl = el.closest('.collapsible-level-week');
+    var dayEl = el.closest('.collapsible-level-day');
+    var weekId = weekEl ? (weekEl.id || 'w') : 'w';
+    var dayId = dayEl ? (dayEl.id || 'd') : 'd';
+    var tag = el.querySelector('.collapsible-tag');
+    var sessionType = tag ? tag.textContent.trim().toLowerCase() : 'session';
+    var key = sectionId + ':' + weekId + ':' + dayId + ':' + sessionType;
+    var cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.className = 'session-check';
+    cb.setAttribute('data-key', key);
+    cb.title = currentLang === 'bos' ? 'Označi kao završeno' : 'Mark as completed';
+    if (data[key]) { cb.checked = true; el.classList.add('session-done'); }
+    cb.addEventListener('click', function(e) { e.stopPropagation(); });
+    cb.addEventListener('change', function() {
+      var d = getCompletionData();
+      if (cb.checked) { d[key] = true; el.classList.add('session-done'); }
+      else { delete d[key]; el.classList.remove('session-done'); }
+      saveCompletionData(d);
+      updateCompletionBadge(sectionId);
+    });
+    header.insertBefore(cb, header.firstChild);
+  });
+  updateCompletionBadge(sectionId);
+}
+
+function updateCompletionBadge(sectionId) {
+  var badge = document.getElementById('progress-badge');
+  if (!badge) return;
+  var phase = PHASE_THEMES[sectionId];
+  if (!phase) return;
+  var data = getCompletionData();
+  var total = 0, done = 0;
+  var prefix = sectionId + ':';
+  document.querySelectorAll('.session-check').forEach(function() { total++; });
+  Object.keys(data).forEach(function(k) { if (k.indexOf(prefix) === 0 && data[k]) done++; });
+  if (total > 0) {
+    var theme = currentLang === 'bos' ? phase.bos : phase.en;
+    var label = currentLang === 'bos' ? 'Faza' : 'Phase';
+    badge.textContent = label + ' ' + phase.num + '/4 — ' + theme;
+    if (done > 0) badge.textContent += ' (' + done + '/' + total + ')';
+    badge.classList.add('visible');
+  }
+}
+
+// ── Page TOC ──
+function renderPageTOC(container, sectionId) {
+  // Only for reference & content pages with collapsible sections
+  var eligible = ['exercise-detail','nutrition-plan','training-tools','weight-management','fight-prep'];
+  if (eligible.indexOf(sectionId) === -1) return;
+  var headings = container.querySelectorAll('.collapsible-level-week > .collapsible-header .collapsible-title');
+  if (headings.length < 4) return;
+  var tocHtml = '<div class="page-toc"><div class="page-toc-title">' +
+    (currentLang === 'bos' ? 'Na ovoj stranici' : 'On this page') +
+    '</div><div class="page-toc-list">';
+  headings.forEach(function(h, i) {
+    var parent = h.closest('.collapsible');
+    var id = parent.id || ('toc-section-' + i);
+    if (!parent.id) parent.id = id;
+    tocHtml += '<a href="javascript:void(0)" data-toc-target="' + id + '">' + h.textContent.trim() + '</a>';
+  });
+  tocHtml += '</div></div>';
+  var tocEl = document.createElement('div');
+  tocEl.innerHTML = tocHtml;
+  var h1 = container.querySelector('h1');
+  if (h1 && h1.nextSibling) container.insertBefore(tocEl.firstChild, h1.nextSibling);
+  else container.insertBefore(tocEl.firstChild, container.firstChild);
+  container.querySelectorAll('[data-toc-target]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.getElementById(a.getAttribute('data-toc-target'));
+      if (target) {
+        var h = target.querySelector('.collapsible-header');
+        var b = target.querySelector('.collapsible-body');
+        if (h && !h.classList.contains('open')) { h.classList.add('open'); }
+        if (b && !b.classList.contains('open')) { b.classList.add('open'); }
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+}
+
+// ── Weight Chart ──
+function renderWeightChart(container) {
+  var stored = [];
+  try { stored = JSON.parse(localStorage.getItem('fc-weight-log') || '[]'); } catch(e) {}
+  if (stored.length < 2) return;
+  var w = 400, h = 60, pad = 20;
+  var weights = stored.map(function(e) { return e.kg; });
+  var dates = stored.map(function(e) { return e.date; });
+  var minW = Math.min.apply(null, weights.concat([TARGET_WEIGHT])) - 1;
+  var maxW = Math.max.apply(null, weights) + 1;
+  var range = maxW - minW || 1;
+  var points = weights.map(function(v, i) {
+    var x = pad + (i / (weights.length - 1)) * (w - 2 * pad);
+    var y = h - pad - ((v - minW) / range) * (h - 2 * pad);
+    return x + ',' + y;
+  });
+  var targetY = h - pad - ((TARGET_WEIGHT - minW) / range) * (h - 2 * pad);
+  var areaPoints = points.join(' ') + ' ' + (pad + (weights.length-1)/(weights.length-1)*(w-2*pad)) + ',' + (h-pad) + ' ' + pad + ',' + (h-pad);
+  var svg = '<div class="fc-weight-chart"><svg viewBox="0 0 ' + w + ' ' + h + '" preserveAspectRatio="none">' +
+    '<defs><linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="' + '#f97316' + '"/><stop offset="100%" stop-color="transparent"/></linearGradient></defs>' +
+    '<line class="chart-target" x1="' + pad + '" y1="' + targetY + '" x2="' + (w-pad) + '" y2="' + targetY + '"/>' +
+    '<polygon class="chart-area" points="' + areaPoints + '"/>' +
+    '<polyline class="chart-line" points="' + points.join(' ') + '"/>';
+  weights.forEach(function(v, i) {
+    var x = pad + (i / (weights.length - 1)) * (w - 2 * pad);
+    var y = h - pad - ((v - minW) / range) * (h - 2 * pad);
+    svg += '<circle class="chart-dot" cx="' + x + '" cy="' + y + '" r="3"/>';
+  });
+  // Date labels (first and last)
+  svg += '<text class="chart-label" x="' + pad + '" y="' + (h - 2) + '">' + dates[0].slice(5) + '</text>';
+  svg += '<text class="chart-label" x="' + (w-pad) + '" y="' + (h - 2) + '" text-anchor="end">' + dates[dates.length-1].slice(5) + '</text>';
+  svg += '<text class="chart-label" x="' + (w-pad) + '" y="' + (targetY - 3) + '" text-anchor="end" fill="' + '#22c55e' + '">' + TARGET_WEIGHT + 'kg</text>';
+  svg += '</svg></div>';
+  container.insertAdjacentHTML('beforeend', svg);
+}
+
+// ── Quick Links Widget ──
+function renderQuickLinks(container) {
+  var lang = currentLang === 'bos' ? 'bos' : 'en';
+  var phase = getCurrentPhase();
+  var phaseData = PHASES[phase];
+  var cards = lang === 'bos' ? [
+    { id: phaseData.id, icon: '&#9876;', title: 'Trenutna Faza', desc: phaseData.bos.name + ' — Pogledaj plan' },
+    { id: 'nutrition-plan', icon: '&#127869;', title: 'Plan Ishrane', desc: 'Dnevni obroci i makronutrijenti' },
+    { id: 'exercise-detail', icon: '&#128170;', title: 'Vodič za Vježbe', desc: 'Tehnika i forma za sve vježbe' },
+    { id: 'weight-management', icon: '&#9878;', title: 'Upravljanje Težinom', desc: 'Protokol za skidanje kilaže' },
+    { id: 'schedule', icon: '&#128198;', title: 'Raspored', desc: 'Pregled svih 9 sedmica' },
+    { id: 'fight-prep', icon: '&#128737;', title: 'Priprema za Borbu', desc: 'Sigurnost, mentalna priprema, game plan' }
+  ] : [
+    { id: phaseData.id, icon: '&#9876;', title: 'Current Phase', desc: phaseData.en.name + ' — View training plan' },
+    { id: 'nutrition-plan', icon: '&#127869;', title: 'Nutrition Plan', desc: 'Daily meals & macro targets' },
+    { id: 'exercise-detail', icon: '&#128170;', title: 'Exercise Guide', desc: 'Form cues for all exercises' },
+    { id: 'weight-management', icon: '&#9878;', title: 'Weight Management', desc: 'Cutting protocol & supplements' },
+    { id: 'schedule', icon: '&#128198;', title: 'Full Schedule', desc: '9-week calendar overview' },
+    { id: 'fight-prep', icon: '&#128737;', title: 'Fight Prep', desc: 'Safety, mental prep, game plan' }
+  ];
+  var html = '<div class="fc-quicklinks">';
+  cards.forEach(function(c) {
+    html += '<a href="#' + c.id + '" class="fc-quicklink">' +
+      '<div class="fc-quicklink-icon">' + c.icon + '</div>' +
+      '<div class="fc-quicklink-text"><div class="fc-quicklink-title">' + c.title + '</div>' +
+      '<div class="fc-quicklink-desc">' + c.desc + '</div></div></a>';
+  });
+  html += '</div>';
+  container.innerHTML = html;
 }
 
 // ── Phase Cards Widget ──
@@ -1158,17 +1584,48 @@ function renderTodayWidget(container) {
   var dayNames = currentLang === 'bos'
     ? ['Nedjelja','Ponedjeljak','Utorak','Srijeda','\u010Cetvrtak','Petak','Subota']
     : ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var rest = currentLang === 'bos' ? 'Dan odmora. Potpuni oporavak.' : 'Rest day. Full recovery.';
+  var rest = currentLang === 'bos' ? 'Dan odmora. Potpuni oporavak. Iskoristi dan za regeneraciju.' : 'Rest day. Full recovery. Use the day for regeneration.';
   if (dayOfWeek === 0) {
-    container.innerHTML = '<div class="fc-today"><div class="fc-today-day">' + dayNames[0] + '</div>' +
-      '<div class="fc-today-sessions">' + rest + '</div></div>';
+    container.innerHTML = '<div class="fc-today"><div class="fc-today-day">' + dayNames[0] +
+      '</div><div class="fc-today-sessions" style="color:var(--green)">' + rest + '</div></div>';
     return;
   }
   var phase = getCurrentPhase();
   var phaseId = PHASES[phase].id;
   var linkText = currentLang === 'bos' ? 'Pogledaj detaljan plan' : 'View detailed plan';
-  container.innerHTML = '<div class="fc-today"><div class="fc-today-day">' + dayNames[dayOfWeek] + '</div>' +
-    '<div class="fc-today-sessions"><a href="#' + phaseId + '">' + linkText + ' &rarr;</a></div></div>';
+  // Try to extract today's AM/PM session info from phase markdown
+  var dayName = dayNames[dayOfWeek];
+  var content = getContent()[phaseId] || '';
+  var campWeek = Math.max(1, Math.ceil((now - CAMP_START) / (7 * 86400000)));
+  var sessions = extractTodaySessions(content, dayName, campWeek);
+  var sessionsHtml = '';
+  if (sessions.am || sessions.pm) {
+    if (sessions.am) sessionsHtml += '<div style="margin:4px 0"><span style="color:var(--blue);font-size:10px;font-weight:700;letter-spacing:.06em">AM</span> <span style="font-size:13px">' + sessions.am + '</span></div>';
+    if (sessions.pm) sessionsHtml += '<div style="margin:4px 0"><span style="color:var(--purple);font-size:10px;font-weight:700;letter-spacing:.06em">PM</span> <span style="font-size:13px">' + sessions.pm + '</span></div>';
+  }
+  container.innerHTML = '<div class="fc-today"><div class="fc-today-day">' + dayName +
+    ' <span style="font-size:12px;color:var(--text-dim);font-weight:400">' +
+    (currentLang === 'bos' ? 'Sedmica ' : 'Week ') + campWeek + '</span></div>' +
+    (sessionsHtml ? '<div class="fc-today-sessions">' + sessionsHtml + '</div>' : '') +
+    '<div style="margin-top:8px"><a href="#' + phaseId + '" style="font-size:12px">' + linkText + ' &rarr;</a></div></div>';
+}
+
+function extractTodaySessions(markdown, dayName, weekNum) {
+  var result = { am: null, pm: null };
+  // Look for day heading pattern: "## DayName — Week N"
+  var dayPattern = new RegExp('## ' + dayName + '\\s*[—\\-]\\s*(?:Week|Sedmica)\\s*' + weekNum, 'i');
+  var dayIdx = markdown.search(dayPattern);
+  if (dayIdx === -1) return result;
+  // Extract content from this day heading to the next day heading
+  var afterDay = markdown.slice(dayIdx);
+  var nextDay = afterDay.search(/\n## (?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Ponedjeljak|Utorak|Srijeda|Četvrtak|Petak|Subota|Nedjelja)/i);
+  var dayContent = nextDay > 0 ? afterDay.slice(0, nextDay) : afterDay.slice(0, 2000);
+  // Find AM/PM session headings
+  var amMatch = dayContent.match(/### (?:AM|Jutro)\s*[—\-]\s*(.+)/i);
+  var pmMatch = dayContent.match(/### (?:PM|Popodne|Večer)\s*[—\-]\s*(.+)/i);
+  if (amMatch) result.am = amMatch[1].trim();
+  if (pmMatch) result.pm = pmMatch[1].trim();
+  return result;
 }
 
 // ── Master init for dashboard ──
@@ -1320,16 +1777,26 @@ function makeCollapsible(container) {
     wrapper.className = 'collapsible collapsible-level-' + level;
     var header = document.createElement('div');
     header.className = 'collapsible-header';
+    header.setAttribute('role', 'button');
+    header.setAttribute('aria-expanded', 'false');
+    header.setAttribute('tabindex', '0');
     header.innerHTML = '<span class="collapsible-arrow">&#9654;</span>' +
       '<span class="collapsible-title">' + title + '</span>' +
       (tag ? '<span class="collapsible-tag ' + tag + '">' + tag.toUpperCase() + '</span>' : '');
-    header.addEventListener('click', function() {
-      header.classList.toggle('open');
+    function toggleCollapsible() {
+      var isOpen = header.classList.toggle('open');
+      header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       var body = wrapper.querySelector('.collapsible-body');
-      if (body) body.classList.toggle('open');
+      if (body) { body.classList.toggle('open'); body.setAttribute('aria-hidden', isOpen ? 'false' : 'true'); }
+    }
+    header.addEventListener('click', toggleCollapsible);
+    header.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleCollapsible(); }
     });
     var body = document.createElement('div');
     body.className = 'collapsible-body';
+    body.setAttribute('role', 'region');
+    body.setAttribute('aria-hidden', 'true');
     wrapper.appendChild(header);
     wrapper.appendChild(body);
     return wrapper;
@@ -1884,7 +2351,7 @@ function renderCurrent() {
   }
   if (SECTIONS.indexOf(id) === -1) id = 'dashboard';
   var page = document.getElementById('page');
-  page.innerHTML = getSection(id);
+  page.innerHTML = renderBreadcrumb(id) + getSection(id);
   addTableLabels(page);
   addScrollAnchors(page);
   // Link exercises in phase pages
@@ -1894,6 +2361,10 @@ function renderCurrent() {
   // Make sections collapsible
   makeCollapsible(page);
   injectExerciseSVGs(page);
+  // Add session completion checkboxes
+  addSessionCheckboxes(page, id);
+  // Add page TOC for long reference pages
+  renderPageTOC(page, id);
   page.style.animation = 'none';
   void page.offsetHeight;
   page.style.animation = '';
@@ -1903,6 +2374,9 @@ function renderCurrent() {
   clearInterval(countdownInterval);
   if (id === 'dashboard') {
     initDashboardWidgets();
+    // Render quick links widget
+    var ql = document.getElementById('widget-quicklinks');
+    if (ql) renderQuickLinks(ql);
     countdownInterval = setInterval(function() {
       var c = document.getElementById('widget-countdown');
       if (c) renderCountdown(c);
@@ -1979,6 +2453,7 @@ var savedLang = 'bos';
 try { savedLang = localStorage.getItem('mma-lang') || 'bos'; } catch(e) {}
 setLang(savedLang === 'en' ? 'en' : 'bos');
 window.addEventListener('hashchange', renderCurrent);
+initSearch();
 
 // ── Rest Timer ──
 var timerInterval = null;
