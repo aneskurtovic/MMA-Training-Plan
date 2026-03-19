@@ -26,6 +26,24 @@
 - **Natrij:** Držati umjerenim u Fazama 1–3 (~2.000–2.500 mg/dan). Manipuliše se u Fazi 4.
 - **Kofein:** Crna kafa ili zeleni čaj — bez šećera, bez mlijeka tokom skidanja kilaže (mlijeko dodaje nepotrebne kalorije).
 
+### Budžet Opcije
+
+Svaka tabela obroka sadrži **Budžet** opciju koja koristi jeftinije namirnice (jaja, tunjevina iz konzerve, sardine/skuša, pileći bataci, zobene, bijela riža, smrznuto povrće, mlijeko, krompir, banane) sa sličnim makro vrijednostima. Ako je novac problem, birajte Budžet opciju za svaki obrok.
+
+### Ključni i Opcionalni Obroci
+
+Ako je budžet ograničen, dajte prioritet **ključnim obrocima** i tretirajte užine kao opcionalne — prebacite njihove kalorije u ključne obroke po potrebi.
+
+| Obrok | Prioritet | Zašto |
+|-------|-----------|-------|
+| **Doručak** | KLJUČAN | Prekida noćni post, daje energiju za jutro |
+| **Užina prijepodne** | Opcionaln | Može se preskočiti ako je doručak veći |
+| **Ručak / Prije treninga** | KLJUČAN | Direktno napaja trening |
+| **Užina prije treninga** | Opcionalno | Banana je dovoljna; preskočite ako je ručak bio blizu treninga |
+| **Poslije treninga** | KLJUČAN | Kritičan prozor oporavka — ne preskakati |
+| **Večera** | KLJUČAN | Glavni obrok oporavka u danu |
+| **Prije spavanja** | Opcionalno | Može se preskočiti ako je večera bila velika i bogata proteinom |
+
 ---
 
 # FAZA 1 — OSNOVNO SKIDANJE (Sedmice 1–3)
@@ -48,6 +66,7 @@
 | **A** | 4 cijela jaja (kajgana) + 2 bjelanca, 1 kriška integralnog hljeba, 1/2 avokada (40 g) | 34 g | 18 g | 22 g | 402 |
 | **B** | 80 g zobenih pahuljica kuhanih u vodi, 1 mjerica whey proteina (30 g), 1 banana, 10 g maslaca od kikirikija | 35 g | 68 g | 10 g | 502 |
 | **C** | 200 g grčkog jogurta (0% masti), 40 g granole, 100 g miješanog bobičastog voća, 1 mjerica whey proteina (30 g) | 40 g | 42 g | 6 g | 382 |
+| **Budžet** | 80 g zobenih kuhanih u vodi, 4 cijela jaja (kajgana), 1 banana | 32 g | 62 g | 22 g | 578 |
 
 ### Obrok 2 — Užina Prijepodne (10:00)
 
@@ -56,6 +75,7 @@
 | **A** | 1 mjerica whey proteina u vodi, 1 jabuka, 15 g badema | 28 g | 25 g | 10 g | 302 |
 | **B** | 150 g svježeg sira, 1 rižin kolačić, 10 g meda | 18 g | 22 g | 3 g | 187 |
 | **C** | 2 kuhana jaja, 1 banana | 14 g | 27 g | 10 g | 254 |
+| **Budžet** | 2 kuhana jaja, 1 kriška hljeba sa 10 g meda | 14 g | 22 g | 10 g | 234 |
 
 ### Obrok 3 — Ručak / Obrok Prije Treninga (12:30 — jesti 2–2,5 sata prije treninga)
 
@@ -64,6 +84,7 @@
 | **A** | 200 g pileća prsa (na žaru), 180 g bijele riže (kuhane), 150 g brokule na pari, 1 kašičica maslinovog ulja | 50 g | 58 g | 10 g | 522 |
 | **B** | 200 g mljeveno pureće meso (5% masti), 200 g slatkog krompira (pečen), velika miješana salata, 1 kašičica maslinovog ulja | 46 g | 52 g | 12 g | 500 |
 | **C** | 200 g bijele ribe (tilapija/bakalar), 180 g bijele riže (kuhane), 150 g zelenih mahuna, 1 kašičica maslinovog ulja | 44 g | 58 g | 8 g | 480 |
+| **Budžet** | 200 g pileći bataci (bez kože), 180 g bijele riže (kuhane), 150 g smrznutog miješanog povrća | 44 g | 56 g | 10 g | 490 |
 
 ### Obrok 4 — Užina Prije Treninga (14:30 — 30–45 min prije treninga)
 
@@ -72,6 +93,7 @@
 | **A** | 1 rižin kolačić + 1 kašika meda, 10 g BCAA | 10 g | 25 g | 1 g | 149 |
 | **B** | 1 banana + 1/2 mjerice whey proteina u vodi | 16 g | 27 g | 1 g | 181 |
 | **C** | 2 hurme (30 g) + 10 g BCAA | 10 g | 22 g | 0 g | 128 |
+| **Budžet** | 1 banana + 1 kašika meda | 1 g | 35 g | 0 g | 145 |
 
 ### Obrok 5 — Poslije Treninga (unutar 30–45 min od završetka)
 
@@ -80,6 +102,7 @@
 | **A** | 1,5 mjerice whey proteina u vodi, 1 banana, 30 g zobenih blendirano | 42 g | 48 g | 4 g | 396 |
 | **B** | 250 g pileća prsa, 150 g bijele riže (kuhane), sok limuna | 52 g | 45 g | 5 g | 433 |
 | **C** | 2 mjerice whey proteina u vodi, 2 rižina kolačića sa medom | 52 g | 36 g | 3 g | 379 |
+| **Budžet** | 4 kuhana jaja, 150 g bijele riže (kuhane), 1 banana | 28 g | 52 g | 20 g | 500 |
 
 ### Obrok 6 — Večera (19:30)
 
@@ -88,6 +111,7 @@
 | **A** | 200 g fileta lososa, 200 g pečenog krompira, 150 g šparoga | 44 g | 40 g | 18 g | 498 |
 | **B** | 200 g biftek od junetine (slabina), 150 g slatkog krompira, velika salata sa 1 kašičicom maslinovog ulja | 46 g | 38 g | 16 g | 476 |
 | **C** | 200 g pilećeg batka (bez kože), 150 g smeđe riže (kuhane), 150 g miješanog pečenog povrća | 42 g | 46 g | 12 g | 460 |
+| **Budžet** | 150 g tunjevine iz konzerve (cijeđena), 200 g bijelog krompira (kuhanog), 150 g smrznutog povrća, 1 kašičica ulja | 40 g | 40 g | 10 g | 410 |
 
 ### Obrok 7 — Prije Spavanja (21:30)
 
@@ -96,6 +120,7 @@
 | **A** | 250 g svježeg sira (niskomasnog), 10 g maslaca od kikirikija | 30 g | 8 g | 8 g | 224 |
 | **B** | 1 mjerica kazein proteina u vodi, 15 g badema | 28 g | 4 g | 10 g | 214 |
 | **C** | 200 g grčkog jogurta (0% masti), 5 g meda, prstohvat cimeta | 20 g | 12 g | 1 g | 137 |
+| **Budžet** | 250 ml mlijeka + 2 kuhana jaja | 22 g | 12 g | 14 g | 262 |
 
 ### Faza 1 Dan Treninga — Dnevni Zbir (koristeći Opciju A)
 
@@ -118,6 +143,7 @@
 | **A** | 4 cijela jaja (kajgana), 100 g špinata dinstаnog na 1 kašičici kokosovog ulja | 28 g | 4 g | 22 g | 324 |
 | **B** | 60 g zobenih kuhanih u vodi, 1 mjerica whey proteina, 80 g borovnica | 33 g | 48 g | 5 g | 369 |
 | **C** | 200 g grčkog jogurta (0%), 1 mjerica whey proteina, 50 g miješanog bobičastog voća | 40 g | 16 g | 2 g | 242 |
+| **Budžet** | 4 cijela jaja (kajgana), 60 g zobenih kuhanih u vodi, 1 kašičica meda | 28 g | 38 g | 22 g | 462 |
 
 ### Obrok 2 — Užina Prijepodne (10:30)
 
@@ -126,6 +152,7 @@
 | **A** | 150 g svježeg sira, 5 stabljika celera | 18 g | 6 g | 3 g | 123 |
 | **B** | 1 mjerica whey proteina u vodi, 10 g badema | 28 g | 2 g | 7 g | 183 |
 | **C** | 2 kuhana jaja, 1/2 krastavca narezanog | 14 g | 3 g | 10 g | 158 |
+| **Budžet** | 2 kuhana jaja, 1/2 krastavca narezanog | 14 g | 3 g | 10 g | 158 |
 
 ### Obrok 3 — Ručak (13:00)
 
@@ -134,6 +161,7 @@
 | **A** | 200 g pileća prsa, 100 g bijele riže (kuhane), velika salata, 1 kašičica maslinovog ulja | 50 g | 32 g | 10 g | 414 |
 | **B** | 200 g mljevena junetina (5% masti), 100 g slatkog krompira, 150 g brokule | 44 g | 28 g | 12 g | 392 |
 | **C** | 3 cijela jaja + 2 bjelanca (omlet), 80 g feta sira, punjeno paradajzom i špinatom | 40 g | 6 g | 22 g | 378 |
+| **Budžet** | 200 g pileći bataci (bez kože), 100 g bijele riže (kuhane), 150 g smrznutog povrća | 42 g | 30 g | 10 g | 378 |
 
 ### Obrok 4 — Popodnevna Užina (16:00)
 
@@ -142,6 +170,7 @@
 | **A** | 1 mjerica whey proteina u vodi, 1 mala jabuka | 28 g | 18 g | 2 g | 202 |
 | **B** | 100 g pureće prsa (narezano), 1 rižin kolačić | 22 g | 12 g | 2 g | 154 |
 | **C** | 150 g svježeg sira, 5 g meda | 18 g | 10 g | 3 g | 139 |
+| **Budžet** | 2 kuhana jaja, 1 mala jabuka | 14 g | 18 g | 10 g | 218 |
 
 ### Obrok 5 — Večera (19:00)
 
@@ -150,6 +179,7 @@
 | **A** | 200 g fileta lososa, 200 g miješanog pečenog povrća (tikvice, paprike, luk), 1 kašičica maslinovog ulja | 44 g | 18 g | 18 g | 406 |
 | **B** | 200 g pileća prsa, 150 g pečenog slatkog krompira, 150 g zelenih mahuna | 48 g | 36 g | 6 g | 390 |
 | **C** | 200 g bijele ribe, 150 g pečenog krompira, velika miješana salata | 42 g | 34 g | 4 g | 340 |
+| **Budžet** | 150 g tunjevine iz konzerve (cijeđena), 200 g bijelog krompira (kuhanog), 150 g smrznutog povrća | 38 g | 36 g | 4 g | 332 |
 
 ### Obrok 6 — Prije Spavanja (21:30)
 
@@ -158,6 +188,7 @@
 | **A** | 250 g svježeg sira (niskomasnog) | 28 g | 8 g | 4 g | 180 |
 | **B** | 1 mjerica kazein proteina u vodi | 26 g | 3 g | 2 g | 134 |
 | **C** | 200 g grčkog jogurta (0%), prstohvat cimeta | 20 g | 8 g | 0 g | 112 |
+| **Budžet** | 250 ml mlijeka + 1 kuhano jaje | 15 g | 12 g | 9 g | 189 |
 
 ### Faza 1 Dan Odmora — Dnevni Zbir (koristeći Opciju A)
 
@@ -191,6 +222,7 @@
 | **A** | 3 cijela jaja + 3 bjelanca (kajgana), 1 kriška integralnog hljeba | 32 g | 14 g | 16 g | 332 |
 | **B** | 70 g zobenih kuhanih u vodi, 1 mjerica whey proteina, 1/2 banane | 33 g | 52 g | 6 g | 394 |
 | **C** | 200 g grčkog jogurta (0%), 30 g granole, 1 mjerica whey proteina, 50 g bobičastog voća | 40 g | 30 g | 4 g | 316 |
+| **Budžet** | 70 g zobenih kuhanih u vodi, 3 cijela jaja (kajgana), 1/2 banane | 28 g | 50 g | 18 g | 474 |
 
 ### Obrok 2 — Užina Prijepodne (10:00)
 
@@ -199,6 +231,7 @@
 | **A** | 1 mjerica whey proteina u vodi, 1 mala jabuka | 28 g | 18 g | 2 g | 202 |
 | **B** | 150 g svježeg sira, 1 rižin kolačić | 18 g | 14 g | 3 g | 155 |
 | **C** | 2 kuhana jaja, 5 cherry paradajza | 14 g | 4 g | 10 g | 162 |
+| **Budžet** | 2 kuhana jaja, 1 kriška hljeba sa medom | 14 g | 18 g | 10 g | 218 |
 
 ### Obrok 3 — Ručak / Obrok Prije Treninga (12:30)
 
@@ -207,6 +240,7 @@
 | **A** | 200 g pileća prsa, 150 g bijele riže (kuhane), 150 g brokule, 1 kašičica maslinovog ulja | 50 g | 48 g | 10 g | 482 |
 | **B** | 200 g mljeveno pureće meso, 150 g slatkog krompira, miješana salata | 46 g | 38 g | 10 g | 426 |
 | **C** | 200 g tilapija, 150 g bijele riže (kuhane), 150 g zelenih mahuna | 44 g | 48 g | 6 g | 422 |
+| **Budžet** | 200 g pileći bataci (bez kože), 150 g bijele riže (kuhane), 150 g smrznutog povrća | 42 g | 48 g | 10 g | 450 |
 
 ### Obrok 4 — Užina Prije Treninga (14:30)
 
@@ -214,6 +248,7 @@
 |--------|-------|---------|-----|-------|------|
 | **A** | 1 rižin kolačić + 1 kašika meda | 2 g | 22 g | 1 g | 105 |
 | **B** | 1/2 banane + 10 g BCAA | 10 g | 14 g | 0 g | 96 |
+| **Budžet** | 1 banana | 1 g | 27 g | 0 g | 105 |
 
 ### Obrok 5 — Poslije Treninga (unutar 30–45 min)
 
@@ -222,6 +257,7 @@
 | **A** | 1,5 mjerice whey proteina u vodi, 1 banana | 40 g | 27 g | 3 g | 295 |
 | **B** | 200 g pileća prsa, 120 g bijele riže (kuhane) | 48 g | 36 g | 5 g | 381 |
 | **C** | 2 mjerice whey proteina u vodi, 1 rižin kolačić | 52 g | 12 g | 3 g | 287 |
+| **Budžet** | 3 kuhana jaja, 150 g bijele riže (kuhane), 1 banana | 22 g | 52 g | 15 g | 435 |
 
 ### Obrok 6 — Večera (19:30)
 
@@ -230,6 +266,7 @@
 | **A** | 180 g fileta lososa, 150 g pečenog krompira, 150 g šparoga | 40 g | 36 g | 16 g | 448 |
 | **B** | 200 g juneći biftek, 100 g slatkog krompira, salata sa limunom | 46 g | 24 g | 14 g | 406 |
 | **C** | 200 g pilećeg batka (bez kože), 120 g smeđe riže (kuhane), pečene tikvice | 40 g | 36 g | 10 g | 394 |
+| **Budžet** | 150 g sardina iz konzerve (cijeđene), 150 g bijelog krompira (kuhanog), 150 g smrznutog povrća | 36 g | 34 g | 14 g | 406 |
 
 ### Obrok 7 — Prije Spavanja (21:30)
 
@@ -238,6 +275,7 @@
 | **A** | 250 g svježeg sira (niskomasnog) | 28 g | 8 g | 4 g | 180 |
 | **B** | 1 mjerica kazein proteina u vodi, 10 g badema | 28 g | 3 g | 8 g | 196 |
 | **C** | 200 g grčkog jogurta (0%) | 20 g | 8 g | 0 g | 112 |
+| **Budžet** | 250 ml mlijeka + 1 kuhano jaje | 15 g | 12 g | 9 g | 189 |
 
 ### Faza 2 Dan Treninga — Dnevni Zbir (koristeći Opciju A)
 
@@ -258,6 +296,7 @@
 | **A** | 3 cijela jaja + 2 bjelanca (kajgana), 80 g špinata | 28 g | 3 g | 16 g | 272 |
 | **B** | 50 g zobenih kuhanih u vodi, 1 mjerica whey proteina, 50 g borovnica | 31 g | 38 g | 5 g | 321 |
 | **C** | 200 g grčkog jogurta (0%), 1 mjerica whey proteina, prstohvat cimeta | 40 g | 10 g | 2 g | 218 |
+| **Budžet** | 3 cijela jaja (kajgana), 50 g zobenih kuhanih u vodi | 24 g | 30 g | 16 g | 360 |
 
 ### Obrok 2 — Užina Prijepodne (10:30)
 
@@ -266,6 +305,7 @@
 | **A** | 1 mjerica whey proteina u vodi, 5 badema | 28 g | 2 g | 4 g | 156 |
 | **B** | 2 kuhana jaja | 14 g | 1 g | 10 g | 150 |
 | **C** | 100 g svježeg sira | 12 g | 4 g | 2 g | 82 |
+| **Budžet** | 2 kuhana jaja | 14 g | 1 g | 10 g | 150 |
 
 ### Obrok 3 — Ručak (13:00)
 
@@ -274,6 +314,7 @@
 | **A** | 200 g pileća prsa, 80 g bijele riže (kuhane), velika salata, 1 kašičica maslinovog ulja | 50 g | 26 g | 10 g | 394 |
 | **B** | 200 g mljevena junetina, 100 g slatkog krompira, 150 g brokule | 44 g | 24 g | 12 g | 376 |
 | **C** | 200 g bijele ribe, velika salata sa paradajzom, krastavcima, paprikama, 1 kašičica maslinovog ulja | 42 g | 10 g | 8 g | 280 |
+| **Budžet** | 200 g pileći bataci (bez kože), 100 g bijele riže (kuhane), 150 g smrznutog povrća | 42 g | 30 g | 10 g | 378 |
 
 ### Obrok 4 — Popodnevna Užina (16:00)
 
@@ -282,6 +323,7 @@
 | **A** | 1 mjerica whey proteina u vodi | 26 g | 2 g | 1 g | 121 |
 | **B** | 100 g purećih prsa (narezanih) | 22 g | 1 g | 1 g | 101 |
 | **C** | 100 g svježeg sira, kriške krastavca | 12 g | 5 g | 2 g | 86 |
+| **Budžet** | 1 kuhano jaje, 1 kriška hljeba | 8 g | 14 g | 6 g | 142 |
 
 ### Obrok 5 — Večera (19:00)
 
@@ -290,6 +332,7 @@
 | **A** | 180 g fileta lososa, 200 g pečenog povrća, 1 kašičica maslinovog ulja | 40 g | 16 g | 18 g | 386 |
 | **B** | 200 g pileća prsa, 100 g pečenog slatkog krompira, 150 g zelenih mahuna | 48 g | 26 g | 5 g | 341 |
 | **C** | 200 g junetine, velika miješana salata, 1 kašičica maslinovog ulja | 44 g | 8 g | 16 g | 352 |
+| **Budžet** | 150 g tunjevine iz konzerve (cijeđena), 200 g bijelog krompira (kuhanog), 150 g smrznutog povrća | 38 g | 36 g | 4 g | 332 |
 
 ### Obrok 6 — Prije Spavanja (21:30)
 
@@ -297,6 +340,7 @@
 |--------|-------|---------|-----|-------|------|
 | **A** | 250 g svježeg sira (niskomasnog) | 28 g | 8 g | 4 g | 180 |
 | **B** | 1 mjerica kazein proteina u vodi | 26 g | 3 g | 2 g | 134 |
+| **Budžet** | 250 ml mlijeka + 1 kuhano jaje | 15 g | 12 g | 9 g | 189 |
 
 ### Faza 2 Dan Odmora — Dnevni Zbir (koristeći Opciju A)
 
@@ -328,6 +372,7 @@
 | **A** | 3 cijela jaja + 2 bjelanca, 1 kriška hljeba, 50 g avokada | 30 g | 16 g | 20 g | 364 |
 | **B** | 70 g zobenih kuhanih u vodi, 1 mjerica whey proteina, 1 banana | 33 g | 62 g | 6 g | 434 |
 | **C** | Smoothie: 1 mjerica whey proteina, 200 ml bademovog mlijeka, 1 banana, 30 g zobenih, 5 g maslaca od kikirikija | 32 g | 48 g | 8 g | 392 |
+| **Budžet** | 70 g zobenih kuhanih u vodi, 3 cijela jaja (kajgana), 1 banana | 28 g | 56 g | 18 g | 500 |
 
 ### Obrok 2 — Užina Prijepodne (10:00)
 
@@ -336,6 +381,7 @@
 | **A** | 1 mjerica whey proteina u vodi, 1 rižin kolačić | 28 g | 10 g | 2 g | 170 |
 | **B** | 150 g svježeg sira, 5 cherry paradajza | 18 g | 8 g | 3 g | 131 |
 | **C** | 2 kuhana jaja, mala jabuka | 14 g | 18 g | 10 g | 218 |
+| **Budžet** | 2 kuhana jaja, 1 kriška hljeba | 16 g | 14 g | 10 g | 210 |
 
 ### Obrok 3 — Ručak / Prije Treninga (12:30)
 
@@ -344,6 +390,7 @@
 | **A** | 200 g pileća prsa, 160 g bijele riže (kuhane), 150 g brokule, 1 kašičica maslinovog ulja | 50 g | 52 g | 10 g | 498 |
 | **B** | 200 g mljeveno pureće meso, 160 g slatkog krompira, miješano zeleno povrće | 46 g | 42 g | 8 g | 424 |
 | **C** | 200 g fileta bakalara, 160 g bijele riže (kuhane), 150 g zelenih mahuna | 44 g | 52 g | 4 g | 420 |
+| **Budžet** | 200 g pileći bataci (bez kože), 160 g bijele riže (kuhane), 150 g smrznutog povrća | 42 g | 50 g | 10 g | 458 |
 
 ### Obrok 4 — Užina Prije Treninga (14:30)
 
@@ -351,6 +398,7 @@
 |--------|-------|---------|-----|-------|------|
 | **A** | 1 rižin kolačić + 1 kašika meda | 2 g | 22 g | 1 g | 105 |
 | **B** | 1 banana | 1 g | 27 g | 0 g | 112 |
+| **Budžet** | 1 banana | 1 g | 27 g | 0 g | 112 |
 
 ### Obrok 5 — Poslije Treninga (unutar 30 min)
 
@@ -359,6 +407,7 @@
 | **A** | 1,5 mjerice whey proteina u vodi, 1 banana, 20 g zobenih blendirano | 40 g | 42 g | 3 g | 355 |
 | **B** | 200 g pileća prsa, 130 g bijele riže (kuhane) | 48 g | 40 g | 5 g | 397 |
 | **C** | 2 mjerice whey proteina u vodi, 2 rižina kolačića | 52 g | 20 g | 3 g | 315 |
+| **Budžet** | 3 kuhana jaja, 130 g bijele riže (kuhane), 1 banana | 22 g | 48 g | 15 g | 415 |
 
 ### Obrok 6 — Večera (19:30)
 
@@ -367,6 +416,7 @@
 | **A** | 180 g lososa, 130 g pečenog krompira, 150 g šparoga | 40 g | 32 g | 16 g | 432 |
 | **B** | 200 g juneći biftek, 100 g slatkog krompira, salata | 46 g | 24 g | 14 g | 406 |
 | **C** | 200 g pileća prsa, 130 g smeđe riže (kuhane), pečeno povrće | 48 g | 40 g | 6 g | 406 |
+| **Budžet** | 150 g skuše iz konzerve (cijeđena), 150 g bijelog krompira (kuhanog), 150 g smrznutog povrća | 34 g | 34 g | 16 g | 416 |
 
 ### Obrok 7 — Prije Spavanja (21:30)
 
@@ -374,6 +424,7 @@
 |--------|-------|---------|-----|-------|------|
 | **A** | 250 g svježeg sira (niskomasnog) | 28 g | 8 g | 4 g | 180 |
 | **B** | 1 mjerica kazein proteina u vodi | 26 g | 3 g | 2 g | 134 |
+| **Budžet** | 250 ml mlijeka + 1 kuhano jaje | 15 g | 12 g | 9 g | 189 |
 
 ### Faza 3 Dan Treninga — Dnevni Zbir (koristeći Opciju A)
 
@@ -394,6 +445,7 @@
 | **A** | 3 cijela jaja + 2 bjelanca, 80 g špinata dinstanog | 28 g | 3 g | 16 g | 272 |
 | **B** | 60 g zobenih kuhanih u vodi, 1 mjerica whey proteina, 60 g borovnica | 32 g | 42 g | 5 g | 341 |
 | **C** | 200 g grčkog jogurta (0%), 1 mjerica whey proteina, 50 g bobičastog voća | 40 g | 14 g | 2 g | 234 |
+| **Budžet** | 3 cijela jaja (kajgana), 50 g zobenih kuhanih u vodi | 24 g | 30 g | 16 g | 360 |
 
 ### Obrok 2 — Užina Prijepodne (10:30)
 
@@ -402,6 +454,7 @@
 | **A** | 1 mjerica whey proteina u vodi, 10 badema | 28 g | 3 g | 7 g | 187 |
 | **B** | 2 kuhana jaja, krastavac | 14 g | 3 g | 10 g | 158 |
 | **C** | 150 g svježeg sira | 18 g | 6 g | 3 g | 123 |
+| **Budžet** | 2 kuhana jaja, krastavac | 14 g | 3 g | 10 g | 158 |
 
 ### Obrok 3 — Ručak (13:00)
 
@@ -410,6 +463,7 @@
 | **A** | 200 g pileća prsa, 100 g bijele riže (kuhane), velika salata, 1 kašičica maslinovog ulja | 50 g | 32 g | 10 g | 414 |
 | **B** | 200 g junetine, 100 g slatkog krompira, 150 g brokule | 44 g | 24 g | 12 g | 376 |
 | **C** | 200 g bijele ribe, 100 g krompira (kuhanog), zelene mahune, limunov preljev | 42 g | 22 g | 4 g | 292 |
+| **Budžet** | 200 g pileći bataci (bez kože), 100 g bijele riže (kuhane), 150 g smrznutog povrća | 42 g | 30 g | 10 g | 378 |
 
 ### Obrok 4 — Popodnevna Užina (16:00)
 
@@ -417,6 +471,7 @@
 |--------|-------|---------|-----|-------|------|
 | **A** | 1 mjerica whey proteina u vodi, 1 mala jabuka | 28 g | 18 g | 2 g | 202 |
 | **B** | 100 g purećih prsa (narezanih), 1 rižin kolačić | 22 g | 12 g | 2 g | 154 |
+| **Budžet** | 1 kuhano jaje, 1 banana | 7 g | 27 g | 5 g | 183 |
 
 ### Obrok 5 — Večera (19:00)
 
@@ -425,6 +480,7 @@
 | **A** | 180 g lososa, 200 g pečenog povrća, 1 kašičica maslinovog ulja | 40 g | 16 g | 18 g | 386 |
 | **B** | 200 g pileća prsa, 100 g slatkog krompira, zelena salata | 48 g | 26 g | 5 g | 341 |
 | **C** | 200 g junetine, velika miješana salata, 1 kašičica maslinovog ulja | 44 g | 8 g | 16 g | 352 |
+| **Budžet** | 150 g tunjevine iz konzerve (cijeđena), 200 g bijelog krompira (kuhanog), 150 g smrznutog povrća | 38 g | 36 g | 4 g | 332 |
 
 ### Obrok 6 — Prije Spavanja (21:30)
 
@@ -432,6 +488,7 @@
 |--------|-------|---------|-----|-------|------|
 | **A** | 250 g svježeg sira (niskomasnog) | 28 g | 8 g | 4 g | 180 |
 | **B** | 1 mjerica kazein proteina u vodi | 26 g | 3 g | 2 g | 134 |
+| **Budžet** | 250 ml mlijeka + 1 kuhano jaje | 15 g | 12 g | 9 g | 189 |
 
 ### Faza 3 Dan Odmora — Dnevni Zbir (koristeći Opciju A)
 
@@ -598,6 +655,24 @@ Započeti 3 dana prije sedmice borbe (četvrtak–subota Sedmice 8):
 **Povrće:** Brokula (500 g), špinat (300 g), šparoge (300 g), zelene mahune (300 g), miješana salata u kesama, krastavci, paradajz, tikvice, paprike
 
 **Ostalo:** Med, limun, cimet, sol, biber, bijeli luk, tablete elektrolita, kafa
+
+---
+
+## Budžet Spisak za Sedmičnu Kupovinu (Faze 1–3)
+
+> Koristite ovaj spisak ako pratite **Budžet** opcije obroka. Ovo su najjeftinije namirnice koje i dalje postižu potrebne makro ciljeve za borca na skidanju kilaže.
+
+**Proteini:** 2 kg pileći bataci (skinuti kožu prije kuhanja), 3 tuceta jaja, 6–8 konzervi tunjevine u vodi, 3–4 konzerve sardina/skuše, 1 L mlijeka
+
+**Ugljikohidrati:** 2 kg bijele riže, 1 kg zobenih pahuljica, hljeb (1 vekna), banane (grozd od 8–10), bijeli krompir (2 kg)
+
+**Masti:** 1 mala boca ulja za kuhanje (suncokretovo ili ulje od uljane repice)
+
+**Povrće:** Smrznuto miješano povrće (2 kg kesa — najjeftinije po porciji), krastavci, 1 glavica kupusa (za salate)
+
+**Ostalo:** Med, sol, biber, bijeli luk, kafa
+
+**Procijenjeni sedmični trošak:** Otprilike 40–60% manje od standardnog spiska. Jaja, konzervirani riba, pileći bataci, riža, zobene, smrznuto povrće i banane čine osnovu budžet plana.
 
 ---
 

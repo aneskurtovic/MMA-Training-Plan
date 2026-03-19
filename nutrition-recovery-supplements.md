@@ -119,6 +119,46 @@
 
 **Day Total: ~3,070 kcal | P: 190g | C: 380g | F: 91g**
 
+#### Budget Training Day (~3,100 kcal)
+
+**Meal 1 - Breakfast (7:00 AM)** (KEY)
+- 100g oats (dry) with water
+- 4 whole eggs scrambled
+- 1 banana, drizzle of honey
+- *P: 36g | C: 85g | F: 24g | ~700 kcal*
+
+**Meal 2 - Pre-Training (11:00 AM)** (KEY)
+- 200g white rice (cooked weight)
+- 200g chicken thighs (skin removed)
+- Frozen vegetables
+- *P: 44g | C: 62g | F: 10g | ~514 kcal*
+
+**Intra-Training (1-3 PM)**
+- 750ml water with pinch of salt + 1 tbsp honey
+- *P: 0g | C: 20g | F: 0g | ~80 kcal*
+
+**Meal 3 - Post-Training (3:30 PM)** (KEY)
+- 4 boiled eggs
+- 100g oats (dry weight) cooked with water
+- 1 banana
+- *P: 32g | C: 80g | F: 22g | ~650 kcal*
+
+**Meal 4 - Dinner (7:00 PM)** (KEY)
+- 150g canned tuna (drained)
+- 200g white potatoes (boiled)
+- 200g frozen mixed vegetables
+- 1 tsp cooking oil
+- *P: 40g | C: 48g | F: 10g | ~446 kcal*
+
+**Meal 5 - Pre-Bed (9:30 PM)** (Optional)
+- 250ml milk
+- 2 boiled eggs
+- 1 slice bread with honey
+- *P: 22g | C: 28g | F: 14g | ~326 kcal*
+
+**Day Total: ~2,716 kcal | P: 174g | C: 323g | F: 80g**
+*(Add extra rice/bread to reach ~3,100. Core budget ingredients: eggs, chicken thighs, canned tuna, oats, rice, potatoes, frozen veg, bananas.)*
+
 #### REST DAY (~2,600 kcal | P: 185g | C: 264g | F: 85g)
 
 **Meal 1 - Breakfast (8:30 AM)**
@@ -151,6 +191,40 @@
 
 **Day Total: ~2,240 kcal | P: 190g | C: 178g | F: 88g**
 *(Can add a rice cake snack or extra fruit to bring carbs to 264g target if needed)*
+
+#### Budget Rest Day (~2,600 kcal)
+
+**Meal 1 - Breakfast (8:30 AM)** (KEY)
+- 4 whole eggs scrambled
+- 60g oats (dry) cooked with water
+- 1 banana
+- *P: 30g | C: 55g | F: 22g | ~538 kcal*
+
+**Meal 2 - Lunch (12:30 PM)** (KEY)
+- 200g chicken thighs (skin removed)
+- 150g white rice (cooked)
+- 200g frozen mixed vegetables
+- *P: 44g | C: 50g | F: 10g | ~466 kcal*
+
+**Meal 3 - Afternoon Snack (3:30 PM)** (Optional)
+- 2 boiled eggs
+- 1 banana
+- 1 slice bread
+- *P: 16g | C: 40g | F: 12g | ~332 kcal*
+
+**Meal 4 - Dinner (6:30 PM)** (KEY)
+- 150g canned mackerel or sardines (drained)
+- 200g white potatoes (boiled)
+- 150g frozen vegetables
+- *P: 34g | C: 40g | F: 16g | ~440 kcal*
+
+**Meal 5 - Pre-Bed (9:00 PM)** (Optional)
+- 250ml milk
+- 2 boiled eggs
+- *P: 22g | C: 12g | F: 14g | ~262 kcal*
+
+**Day Total: ~2,038 kcal | P: 146g | C: 197g | F: 74g**
+*(Add extra rice, bread, or bananas to reach 2,600 kcal target. Budget rest days use the same cheap staples as training days.)*
 
 ### 1.5 Hydration Protocol
 

@@ -86,6 +86,21 @@ Rest day carbs:        88 × 3.0 = 264 g → 264 × 4 = 1,056 kcal → Total: 2,
 
 *Adjust portions down slightly on standard training days (reduce rice at Meal 2 or oats at Meal 3 by ~25 g dry) to hit 3,100. The plan above is closer to a moderate-heavy session day. On double days, keep full portions and add a second intra-workout drink.*
 
+#### Budget Training Day (~3,100 kcal)
+
+| Meal | Time | Food | P | C | F | kcal |
+|------|------|------|---|---|---|------|
+| **Meal 1 — Breakfast** (KEY) | 7:00 AM | 100 g oats cooked with water, 4 whole eggs scrambled, 1 banana | 36 g | 80 g | 24 g | 676 |
+| **Meal 2 — Pre-Training** (KEY) | 11:00 AM | 200 g chicken thighs (skin removed), 250 g white rice (cooked), frozen vegetables | 44 g | 80 g | 12 g | 604 |
+| **Pre-Training Snack** (Optional) | 12:30 PM | 1 banana + 1 tsp honey | 1 g | 35 g | 0 g | 145 |
+| **Intra-Training** | 1:00-3:00 PM | Water with pinch of salt + 1 tbsp honey | 0 g | 20 g | 0 g | 80 |
+| **Meal 3 — Post-Training** (KEY) | 3:30 PM | 4 boiled eggs, 100 g oats (dry weight) cooked with water, 1 banana | 32 g | 80 g | 22 g | 650 |
+| **Meal 4 — Dinner** (KEY) | 7:00 PM | 150 g canned tuna (drained), 200 g white potatoes (boiled), 200 g frozen vegetables, 1 tsp cooking oil | 40 g | 48 g | 10 g | 446 |
+| **Meal 5 — Pre-Bed** (Optional) | 9:30 PM | 250 ml milk, 2 boiled eggs, 1 slice bread with honey | 22 g | 28 g | 14 g | 326 |
+| **DAILY TOTAL** | | | **175 g** | **371 g** | **82 g** | **~2,927** |
+
+*Add extra rice or bread portions to reach 3,100 kcal if needed. Budget meals prioritize eggs, chicken thighs, canned fish, oats, rice, potatoes, frozen vegetables, and bananas — the cheapest high-quality fuel for a fighter.*
+
 ### Rest Day (~2,560 kcal)
 
 | Meal | Time | Food | P | C | F | kcal |
@@ -98,6 +113,19 @@ Rest day carbs:        88 × 3.0 = 264 g → 264 × 4 = 1,056 kcal → Total: 2,
 | **DAILY TOTAL** | | | **185 g** | **195 g** | **86 g** | **~2,300** |
 
 *If coming in under the 264 g carb target, add a piece of fruit at Meal 2 and an extra 50 g rice at lunch. Adjust carbs upward with easy additions (bread, rice, fruit) rather than adding fat.*
+
+#### Budget Rest Day (~2,560 kcal)
+
+| Meal | Time | Food | P | C | F | kcal |
+|------|------|------|---|---|---|------|
+| **Meal 1 — Breakfast** (KEY) | 8:30 AM | 4 whole eggs scrambled, 60 g oats cooked with water, 1 banana | 30 g | 55 g | 22 g | 538 |
+| **Meal 2 — Lunch** (KEY) | 12:30 PM | 200 g chicken thighs (skin removed), 150 g white rice (cooked), 200 g frozen vegetables | 44 g | 50 g | 10 g | 466 |
+| **Meal 3 — Afternoon** (Optional) | 4:00 PM | 2 boiled eggs, 1 banana, 1 slice bread | 16 g | 40 g | 12 g | 332 |
+| **Meal 4 — Dinner** (KEY) | 7:00 PM | 150 g canned sardines (drained), 200 g white potatoes (boiled), 150 g frozen vegetables | 36 g | 40 g | 14 g | 432 |
+| **Meal 5 — Pre-Bed** (Optional) | 9:30 PM | 250 ml milk, 2 boiled eggs | 22 g | 12 g | 14 g | 262 |
+| **DAILY TOTAL** | | | **148 g** | **197 g** | **72 g** | **~2,030** |
+
+*Add extra rice at lunch and bread at dinner to reach the 2,560 kcal target. Budget rest days rely on eggs, chicken thighs, canned fish, and staple carbs.*
 
 ---
 
@@ -211,6 +239,26 @@ Aim for the higher end on training days and in warm conditions.
 - Electrolyte mix or sodium tablets
 - Caffeine (coffee or capsules)
 - Beta-alanine powder (optional)
+
+### Budget Grocery Alternatives
+
+> If money is tight, swap the standard list for these cheaper staples. They hit the same macros at a fraction of the cost.
+
+| Standard Item | Budget Swap | Saving |
+|---|---|---|
+| Chicken breast | Chicken thighs (remove skin) | ~40% cheaper |
+| Salmon fillets | Canned tuna, sardines, or mackerel | ~70% cheaper |
+| Lean ground beef (93%) | Eggs or chicken thighs | ~50% cheaper |
+| Greek yogurt / cottage cheese | Milk + eggs | ~40% cheaper |
+| Whey protein | Extra eggs or milk | ~60% cheaper |
+| Almonds / walnuts | Sunflower seeds or peanuts | ~50% cheaper |
+| Avocados | Extra egg or cooking oil | ~70% cheaper |
+| Sweet potatoes | White potatoes | ~30% cheaper |
+| Fresh berries | Bananas or frozen berries | ~60% cheaper |
+| Sourdough bread | Regular bread | ~50% cheaper |
+| Fresh vegetables | Frozen mixed vegetables (bulk bags) | ~50% cheaper |
+
+**Budget weekly staples:** 2 kg chicken thighs, 3 dozen eggs, 6–8 cans tuna/sardines, 2 kg rice, 1 kg oats, 2 kg potatoes, 2 kg frozen vegetables, bananas, bread, milk, cooking oil, honey, salt, coffee.
 
 ---
 

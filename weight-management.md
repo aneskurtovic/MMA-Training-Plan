@@ -131,6 +131,21 @@ Target weight at the end of each week (weighed fasted, morning, same scale):
 
 *Increase chicken portion at Meal 2 by 30 g to push protein closer to 185 g target. Adjust rice portion down by 25 g if weight loss stalls.*
 
+#### Budget Training Day (~2,600 kcal — Phase 1)
+
+| Meal | Time | Food | P | C | F | kcal |
+|------|------|------|---|---|---|------|
+| **Meal 1 — Breakfast** (KEY) | 7:00 AM | 80 g oats cooked with water, 3 whole eggs scrambled, 1 banana | 28 g | 62 g | 18 g | 526 |
+| **Meal 2 — Pre-Training** (KEY) | 11:00 AM | 200 g chicken thighs (skin removed), 200 g white rice (cooked), frozen vegetables | 44 g | 62 g | 10 g | 514 |
+| **Pre-Training Snack** (Optional) | 12:30 PM | 1 banana | 1 g | 27 g | 0 g | 112 |
+| **Intra-Training** | 1:00-3:00 PM | Water with pinch of salt + 1 tbsp honey | 0 g | 20 g | 0 g | 80 |
+| **Meal 3 — Post-Training** (KEY) | 3:30 PM | 4 boiled eggs, 80 g oats (dry weight) cooked with water, 1 banana | 30 g | 72 g | 22 g | 610 |
+| **Meal 4 — Dinner** (KEY) | 7:00 PM | 150 g canned tuna (drained), 200 g white potatoes (boiled), 200 g frozen vegetables, 1 tsp cooking oil | 40 g | 44 g | 10 g | 430 |
+| **Meal 5 — Pre-Bed** (Optional) | 9:30 PM | 250 ml milk, 2 boiled eggs | 22 g | 12 g | 14 g | 262 |
+| **DAILY TOTAL** | | | **165 g** | **299 g** | **74 g** | **~2,534** |
+
+*Add extra rice or bread to reach 2,600 kcal. KEY meals are non-negotiable; Optional meals can be skipped if budget is extremely tight (fold calories into KEY meals instead).*
+
 ### Rest Day (~2,100 kcal — Phase 1)
 
 | Meal | Time | Food | P | C | F | kcal |
@@ -143,6 +158,19 @@ Target weight at the end of each week (weighed fasted, morning, same scale):
 | **DAILY TOTAL** | | | **177 g** | **107 g** | **70 g** | **~1,780** |
 
 *Add a rice cake or piece of fruit at lunch to bring closer to 2,100 kcal target if needed. Adjust carbs upward with simple additions, not fats.*
+
+#### Budget Rest Day (~2,100 kcal — Phase 1)
+
+| Meal | Time | Food | P | C | F | kcal |
+|------|------|------|---|---|---|------|
+| **Meal 1 — Breakfast** (KEY) | 8:30 AM | 4 whole eggs scrambled, 50 g oats cooked with water, 1 banana | 30 g | 50 g | 22 g | 518 |
+| **Meal 2 — Lunch** (KEY) | 12:30 PM | 200 g chicken thighs (skin removed), 120 g white rice (cooked), 200 g frozen vegetables | 44 g | 40 g | 10 g | 426 |
+| **Meal 3 — Afternoon** (Optional) | 4:00 PM | 2 boiled eggs, 1 banana | 14 g | 27 g | 10 g | 254 |
+| **Meal 4 — Dinner** (KEY) | 7:00 PM | 150 g canned sardines (drained), 200 g white potatoes (boiled), 150 g frozen vegetables | 36 g | 40 g | 14 g | 432 |
+| **Meal 5 — Pre-Bed** (Optional) | 9:30 PM | 250 ml milk, 1 boiled egg | 15 g | 12 g | 9 g | 189 |
+| **DAILY TOTAL** | | | **139 g** | **169 g** | **65 g** | **~1,819** |
+
+*Add extra rice or bread at lunch/dinner to reach 2,100 kcal. Increase eggs at breakfast to push protein closer to target.*
 
 ---
 
@@ -377,3 +405,17 @@ If competing under any athletic commission or sanctioning body, the athlete is *
 - Caffeine (coffee or capsules)
 - Beta-alanine powder (optional)
 - Oral rehydration solution (for fight week rehydration)
+
+### Budget Grocery List
+
+> If following the budget meal options, replace the standard list with these cheaper staples.
+
+**Proteins:** 2 kg chicken thighs (remove skin before cooking), 3 dozen eggs, 6–8 cans tuna in water, 3–4 cans sardines or mackerel, 1 L milk
+
+**Carbs:** 2 kg white rice, 1 kg oats, bread (1 loaf), bananas (8–10), white potatoes (2 kg)
+
+**Fats:** 1 small bottle cooking oil (sunflower or canola)
+
+**Vegetables:** Frozen mixed vegetables (2 kg bulk bag), cucumbers
+
+**Other:** Honey, salt, pepper, garlic, coffee, ORS sachets (fight week)

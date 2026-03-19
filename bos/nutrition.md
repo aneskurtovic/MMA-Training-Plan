@@ -86,6 +86,21 @@ Ugljikohidrati dan odmora:       88 × 3.0 = 264 g → 264 × 4 = 1,056 kcal →
 
 *Prilagoditi porcije blago na dolje na standardnim danima treninga (smanjiti pirinač na Obroku 2 ili zob na Obroku 3 za ~25 g suhe) da se postigne 3,100. Gornji plan je bliži umjereno-teškom danu treninga. Na duplim danima, zadržati pune porcije i dodati drugi napitak tokom treninga.*
 
+#### Budžet Dan Treninga (~3,100 kcal)
+
+| Obrok | Vrijeme | Hrana | P | U | M | kcal |
+|-------|---------|-------|---|---|---|------|
+| **Obrok 1 — Doručak** (KLJUČAN) | 7:00 | 100 g zobenih kuhanih u vodi, 4 cijela jaja (kajgana), 1 banana | 36 g | 80 g | 24 g | 676 |
+| **Obrok 2 — Prije treninga** (KLJUČAN) | 11:00 | 200 g pileći bataci (bez kože), 250 g bijele riže (kuhane), smrznuto povrće | 44 g | 80 g | 12 g | 604 |
+| **Užina prije treninga** (Opcionalno) | 12:30 | 1 banana + 1 kašičica meda | 1 g | 35 g | 0 g | 145 |
+| **Tokom treninga** | 13:00-15:00 | Voda sa prstohvatom soli + 1 kašika meda | 0 g | 20 g | 0 g | 80 |
+| **Obrok 3 — Poslije treninga** (KLJUČAN) | 15:30 | 4 kuhana jaja, 100 g zobenih (suha težina) kuhanih u vodi, 1 banana | 32 g | 80 g | 22 g | 650 |
+| **Obrok 4 — Večera** (KLJUČAN) | 19:00 | 150 g tunjevine iz konzerve (cijeđena), 200 g bijelog krompira (kuhanog), 200 g smrznutog povrća, 1 kašičica ulja | 40 g | 48 g | 10 g | 446 |
+| **Obrok 5 — Prije spavanja** (Opcionalno) | 21:30 | 250 ml mlijeka, 2 kuhana jaja, 1 kriška hljeba sa medom | 22 g | 28 g | 14 g | 326 |
+| **DNEVNI ZBIR** | | | **175 g** | **371 g** | **82 g** | **~2,927** |
+
+*Dodajte ekstra riže ili hljeba da dosegnete 3,100 kcal. Budžet obroci koriste jaja, pileće batake, tunjevinu iz konzerve, zobene, rižu, krompir, smrznuto povrće i banane — najjeftinije visokokvalitetno gorivo za borca.*
+
 ### Dan odmora (~2,560 kcal)
 
 | Obrok | Vrijeme | Hrana | P | U | M | kcal |
@@ -98,6 +113,19 @@ Ugljikohidrati dan odmora:       88 × 3.0 = 264 g → 264 × 4 = 1,056 kcal →
 | **DNEVNI ZBIR** | | | **185 g** | **195 g** | **86 g** | **~2,300** |
 
 *Ako je unos ispod cilja od 264 g ugljikohidrata, dodati komad voća na Obroku 2 i dodatnih 50 g pirinča na ručku. Ugljikohidrate podizati laganim dodacima (kruh, pirinač, voće) umjesto dodavanja masti.*
+
+#### Budžet Dan Odmora (~2,560 kcal)
+
+| Obrok | Vrijeme | Hrana | P | U | M | kcal |
+|-------|---------|-------|---|---|---|------|
+| **Obrok 1 — Doručak** (KLJUČAN) | 8:30 | 4 cijela jaja (kajgana), 60 g zobenih kuhanih u vodi, 1 banana | 30 g | 55 g | 22 g | 538 |
+| **Obrok 2 — Ručak** (KLJUČAN) | 12:30 | 200 g pileći bataci (bez kože), 150 g bijele riže (kuhane), 200 g smrznutog povrća | 44 g | 50 g | 10 g | 466 |
+| **Obrok 3 — Popodne** (Opcionalno) | 16:00 | 2 kuhana jaja, 1 banana, 1 kriška hljeba | 16 g | 40 g | 12 g | 332 |
+| **Obrok 4 — Večera** (KLJUČAN) | 19:00 | 150 g sardina iz konzerve (cijeđene), 200 g bijelog krompira (kuhanog), 150 g smrznutog povrća | 36 g | 40 g | 14 g | 432 |
+| **Obrok 5 — Prije spavanja** (Opcionalno) | 21:30 | 250 ml mlijeka, 2 kuhana jaja | 22 g | 12 g | 14 g | 262 |
+| **DNEVNI ZBIR** | | | **148 g** | **197 g** | **72 g** | **~2,030** |
+
+*Dodajte ekstra riže na ručku i hljeba uz večeru za postizanje cilja od 2,560 kcal. Budžet dani odmora se oslanjaju na jaja, pileće batake, konzerviranu ribu i osnovne ugljikohidrate.*
 
 ---
 
@@ -211,6 +239,26 @@ Ciljati na viši kraj na dane treninga i u toplim uslovima.
 - Miks elektrolita ili tablete natrija
 - Kofein (kafa ili kapsule)
 - Beta-alanin u prahu (opcionalno)
+
+### Budžet Alternativa za Kupovinu
+
+> Ako je novac problem, zamijenite standardni spisak ovim jeftinijim namirnicama. Postižu iste makro ciljeve uz daleko nižu cijenu.
+
+| Standardna namirnica | Budžet zamjena | Ušteda |
+|---|---|---|
+| Pileća prsa | Pileći bataci (skinuti kožu) | ~40% jeftinije |
+| Fileti lososa | Tunjevina, sardine ili skuša iz konzerve | ~70% jeftinije |
+| Mršavo mljeveno meso (93%) | Jaja ili pileći bataci | ~50% jeftinije |
+| Grčki jogurt / svježi sir | Mlijeko + jaja | ~40% jeftinije |
+| Whey protein | Dodatna jaja ili mlijeko | ~60% jeftinije |
+| Bademi / orasi | Sjemenke suncokreta ili kikiriki | ~50% jeftinije |
+| Avokado | Dodatno jaje ili ulje za kuhanje | ~70% jeftinije |
+| Slatki krompir | Bijeli krompir | ~30% jeftinije |
+| Svježe bobičasto voće | Banane ili smrznuto voće | ~60% jeftinije |
+| Kiseli kruh | Obični hljeb | ~50% jeftinije |
+| Svježe povrće | Smrznuto miješano povrće (velike kese) | ~50% jeftinije |
+
+**Sedmične budžet namirnice:** 2 kg pileći bataci, 3 tuceta jaja, 6–8 konzervi tunjevine/sardina, 2 kg riže, 1 kg zobenih, 2 kg krompira, 2 kg smrznutog povrća, banane, hljeb, mlijeko, ulje za kuhanje, med, sol, kafa.
 
 ---
 
